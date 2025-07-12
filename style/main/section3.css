@@ -1,0 +1,64 @@
+@import url('../base.css');
+
+section#section3{
+    gap: 60px;
+    padding: 50px 60px;
+    background-color: var(--Branco);
+}
+
+section#section3 h1{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--Verde-petroleo-claro);
+}
+
+div#section3-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+div#section3-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+/* Vídeo do Do que se trata? */
+div#section3-container img{
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px 0 var(--Azul-petroleo-claro);
+}
+
+div#section3-video h3{
+    max-width: 400px;
+    font-size: 40px;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: var(--Azul-petroleo-claro);
+}
+
+div#section3-pecas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+div#section3-pecas p{
+    font-size: 30px;
+    font-family: var(--openSans);
+    color: var(--Preto);
+}
+
+/* Onde ficará a parte interativa com as peças R, P e I */
+div#section3-pecas div{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
