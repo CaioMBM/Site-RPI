@@ -1,0 +1,43 @@
+@import url('../base.css');
+
+header{
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Verde-petroleo);
+}
+
+header img{
+    width: 60px;
+}
+
+header ul{
+    display: flex;
+    gap: 50px;
+}
+
+header a{
+    font-family: var(--theSeasonBold);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--Branco);
+    position: relative;
+}
+
+/* Efeito do hover */
+header a::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: " ";
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--Branco);
+    transition: .3s ease-in-out;
+}
+
+header a:hover::after{
+    width: 100%;
+}
