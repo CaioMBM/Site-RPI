@@ -5,7 +5,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--Verde-petroleo);
+    background-color: var(--Verde-petroleo-claro);
 }
 
 header img{

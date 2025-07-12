@@ -1,0 +1,49 @@
+@import url('../base.css');
+
+#section1{
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 51, 63);
+}
+
+#section1Content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#section1texto{
+    max-width: 740px;
+}
+
+#section1texto h1{
+    margin-bottom: 35px;
+    font-size: 60px;
+    font-family: var(--theSeasonBold);
+    color: var(--Branco);
+}
+
+#section1texto p{
+    font-size: 25px;
+    font-style: italic;
+    font-family: var(--openSans);
+    color: var(--Cinza-neutro);
+}
+
+#btn-rpi{
+    width: 150px;
+    border: 3px solid var(--Branco);
+    border-radius: 20px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Branco);
+    transition: .3s ease-in-out;
+}
+
+#btn-rpi:hover{
+    border: 3px solid var(--Verde-petroleo-claro);
+    background-color: var(--Verde-petroleo-claro);
+}

@@ -24,11 +24,11 @@
     --Preto          : #030d0f;
 
     /* Cores secundáriais */
-    --Azul-claro          : #11BCE8;
-    --Azul-petroleo-claro : #72C5CF;
-    --Vermelho            : #C32224;
-    --Verde-petroleo      : #136972;
-    --gradient            : linear-gradient(175deg,rgba(19, 105, 114, 1) 0%, rgba(11, 60, 64, 1) 36%, rgba(3, 13, 15, 1) 97%);
+    --Azul-claro           : #11BCE8;
+    --Azul-petroleo-claro  : #72C5CF;
+    --Vermelho             : #C32224;
+    --Verde-petroleo-claro : #136972;
+    --gradient             : linear-gradient(175deg,rgba(19, 105, 114, 1) 0%, rgba(11, 60, 64, 1) 36%, rgba(3, 13, 15, 1) 97%);
 
     /* Cores 70% de opacidade */
     --Azul-claro-70 : #11bde8a7;
