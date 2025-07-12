@@ -15,6 +15,10 @@
     src: url(../Fonts/The-Seasons-Bold.otf) format('opentype');
 }
 
+body{
+    background: var(--gradient);
+}
+
 :root{
     /* Cores */
     /* Cores principais */
