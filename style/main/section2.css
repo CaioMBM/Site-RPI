@@ -1,0 +1,50 @@
+@import url('../base.css');
+
+#section2{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    font-family: var(--theSeasonBold);
+    color: var(--Branco);
+    background-color: var(--Verde-petroleo-claro);
+}
+
+/* Serve p/todos os <p> da section2 */
+#section2 p{
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#montandoQuebraCabeca{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#montandoQuebraCabeca div{
+    min-width: 574px;
+    height: 430px;
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px 0 var(--Branco);
+}
+
+#exibindoLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#exibindoLogo p{
+    max-width: 870px;
+}
+
+/* Gif da logo sendo gerada */
+#exibindoLogo img{
+    width: 575px;
+    height: 355px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px var(--Azul-petroleo-claro);
+}
