@@ -1,0 +1,108 @@
+@import url('../base.css');
+
+footer{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--Verde-petroleo-claro);
+}
+
+/* Parte Superior do Footer - Lado esquerdo */
+footer div#footerSuperior{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div#footerSuperior div#footerinformacoes{
+    width: 427px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer div#footerSuperior div#footerinformacoes > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div#footerSuperior div#footerinformacoes > div div.footerInfo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 20px;
+}
+
+footer div#footerSuperior h2, i, p, a{
+    color: var(--Branco);
+    text-decoration: none;
+}
+
+footer div#footerSuperior h2{
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: var(--theSeasonBold);
+}
+
+footer div#footerSuperior div#footerinformacoes > div i{
+    font-size: 20px;
+}
+
+footer div#footerSuperior div#footerinformacoes > div i.icon-localizacao{
+    align-self: flex-start;
+}
+
+footer div#footerSuperior div#footerinformacoes > div p, a{
+    font-size: 15px;
+    font-family: var(--openSans);
+    letter-spacing: 0.5px
+}
+
+footer div#footerSuperior div#footerinformacoes > div a span{
+    font-weight: bold;
+}
+
+/* Parte Superior do Footer - Lado direito */
+footer div#footerSuperior div#footerParceiros{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer div#footerSuperior div#footerParceiros > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div#footerSuperior div#footerParceiros > div div#footerCards{
+    display: flex;
+    gap: 30px;
+}
+
+footer div#footerSuperior div#footerParceiros > div div#footerCards img{
+    width: 120px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: -8px 8px 5px 0 var(--Preto);
+}
+
+footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais{
+    display: flex;
+    gap: 15px;
+}
+
+footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais i{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 10px 7px 10px;
+    color: var(--Preto);
+    background-color: var(--Verde-petroleo);
+    transition: .3s ease;
+}
+
+footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais i:hover{
+    color: var(--Verde-petroleo);
+    background-color: var(--Branco);
+}
