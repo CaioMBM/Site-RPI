@@ -1,0 +1,58 @@
+@import url('../base.css');
+
+section#section6{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 0;
+}
+
+section#section6 div.section6Card{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--Azul-petroleo-claro);
+}
+
+section#section6 div.section6Card img{
+    width: 54px;
+    color: var(--Verde-petroleo);
+}
+
+section#section6 div.section6Card h3{
+    height: 30px;
+    font-size: 22px;
+    font-family: var(--openSans);
+    font-weight: bold;
+    position: relative;
+    color: var(--Verde-petroleo);
+}
+
+section#section6 div.section6Card h3#negPerformancer{
+    font-size: 17px;
+}
+
+section#section6 div.section6Card h3::after{
+    content: " ";
+    width: 63px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -5px;
+    right: 15%;
+    background-color: var(--Verde-petroleo);
+}
+
+section#section6 div.section6Card p{
+    height: 165px;
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--openSans);
+    color: var(--Verde-petroleo);
+}
