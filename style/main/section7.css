@@ -1,0 +1,49 @@
+@import url('../base.css');
+
+section#section7{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 50px;
+    color: var(--Verde-petroleo-claro);
+    background-color: var(--Branco);
+}
+
+section#section7 div#section7Titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section#section7 div#section7Titulo i{
+    font-size: 40px;
+}
+
+section#section7 div#section7Titulo h1{
+    font-size: 60px;
+}
+
+section#section7 p{
+    max-width: 1000px;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--openSans);
+}
+
+section#section7 p a{
+    text-decoration: none;
+    color: var(--Verde-petroleo-claro);
+}
+
+section#section7 div#containerCards{
+    display: flex;
+    gap: 50px;
+}
+
+section#section7 div#containerCards .cardsVideos{
+    width: 325px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
