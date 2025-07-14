@@ -1,6 +1,9 @@
 @import url('../base.css');
 
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
     padding: 20px 120px;
     display: flex;
     justify-content: space-between;
