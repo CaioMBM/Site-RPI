@@ -106,3 +106,12 @@ footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais i:hove
     color: var(--Verde-petroleo);
     background-color: var(--Branco);
 }
+
+
+
+/* Linha Divisória */
+footer > span{
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--Branco);
+}
