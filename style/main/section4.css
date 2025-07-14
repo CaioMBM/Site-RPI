@@ -32,7 +32,9 @@ div#section4Texto h2{
     position: relative;
     margin-bottom: 40px;
     font-size: 45px;
-    letter-spacing: 5px;
+    font-family: var(--theSeasonBold);
+    font-weight: 100;
+    letter-spacing: 2px;
     color: var(--Branco);
 }
 
@@ -41,8 +43,8 @@ div#section4Texto h2::after{
     width: 5px;
     height: 20px;
     position: absolute;
-    left: -10px;
-    top: 15px;
+    left: -15px;
+    top: 20px;
     background-color: var(--Azul-petroleo-claro);
 }
 

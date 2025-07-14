@@ -15,9 +15,10 @@ section#section9 div{
 
 section#section9 div h1{
     margin-bottom: 40px;
-    line-height: 40px;
+    line-height: 50px;
     font-size: 45px;
     font-family: var(--theSeasonBold);
+    font-weight: 100;
     color: var(--Verde-petroleo-claro);
 }
 
@@ -56,6 +57,7 @@ section#section9 form div.form-input{
 
 section#section9 form div.form-input label{
     font-family: var(--theSeasonBold);
+    font-weight: 100;
     font-size: 25px;
     color: var(--Branco);
 }

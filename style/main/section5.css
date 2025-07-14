@@ -12,6 +12,8 @@ section#section5 h2{
     font-size: 45px;
     letter-spacing: 5px;
     color: var(--Branco);
+    font-family: var(--theSeasonBold);
+    font-weight: 100;
 }
 
 section#section5 p{
@@ -47,6 +49,7 @@ section#section5 > div div.section5Cards{
 section#section5 > div div.section5Cards h3{
     font-size: 25px;
     font-family: var(--theSeasonBold);
+    font-weight: 100;
     color: var(--Branco);
 }
 section#section5 > div div.section5Cards h4{

@@ -18,7 +18,8 @@ header ul{
 }
 
 header a{
-    font-family: var(--theSeasonBold);
+    font-family: 'The Seasons-Bold';
+    font-weight: 100;
     font-size: 20px;
     text-decoration: none;
     color: var(--Branco);

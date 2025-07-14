@@ -12,6 +12,7 @@ section#section8{
 section#section8 h1{
     font-size: 60px;
     font-family: var(--theSeasonBold);
+    font-weight: 100;
 }
 
 section#section8 div#section8Cards{
@@ -47,11 +48,13 @@ section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInform
 section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInformacao h5{
     font-size: 15px;
     font-family: var(--theSeasonBold);
+    font-weight: 100;
 }
 
 section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInformacao span{
     font-size: 10px;
     font-family: var(--theSeasonBold);
+    font-weight: 100;
     color: var(--Cinza-neutro);
 }
 

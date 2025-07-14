@@ -22,6 +22,8 @@ section#section7 div#section7Titulo i{
 
 section#section7 div#section7Titulo h1{
     font-size: 60px;
+    font-family: var(--theSeasonBold);
+    font-weight: 100;
 }
 
 section#section7 p{

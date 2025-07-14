@@ -43,6 +43,7 @@ footer div#footerSuperior h2{
     letter-spacing: 2px;
     font-size: 30px;
     font-family: var(--theSeasonBold);
+    font-weight: 100;
 }
 
 footer div#footerSuperior div#footerinformacoes > div i{

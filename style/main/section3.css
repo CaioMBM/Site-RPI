@@ -10,6 +10,8 @@ section#section3 h1{
     margin-bottom: 60px;
     text-align: center;
     font-size: 60px;
+    font-family: var(--theSeasonBold);
+    font-weight: 100;
     color: var(--Verde-petroleo-claro);
 }
 
@@ -37,7 +39,8 @@ div#section3-container img{
 div#section3-video h3{
     max-width: 400px;
     font-size: 40px;
-    font-style: italic;
+    font-family: var(--theSeasonBold);
+    font-weight: 100;
     letter-spacing: 2px;
     color: var(--Azul-petroleo-claro);
 }
