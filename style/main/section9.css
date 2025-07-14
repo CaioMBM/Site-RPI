@@ -7,6 +7,7 @@ section#section9{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    scroll-margin-top: 80px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
 
 section#section9 div{

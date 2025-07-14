@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(16, 51, 63);
+    scroll-margin-top: 100px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
 
 #section1Content{
