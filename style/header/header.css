@@ -20,6 +20,10 @@ header ul{
     gap: 50px;
 }
 
+header ul li{
+    transition: .3s ease;
+}
+
 header a{
     font-family: 'The Seasons-Bold';
     font-weight: 100;
@@ -44,4 +48,13 @@ header a::after{
 
 header a:hover::after{
     width: 100%;
+}
+
+header i{
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    right: 120px;
+    color: var(--Branco);
+    display: none;
 }
