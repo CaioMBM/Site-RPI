@@ -34,6 +34,10 @@ footer div#footerSuperior div#footerinformacoes > div div.footerInfo{
     line-height: 20px;
 }
 
+footer div#footerSuperior div#footerinformacoes > div div.footerInfo a:hover {
+    text-decoration: underline;
+}
+
 footer div#footerSuperior h2, i, p, a{
     color: var(--Branco);
     text-decoration: none;
@@ -121,6 +125,10 @@ footer > span{
 footer div#footerInferior{
     display: flex;
     justify-content: space-between;
+}
+
+footer div#footerInferior p, div#footerInferior a{
+    font-size: 14px;
 }
 
 footer div#footerInferior p a{
