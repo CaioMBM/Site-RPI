@@ -6,7 +6,6 @@ section#section7{
     flex-direction: column;
     gap: 30px;
     padding: 60px 50px;
-    color: var(--Verde-petroleo-claro);
     background-color: var(--Branco);
 }
 
@@ -18,24 +17,53 @@ section#section7 div#section7Titulo{
 
 section#section7 div#section7Titulo i{
     font-size: 40px;
+    color: var(--Verde-petroleo-claro);
 }
 
 section#section7 div#section7Titulo h1{
     font-size: 60px;
     font-family: var(--theSeasonBold);
     font-weight: 100;
+    color: var(--Verde-petroleo-claro);
 }
 
 section#section7 p{
     max-width: 1000px;
     text-align: center;
     font-size: 30px;
+    font-style: italic;
     font-family: var(--openSans);
+    color: var(--Verde-petroleo-claro);
 }
 
 section#section7 p a{
+    position: relative;
     text-decoration: none;
+    font-size: 30px;
+    font-style: italic;
     color: var(--Verde-petroleo-claro);
+    transition: .3s ease-in-out;
+}
+
+
+section#section7 p a:hover{
+    color: var(--Azul-petroleo-claro);
+}
+
+section#section7 p a::after{
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+    content: " ";
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--Azul-petroleo-claro);
+    transition: .3s ease-in-out;
+}
+
+section#section7 p a:hover::after{
+    width: 88%;
 }
 
 section#section7 div#containerCards{

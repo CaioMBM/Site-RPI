@@ -55,7 +55,7 @@ section#section5 > div div.section5Cards h3{
 section#section5 > div div.section5Cards h4{
     font-size: 20px;
     font-family: var(--openSans);
-    font-weight: 600;
+    font-weight: 300;
     color: var(--Cinza-neutro);
 }
 section#section5 > div div.section5Cards span{
