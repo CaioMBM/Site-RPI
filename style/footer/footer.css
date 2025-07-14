@@ -108,10 +108,36 @@ footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais i:hove
 }
 
 
-
 /* Linha Divisória */
 footer > span{
     height: 2px;
     border-radius: 5px;
     background-color: var(--Branco);
+}
+
+
+/* Parte Inferior do Footer */
+footer div#footerInferior{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div#footerInferior p a{
+    position: relative;
+}
+
+footer div#footerInferior p a::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: " ";
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--Branco);
+    transition: .3s ease-in-out;
+}
+
+footer div#footerInferior p a:hover::after{
+    width: 100%;
 }
