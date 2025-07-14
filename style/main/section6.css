@@ -9,9 +9,8 @@ section#section6{
 
 section#section6 div.section6Card{
     width: 300px;
-    height: 400px;
     border-radius: 10px;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,33 +31,31 @@ section#section6 div.section6Card img{
 }
 
 section#section6 div.section6Card h3{
-    height: 30px;
-    font-size: 22px;
+    font-size: 15px;
     font-family: var(--openSans);
     font-weight: bold;
-    position: relative;
     color: var(--Verde-petroleo);
 }
 
-section#section6 div.section6Card h3#negPerformancer{
-    font-size: 17px;
+section#section6 div.section6Card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
 }
 
-section#section6 div.section6Card h3::after{
-    content: " ";
-    width: 63px;
-    height: 4px;
+
+section#section6 div.section6Card div span{
+    width: 80%;
+    height: 3px;
     border-radius: 5px;
-    position: absolute;
-    bottom: -5px;
-    right: 15%;
     background-color: var(--Verde-petroleo);
 }
 
 section#section6 div.section6Card p{
-    height: 165px;
+    height: 205px;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     font-family: var(--openSans);
     color: var(--Verde-petroleo);
 }
