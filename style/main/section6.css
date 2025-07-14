@@ -18,6 +18,12 @@ section#section6 div.section6Card{
     justify-content: center;
     gap: 30px;
     background-color: var(--Azul-petroleo-claro);
+    transition: .3s ease;
+}
+
+section#section6 div.section6Card:hover{
+    transform: translateY(-3%);
+    box-shadow: -10px 10px 3px 0 var(--Branco);
 }
 
 section#section6 div.section6Card img{
