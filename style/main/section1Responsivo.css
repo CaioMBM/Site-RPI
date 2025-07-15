@@ -1,7 +1,37 @@
 @import url('../base.css');
 
 /* Media query */
-@media screen and (max-width: 389px) {}
+@media screen and (max-width: 389px) {
+    section#section1{
+        height: 280px;
+    }
+
+    section#section1 div#section1Content{
+        bottom: 10%;
+        left: 10%;
+        gap: 20px;
+    }
+
+    section#section1 div#section1Content div#section1texto{
+        max-width: 320px;
+    }
+    
+    section#section1 div#section1Content div#section1texto h1{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    section#section1 div#section1Content div#section1texto p{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    section#section1 div#section1Content a#btn-rpi{
+        width: fit-content;
+        padding: 12px 35px;
+        font-size: 10px;
+    }
+}
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section1{
         height: 280px;
