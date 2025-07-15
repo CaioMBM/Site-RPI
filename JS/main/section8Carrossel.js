@@ -5,12 +5,11 @@ const containerSec8 = document.querySelector('#section8Cards')
 // Media query
 /*
 Tela: 599px-768px = telaNormal
-Tela: 459px-598px = telaNormalPequena
-Tela: 390px-458px = telaPequena
+Tela: 390px-598px = telaNormalPequena
 Tela: ...px-389px = telaMuitoPequena
 */
 const telaNormal         = window.matchMedia('(min-width: 599px) and (max-width: 768px)');
-const telaNormalPequena  = window.matchMedia('(min-width: 459px) and (max-width: 598px)');
+const telaNormalPequena  = window.matchMedia('(min-width: 390px) and (max-width: 598px)');
 
 
 function moverDireitaDepoimentos(){
@@ -27,7 +26,7 @@ function moverDireitaDepoimentos(){
             containerSec8.scrollLeft += 250; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     } 
-    // Telas: 459px-598px
+    // Telas: 390px-598px
     else if (telaNormalPequena.matches){
         // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
         if (containerSec8.scrollLeft >= scrollMax) {
@@ -53,7 +52,7 @@ function moverEsquerdaDepoimentos(){
             containerSec8.scrollLeft -= 250; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     }
-    // Telas: 459px-598px
+    // Telas: 390px-598px
     else if(telaNormalPequena.matches){
         // Se estiver no primeiro card e então clicar para mover para esquerda, será mostrado o último card do carrossel
         if (containerSec8.scrollLeft <= 0) {
