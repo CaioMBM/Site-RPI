@@ -73,7 +73,6 @@ section#section8 div#section8BotoesCarrossel{
     top: 60%;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
 }
 
 section#section8 div#section8BotoesCarrossel i{
