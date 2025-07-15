@@ -10,6 +10,7 @@ Tela: ...px-389px = telaMuitoPequena
 */
 const telaNormal         = window.matchMedia('(min-width: 599px) and (max-width: 768px)');
 const telaNormalPequena  = window.matchMedia('(min-width: 390px) and (max-width: 598px)');
+const telaMuitoPequena   = window.matchMedia('(max-width: 389px)');
 
 
 function moverDireitaDepoimentos(){
@@ -35,6 +36,17 @@ function moverDireitaDepoimentos(){
         // Se não for o último card, será mostrado o card seguinte
         else {
             containerSec8.scrollLeft += 280; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
+        }
+    }
+    // Telas: ...px-389px
+    else if (telaMuitoPequena.matches){
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (containerSec8.scrollLeft >= scrollMax) {
+            containerSec8.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            containerSec8.scrollLeft += 240; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     }
 }
@@ -63,5 +75,14 @@ function moverEsquerdaDepoimentos(){
             containerSec8.scrollLeft -= 280; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     }
+     // Telas: ...px-389px
+    // Se estiver no primeiro card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (containerSec8.scrollLeft <= 0) {
+            containerSec8.scrollLeft = containerSec8.scrollWidth - containerSec8.clientWidth;
+        } 
+        // Se não for o primeiro card, será mostrado o card anterior
+        else {
+            containerSec8.scrollLeft -= 240; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
+        }
 }
 btnSec8CarrosselEsquerda.addEventListener('click', moverEsquerdaDepoimentos);
