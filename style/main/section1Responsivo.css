@@ -5,7 +5,28 @@
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
 @media only screen and (min-width: 459px) and (max-width: 598px) {}
 @media only screen and (min-width: 599px) and (max-width: 768px) {}
-@media only screen and (min-width: 769px) and (max-width: 958px) {}
+@media only screen and (min-width: 769px) and (max-width: 958px) {
+    section#section1{
+        height: 500px;
+    }
+
+    section#section1 div#section1Content{
+        bottom: 15%;
+        left: 22%;
+    }
+
+    section#section1 div#section1Content div#section1texto{
+        max-width: 540px;
+    }
+
+    section#section1 div#section1Content div#section1texto h1{
+        font-size: 45px;
+    }
+
+    section#section1 div#section1Content div#section1texto p{
+        font-size: 22px;
+    }
+}
 @media only screen and (min-width: 959px) and (max-width: 1078px) {
     section#section1{
         height: 600px;
