@@ -1,25 +1,34 @@
 @import url('../base.css');
 
-#section1{
+section#section1{
+    position: relative;
     height: 640px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(16, 51, 63);
+    box-shadow: 0 8px 8px 0 #000;
+    border-radius: 0 0 20px 20px;
+    background: url('../../Imagens/img-homemOlhandoFuturo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(.9);
     scroll-margin-top: 100px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
 
-#section1Content{
+section#section1 div#section1Content{
+    filter: brightness(10);
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
 }
 
-#section1texto{
+section#section1 div#section1Content div#section1texto{
     max-width: 740px;
+    z-index: 10;
 }
 
-#section1texto h1{
+section#section1 div#section1Content div#section1texto h1{
     margin-bottom: 35px;
     font-size: 60px;
     font-family: var(--theSeasonBold);
@@ -28,14 +37,14 @@
     color: var(--Branco);
 }
 
-#section1texto p{
+section#section1 div#section1Content div#section1texto p{
     font-size: 25px;
     font-style: italic;
     font-family: var(--openSans);
     color: var(--Cinza-neutro);
 }
 
-#btn-rpi{
+section#section1 div#section1Content a#btn-rpi{
     width: 150px;
     border: 3px solid var(--Branco);
     border-radius: 20px;
@@ -46,7 +55,7 @@
     transition: .3s ease-in-out;
 }
 
-#btn-rpi:hover{
+section#section1 div#section1Content a#btn-rpi:hover{
     border: 3px solid var(--Verde-petroleo-claro);
     background-color: var(--Verde-petroleo-claro);
 }
