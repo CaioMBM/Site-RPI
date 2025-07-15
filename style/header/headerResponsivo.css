@@ -2,7 +2,54 @@
 
 /* Media query */
 @media screen and (max-width: 389px) {}
-@media only screen and (min-width: 390px) and (max-width: 458px) {}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    header{
+        padding: 20px 60px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header ul{
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        border-radius: 0 0 5px 5px;
+        border: 2px solid var(--Preto);
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 0;
+        background-color: var(--Verde-petroleo-claro);
+    }
+
+    header ul li{
+        text-align: center;
+        padding: 20px 0;
+        border: 1px solid var(--Preto);
+    }
+
+    header ul li:hover{
+        background-color: var(--Azul-petroleo-claro);
+    }
+
+    header ul li a{
+        padding: 20px 145px;
+    }
+
+    header a:hover::after{
+        width: 0%;
+    }
+
+    header i{
+        right: 60px;
+    }
+
+    header i.icon-abrirMenu{
+        display: block;
+    }
+}
 @media only screen and (min-width: 459px) and (max-width: 598px) {
     header{
         padding: 20px 60px;
