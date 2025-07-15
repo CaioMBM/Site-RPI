@@ -1,0 +1,19 @@
+@import url('../base.css');
+
+/* Media query */
+@media screen and (max-width: 389px) {}
+@media only screen and (min-width: 390px) and (max-width: 458px) {}
+@media only screen and (min-width: 459px) and (max-width: 598px) {}
+@media only screen and (min-width: 599px) and (max-width: 768px) {}
+@media only screen and (min-width: 769px) and (max-width: 958px) {}
+@media only screen and (min-width: 959px) and (max-width: 1078px) {}
+@media only screen and (min-width: 1079px) and (max-width: 1280px) {
+    section#section1{
+        height: 580px;
+    }
+
+    section#section1 div#section1Content{
+        bottom: 15%;
+        left: 23%;
+    }
+}
