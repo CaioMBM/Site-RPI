@@ -2,7 +2,45 @@
 
 /* Media query */
 @media screen and (max-width: 389px) {}
-@media only screen and (min-width: 390px) and (max-width: 458px) {}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    #section2{
+        padding: 40px;
+        gap: 90px;
+    }
+
+    #montandoQuebraCabeca div{
+        min-width: 325px;
+        height: 180px;
+    }
+
+    #montandoQuebraCabeca{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #montandoQuebraCabeca p{
+        max-width: 540px;
+    }
+
+    /* Serve p/todos os <p> da section2 */
+    #section2 p{
+        font-size: 18px;
+    }
+
+    #exibindoLogo{
+        gap: 20px;
+    }
+
+    #exibindoLogo p{
+        max-width: 540px;
+    }
+
+    /* Gif da logo sendo gerada */
+    #exibindoLogo img{
+        width: 325px;
+        height: 180px;
+    }
+}
 @media only screen and (min-width: 459px) and (max-width: 598px) {
     #section2{
         padding: 40px;
