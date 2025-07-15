@@ -3,7 +3,33 @@
 /* Media query */
 @media screen and (max-width: 389px) {}
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
-@media only screen and (min-width: 459px) and (max-width: 598px) {}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    section#section1{
+        height: 320px;
+    }
+
+    section#section1 div#section1Content{
+        bottom: 15%;
+        left: 22%;
+    }
+
+    section#section1 div#section1Content div#section1texto{
+        max-width: 330px;
+    }
+
+    section#section1 div#section1Content div#section1texto h1{
+        font-size: 30px;
+    }
+
+    section#section1 div#section1Content div#section1texto p{
+        font-size: 15px;
+    }
+
+    section#section1 div#section1Content a#btn-rpi{
+        width: 120px;
+        padding: 10px 0;
+    }
+}
 @media only screen and (min-width: 599px) and (max-width: 768px) {
     section#section1{
         height: 400px;
