@@ -5,7 +5,36 @@
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
 @media only screen and (min-width: 459px) and (max-width: 598px) {}
 @media only screen and (min-width: 599px) and (max-width: 768px) {}
-@media only screen and (min-width: 769px) and (max-width: 998px) {}
+@media only screen and (min-width: 769px) and (max-width: 998px) {
+    #section2{
+        padding: 40px;
+        gap: 60px;
+    }
+
+    #montandoQuebraCabeca div{
+        min-width: 374px;
+        height: 230px;
+    }
+
+    #montandoQuebraCabeca{
+        gap: 30px;
+    }
+
+    /* Serve p/todos os <p> da section2 */
+    #section2 p{
+        font-size: 22px;
+    }
+
+    #exibindoLogo p{
+        max-width: 570px;
+    }
+
+    /* Gif da logo sendo gerada */
+    #exibindoLogo img{
+        width: 475px;
+        height: 255px;
+    }
+}
 @media only screen and (min-width: 999px) and (max-width: 1150px) {
     #montandoQuebraCabeca div{
         min-width: 474px;
