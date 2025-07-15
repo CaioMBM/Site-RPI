@@ -75,8 +75,9 @@ function moverEsquerdaDepoimentos(){
             containerSec8.scrollLeft -= 280; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     }
-     // Telas: ...px-389px
-    // Se estiver no primeiro card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+    // Telas: ...px-389px
+    else if(telaMuitoPequena.matches){
+        // Se estiver no primeiro card e então clicar para mover para esquerda, será mostrado o último card do carrossel
         if (containerSec8.scrollLeft <= 0) {
             containerSec8.scrollLeft = containerSec8.scrollWidth - containerSec8.clientWidth;
         } 
@@ -84,5 +85,6 @@ function moverEsquerdaDepoimentos(){
         else {
             containerSec8.scrollLeft -= 240; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
+    }
 }
 btnSec8CarrosselEsquerda.addEventListener('click', moverEsquerdaDepoimentos);
