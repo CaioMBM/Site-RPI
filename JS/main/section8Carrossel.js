@@ -1,6 +1,6 @@
 const btnSec8CarrosselEsquerda = document.querySelectorAll('.botaoCarrosselDepoimentos')[0];
 const btnSec8CarrosselDireita  = document.querySelectorAll('.botaoCarrosselDepoimentos')[1];
-const containerSec8 = document.querySelector('#section8Cards')
+const containerSec8 = document.querySelector('#section8Cards');
 
 // Media query
 /*
@@ -12,7 +12,7 @@ const telaNormal         = window.matchMedia('(min-width: 599px) and (max-width:
 const telaNormalPequena  = window.matchMedia('(min-width: 390px) and (max-width: 598px)');
 const telaMuitoPequena   = window.matchMedia('(max-width: 389px)');
 
-
+// Mover itens do carrossel para direita
 function moverDireitaDepoimentos(){
     const scrollMax = containerSec8.scrollWidth - containerSec8.clientWidth;
 
@@ -52,6 +52,7 @@ function moverDireitaDepoimentos(){
 }
 btnSec8CarrosselDireita.addEventListener('click', moverDireitaDepoimentos);
 
+// Mover itens do carrossel para esquerda
 function moverEsquerdaDepoimentos(){
     // Telas: 599px-768px
     if (telaNormal.matches){

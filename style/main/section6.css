@@ -3,11 +3,19 @@
 section#section6{
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 60px 0;
+    align-items: center;
+    padding: 50px 60px;
 }
 
-section#section6 div.section6Card{
+section#section6 #section6container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+section#section6 #section6container div.section6Card{
     width: 300px;
     border-radius: 10px;
     padding: 20px;
@@ -20,42 +28,64 @@ section#section6 div.section6Card{
     transition: .3s ease;
 }
 
-section#section6 div.section6Card:hover{
+section#section6 #section6container div.section6Card:hover{
     transform: translateY(-3%);
     box-shadow: -10px 10px 3px 0 var(--Branco);
 }
 
-section#section6 div.section6Card img{
+section#section6 #section6container div.section6Card img{
     width: 54px;
     color: var(--Verde-petroleo);
 }
 
-section#section6 div.section6Card h3{
+section#section6 #section6container div.section6Card h3{
     font-size: 15px;
     font-family: var(--openSans);
     font-weight: bold;
     color: var(--Verde-petroleo);
 }
 
-section#section6 div.section6Card div{
+section#section6 #section6container div.section6Card div{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px;
 }
 
-
-section#section6 div.section6Card div span{
+section#section6 #section6container div.section6Card div span{
     width: 80%;
     height: 3px;
     border-radius: 5px;
     background-color: var(--Verde-petroleo);
 }
 
-section#section6 div.section6Card p{
+section#section6 #section6container div.section6Card p{
     height: 205px;
     text-align: center;
     font-size: 12px;
     font-family: var(--openSans);
     color: var(--Verde-petroleo);
+}
+
+section#section6 div#section6BotoesCarrossel{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#section6 div#section6BotoesCarrossel i{
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: var(--Verde-petroleo-claro);
+    transition: .3s ease;
+}
+
+section#section6 div#section6BotoesCarrossel i:hover{
+    transform: scale(1.1);
+}
+
+section#section6 div#section6BotoesCarrossel i:active{
+    color: var(--Branco);
 }
