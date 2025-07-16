@@ -6,12 +6,13 @@ const containerSec6 = document.querySelector('#section6container');
 /*
 Tela: 689px-768px = atributos_telaNormal
 Tela: 390px-598px = atributos_telaNormalPequena
-Tela: ...px-389px = atributos_telaMuitoPequena
+Tela: ...px-389px = atributos_telaBemPequena
 */
 
 const atributos_telaNormal         = window.matchMedia('(min-width: 689px) and (max-width: 798px)');
 const atributos_telaNormalPequena  = window.matchMedia('(min-width: 599px) and (max-width: 688px)');
-const atributos_telaMuitoPequena   = window.matchMedia('(min-width: 389px) and (max-width: 598px)');
+const atributos_telaBemPequena     = window.matchMedia('(min-width: 389px) and (max-width: 598px)');
+const atributos_telaMuitoPequena   = window.matchMedia('(max-width: 390px)');
 
 // Mover itens do carrossel para direita
 function moverDireitaAtributos(){
@@ -37,13 +38,21 @@ function moverDireitaAtributos(){
         }
     }
     // Telas: 389px-598px
-    else if (atributos_telaMuitoPequena.matches){
+    else if (atributos_telaBemPequena.matches){
         if (containerSec6.scrollLeft >= scrollMax) {
             containerSec6.scrollLeft = 0;
         } else {
             containerSec6.scrollLeft += 280;
         }
-    } 
+    }
+    // Telas: ...px-390px
+    else if (atributos_telaMuitoPequena.matches){
+        if (containerSec6.scrollLeft >= scrollMax) {
+            containerSec6.scrollLeft = 0;
+        } else {
+            containerSec6.scrollLeft += 240;
+        }
+    }
 }
 btnSec6CarrosselDireita.addEventListener('click', moverDireitaAtributos);
 
@@ -69,11 +78,19 @@ function moverEsquerdaAtributos(){
         }
     }
     // Telas: 389px-598px
-    else if (atributos_telaMuitoPequena.matches){
+    else if (atributos_telaBemPequena.matches){
         if (containerSec6.scrollLeft <= 0) {
             containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
         } else {
             containerSec6.scrollLeft -= 280;
+        }
+    }
+    // Telas: ...px-390px
+    else if (atributos_telaMuitoPequena.matches){
+        if (containerSec6.scrollLeft <= 0) {
+            containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
+        } else {
+            containerSec6.scrollLeft -= 240;
         }
     }
 }
