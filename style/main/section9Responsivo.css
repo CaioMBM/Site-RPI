@@ -6,6 +6,7 @@
     section#section9{
         flex-direction: column;
         padding: 50px 10px;
+        gap: 30px;
     }
 
     section#section9 div{
@@ -15,6 +16,7 @@
     section#section9 div h1{
         font-size: 30px;
         line-height: 30px;
+        margin-bottom: 20px;
     }
 
     section#section9 div p{
@@ -59,6 +61,7 @@
     section#section9{
         flex-direction: column;
         padding: 40px 20px;
+        gap: 30px;
     }
 
     section#section9 div{
@@ -68,6 +71,7 @@
     section#section9 div h1{
         font-size: 30px;
         line-height: 30px;
+        margin-bottom: 20px;
     }
 
     section#section9 div p{
@@ -112,6 +116,7 @@
     section#section9{
         flex-direction: column;
         padding: 40px;
+        gap: 30px;
     }
 
     section#section9 div{
@@ -120,6 +125,7 @@
     
     section#section9 div h1{
         width: 90%;
+        margin-bottom: 20px;
         font-size: 35px;
         line-height: 40px;
     }
@@ -165,6 +171,7 @@
     section#section9{
         flex-direction: column;
         padding: 40px;
+        gap: 30px;
     }
 
     section#section9 div{
@@ -173,6 +180,7 @@
     }
 
     section#section9 div h1{
+        margin-bottom: 20px;
         font-size: 40px;
         line-height: 40px;
     }
