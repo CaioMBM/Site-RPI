@@ -3,8 +3,45 @@
 
 /* Media query */
 @media screen and (max-width: 389px) {}
-@media only screen and (min-width: 390px) and (max-width: 458px) {}
-@media only screen and (min-width: 459px) and (max-width: 598px) {}
+@media only screen and (min-width: 390px) and (max-width: 598px) {
+    section#section6{
+        padding: 40px 20px;
+    }
+
+    section#section6 #section6container{
+        width: 260px;
+        overflow-x: hidden;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: unset;
+    }
+
+    section#section6 #section6container div.section6Card{
+        min-width: 260px;
+        gap: 20px;
+    }
+
+    section#section6 #section6container div.section6Card:hover{
+        transform: translateY(0%);
+        box-shadow: 0 var(--Branco);
+    }
+
+    section#section6 #section6container div.section6Card h3{
+        font-size: 14px;
+    }
+
+    section#section6 #section6container div.section6Card p{
+        height: 240px;
+    }
+
+    section#section6 div#section6BotoesCarrossel{
+        width: 89%;
+    }
+
+    section#section6 div#section6BotoesCarrossel i{
+        display: block;
+    }
+}
 @media only screen and (min-width: 599px) and (max-width: 688px) {
     section#section6{
         padding: 40px;

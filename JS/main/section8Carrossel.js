@@ -6,11 +6,11 @@ const containerSec8 = document.querySelector('#section8Cards');
 /*
 Tela: 599px-768px = depoimentos_telaNormal
 Tela: 390px-598px = depoimentos_telaNormalPequena
-Tela: ...px-389px = atributos_telaMuitoPequena
+Tela: ...px-389px = depoimentos_telaMuitoPequena
 */
 const depoimentos_telaNormal         = window.matchMedia('(min-width: 599px) and (max-width: 768px)');
 const depoimentos_telaNormalPequena  = window.matchMedia('(min-width: 390px) and (max-width: 598px)');
-const atributos_telaMuitoPequena   = window.matchMedia('(max-width: 389px)');
+const depoimentos_telaMuitoPequena   = window.matchMedia('(max-width: 389px)');
 
 // Mover itens do carrossel para direita
 function moverDireitaDepoimentos(){
@@ -39,7 +39,7 @@ function moverDireitaDepoimentos(){
         }
     }
     // Telas: ...px-389px
-    else if (atributos_telaMuitoPequena.matches){
+    else if (depoimentos_telaMuitoPequena.matches){
         // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
         if (containerSec8.scrollLeft >= scrollMax) {
             containerSec8.scrollLeft = 0;

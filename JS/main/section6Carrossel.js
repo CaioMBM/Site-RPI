@@ -6,11 +6,12 @@ const containerSec6 = document.querySelector('#section6container');
 /*
 Tela: 689px-768px = atributos_telaNormal
 Tela: 390px-598px = atributos_telaNormalPequena
-Tela: ...px-389px = telaMuitoPequena
+Tela: ...px-389px = atributos_telaMuitoPequena
 */
 
 const atributos_telaNormal         = window.matchMedia('(min-width: 689px) and (max-width: 798px)');
-const atributos_telaNormalPequena   = window.matchMedia('(min-width: 599px) and (max-width: 688px)');
+const atributos_telaNormalPequena  = window.matchMedia('(min-width: 599px) and (max-width: 688px)');
+const atributos_telaMuitoPequena   = window.matchMedia('(min-width: 389px) and (max-width: 598px)');
 
 // Mover itens do carrossel para direita
 function moverDireitaAtributos(){
@@ -35,6 +36,14 @@ function moverDireitaAtributos(){
             containerSec6.scrollLeft += 250;
         }
     }
+    // Telas: 389px-598px
+    else if (atributos_telaMuitoPequena.matches){
+        if (containerSec6.scrollLeft >= scrollMax) {
+            containerSec6.scrollLeft = 0;
+        } else {
+            containerSec6.scrollLeft += 280;
+        }
+    } 
 }
 btnSec6CarrosselDireita.addEventListener('click', moverDireitaAtributos);
 
@@ -52,11 +61,19 @@ function moverEsquerdaAtributos(){
         }
     }
     // Telas: 599px-688px
-    else if(telaNormalPequena.matches){
-        if (containerSec8.scrollLeft <= 0) {
-            containerSec8.scrollLeft = containerSec8.scrollWidth - containerSec8.clientWidth;
+    else if (atributos_telaNormalPequena.matches){
+        if (containerSec6.scrollLeft <= 0) {
+            containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
         } else {
-            containerSec8.scrollLeft -= 250;
+            containerSec6.scrollLeft -= 250;
+        }
+    }
+    // Telas: 389px-598px
+    else if (atributos_telaMuitoPequena.matches){
+        if (containerSec6.scrollLeft <= 0) {
+            containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
+        } else {
+            containerSec6.scrollLeft -= 280;
         }
     }
 }
