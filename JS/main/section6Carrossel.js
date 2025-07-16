@@ -5,8 +5,9 @@ const containerSec6 = document.querySelector('#section6container');
 // Media query
 /*
 Tela: 689px-768px = atributos_telaNormal
-Tela: 390px-598px = atributos_telaNormalPequena
-Tela: ...px-389px = atributos_telaBemPequena
+Tela: 599px-688px = atributos_telaNormalPequena
+Tela: 389px-598px = atributos_telaBemPequena
+Tela: ...px-389px = atributos_telaMuitoPequena
 */
 
 const atributos_telaNormal         = window.matchMedia('(min-width: 689px) and (max-width: 798px)');

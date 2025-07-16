@@ -85,6 +85,7 @@ section#section9 form div.form-input input::placeholder{
 
 section#section9 form div.form-input textarea{
     height: 100px;
+    resize: none;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
