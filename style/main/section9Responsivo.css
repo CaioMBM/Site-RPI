@@ -5,7 +5,52 @@
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
 @media only screen and (min-width: 459px) and (max-width: 598px) {}
 @media only screen and (min-width: 599px) and (max-width: 768px) {}
-@media only screen and (min-width: 769px) and (max-width: 1008px) {}
+@media only screen and (min-width: 769px) and (max-width: 1008px) {
+    /* Contato */
+    section#section9{
+        padding: 60px 50px;
+    }
+
+    section#section9 div{
+        min-width: 250px;
+    }
+
+    section#section9 div h1{
+        font-size: 40px;
+    }
+
+    section#section9 div p{
+        font-size: 25px;
+    }
+
+    /* Formulário */ 
+    section#section9 form{
+        width: 73%;
+        padding: 20px;
+    }
+
+    section#section9 form div.form-input{
+        min-width: 100%;
+    }
+
+    section#section9 form div.form-input label{
+        font-size: 20px;
+    }
+
+    section#section9 form div.form-input input::placeholder{
+        font-size: 12px;
+    }
+
+    section#section9 form div.form-input textarea::placeholder{
+        font-size: 12px;
+    }
+
+    section#section9 form button{
+        width: 150px;
+        padding: 12px 0;
+        font-size: 20px;
+    }
+}
 @media only screen and (min-width: 1009px) and (max-width: 1280px) {
     /* Contato */
     section#section9{
