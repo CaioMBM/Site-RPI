@@ -12,7 +12,7 @@ section#section4 div#section4Imagens{
     position: relative;
     width: 420px;
     height: 245px;
-    border-radius: 10px 0 10px 10px;
+    border-radius: 10px;
     background-color: antiquewhite;
 }
 
