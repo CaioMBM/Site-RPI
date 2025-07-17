@@ -4,7 +4,32 @@
 @media screen and (max-width: 389px) {}
 @media only screen and (min-width: 390px) and (max-width: 598px) {}
 @media only screen and (min-width: 599px) and (max-width: 688px) {}
-@media only screen and (min-width: 689px) and (max-width: 798px) {}
+@media only screen and (min-width: 689px) and (max-width: 888px) {
+    footer{
+        padding: 60px 50px;
+    }
+
+    /* Parte Superior do Footer - Lado esquerdo */
+    footer div#footerSuperior{
+        gap: 60px;
+    }
+
+    footer div#footerSuperior div#footerinformacoes > div{
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    /* Parte Superior do Footer - Lado direito */
+    footer div#footerSuperior div#footerParceiros > div div#footerCards{
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerCards img{
+        width: 100px;
+        height: 50px;
+    }
+}
 @media only screen and (min-width: 889px) and (max-width: 1008px) {
     footer{
         padding: 60px 50px;
