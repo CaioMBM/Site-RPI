@@ -5,7 +5,43 @@
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
 @media only screen and (min-width: 459px) and (max-width: 598px) {}
 @media only screen and (min-width: 599px) and (max-width: 768px) {}
-@media only screen and (min-width: 769px) and (max-width: 898px) {}
+@media only screen and (min-width: 769px) and (max-width: 898px) {
+    section#section4{
+        gap: 100px;
+        padding: 150px 60px 50px 60px;
+    }
+
+    section#section4 div#section4Imagens{
+        min-width: 280px;
+        height: 155px;
+    }
+
+    section#section4 img{
+        width: 155px;
+        height: 200px;
+    }
+
+    div#section4Texto{
+        width: 80%;
+        margin-top: -5%;
+    }
+
+    div#section4Texto h2{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    div#section4Texto h2::after{
+        width: 4px;
+        height: 18px;
+        left: -12px;
+        top: 12px;
+    }
+
+    div#section4Texto p{
+        font-size: 18px;
+    }
+}
 @media only screen and (min-width: 899px) and (max-width: 1008px) {
     section#section4{
         gap: 100px;
