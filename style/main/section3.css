@@ -87,6 +87,6 @@ section#section3 div#section3-container div#section3-pecas div div#contentPecas 
     transition: .3s ease;
 }
 
-section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(2):hover{
-    transform: translateY(-20px)
+section#section3 div#section3-container div#section3-pecas div div#contentPecas img:hover{
+    transform: translateY(-20px);
 }

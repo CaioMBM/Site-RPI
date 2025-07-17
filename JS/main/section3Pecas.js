@@ -1,6 +1,7 @@
 const conteinarPecas = document.getElementById('conteinarPecas');
 const fundoPadrao    = 'Imagens/Quebra-cabeça/fundoPecasPadrao.png';
 
+
 // Resultado
 // Caminhos relativos ao HTML
 const pecaQC_Result = document.getElementById('pecaQC_Result');
@@ -21,6 +22,7 @@ pecaQC_Result.addEventListener('click', () => {
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
     }
 });
+
 
 // Performance
 // Caminhos relativos ao HTML
