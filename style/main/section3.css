@@ -61,9 +61,32 @@ section#section3 div#section3-container div#section3-pecas p{
 }
 
 /* Onde ficará a parte interativa com as peças R, P e I */
-section#section3 div#section3-container div#section3-pecas div{
-    width: 1000px;
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
+    width: 750px;
     height: 500px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../Imagens/Quebra-cabeça/fundoPecasPadrao.png');
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-image 0.5s ease-in-out;
+}
+
+section#section3 div#section3-container div#section3-pecas div div#contentPecas{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: baseline;
+}
+
+section#section3 div#section3-container div#section3-pecas div div#contentPecas img{
+    transition: .3s ease;
+}
+
+section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(2):hover{
+    transform: translateY(-20px)
 }
