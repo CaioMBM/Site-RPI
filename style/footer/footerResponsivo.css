@@ -2,7 +2,52 @@
 
 /* Media query */
 @media screen and (max-width: 389px) {}
-@media only screen and (min-width: 390px) and (max-width: 458px) {}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    footer{
+        padding: 40px 20px;
+    }
+
+    footer div#footerSuperior{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Parte Superior do Footer - Lado esquerdo */
+    footer div#footerSuperior div#footerinformacoes{
+        width: auto;
+        gap: 25px;
+    }
+
+    footer div#footerSuperior h2{
+        font-size: 25px;
+    }
+
+    footer div#footerSuperior div#footerinformacoes > div i{
+        font-size: 15px;
+    }
+
+    footer div#footerSuperior div#footerinformacoes > div p, a{
+        font-size: 13px;
+    }
+    
+    /* Parte Superior do Footer - Lado direito */
+    footer div#footerSuperior div#footerParceiros{
+        gap: 25px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div{
+        gap: 25px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerCards{
+        gap: 15px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerCards img{
+        width: 90px;
+        height: 50px;
+    }
+}
 @media only screen and (min-width: 458px) and (max-width: 598px) {
     footer{
         padding: 40px;
@@ -43,6 +88,11 @@
     footer div#footerSuperior div#footerParceiros > div div#footerCards{
         flex-wrap: wrap;
         gap: 15px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerCards img{
+        width: 90px;
+        height: 50px;
     }
 }
 @media only screen and (min-width: 599px) and (max-width: 688px) {
