@@ -3,7 +3,43 @@
 /* Media query */
 @media screen and (max-width: 389px) {}
 @media only screen and (min-width: 390px) and (max-width: 598px) {}
-@media only screen and (min-width: 599px) and (max-width: 688px) {}
+@media only screen and (min-width: 599px) and (max-width: 688px) {
+    footer{
+        padding: 40px;
+    }
+
+    /* Parte Superior do Footer - Lado esquerdo */
+    footer div#footerSuperior{
+        position: relative;
+        height: 280px;
+        gap: 50px;
+    }
+
+    footer div#footerSuperior div#footerinformacoes > div {
+        justify-content: unset;
+    }
+
+    /* Parte Superior do Footer - Lado direito */
+    footer div#footerSuperior div#footerParceiros{
+        width: 200px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerCards{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerCards img{
+        width: 100px;
+        height: 50px;
+    }
+
+    footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais{
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+    }
+}
 @media only screen and (min-width: 689px) and (max-width: 888px) {
     footer{
         padding: 60px 50px;

@@ -114,6 +114,10 @@ footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais i:hove
     background-color: var(--Branco);
 }
 
+footer div#footerSuperior div#footerParceiros > div div#footerRedeSociais i:active{
+    transform: scale(2);
+}
+
 
 /* Linha Divisória */
 footer > span{
