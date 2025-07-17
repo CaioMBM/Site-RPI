@@ -29,7 +29,6 @@ const imagem4     = 'Imagens/Quebra-cabeça/peçaInterf-Clicada.png';
 const fundoInterf = 'Imagens/Quebra-cabeça/QC-Interferencia_resized.png';
 
 pecaQC_Interf.addEventListener('click', () => {
-    console.log('oi')
     const imgAgora = pecaQC_Interf.getAttribute('src');
     
     if (imgAgora === imagem3) {
@@ -37,6 +36,25 @@ pecaQC_Interf.addEventListener('click', () => {
         conteinarPecas.style.backgroundImage = `url('${fundoInterf}')`;
     } else {
         pecaQC_Interf.setAttribute('src', imagem3);
+        conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
+    }
+});
+
+// Interferência
+// Caminhos relativos ao HTML
+const pecaQC_Result = document.getElementById('pecaQC_Result');
+const imagem5     = 'Imagens/Quebra-cabeça/peçaResult-Contorno.png';
+const imagem6     = 'Imagens/Quebra-cabeça/peçaResult-Clicada.png';
+const fundoResult = 'Imagens/Quebra-cabeça/QC-Resultado_resized.png';
+
+pecaQC_Result.addEventListener('click', () => {
+    const imgPresente = pecaQC_Result.getAttribute('src');
+    
+    if (imgPresente === imagem5) {
+        pecaQC_Result.setAttribute('src', imagem6);
+        conteinarPecas.style.backgroundImage = `url('${fundoResult}')`;
+    } else {
+        pecaQC_Result.setAttribute('src', imagem5);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
     }
 });
