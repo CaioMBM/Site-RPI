@@ -1,0 +1,28 @@
+@import url('../base.css');
+
+/* Media query */
+@media screen and (max-width: 389px) {}
+@media only screen and (min-width: 390px) and (max-width: 458px) {}
+@media only screen and (min-width: 459px) and (max-width: 598px) {}
+@media only screen and (min-width: 599px) and (max-width: 768px) {}
+@media only screen and (min-width: 769px) and (max-width: 1008px) {}
+@media only screen and (min-width: 1009px) and (max-width: 1280px) {
+    section#section4{
+        gap: 100px;
+        padding: 150px 60px 50px 60px;
+    }
+
+    section#section4 div#section4Imagens{
+        min-width: 380px;
+        height: 205px;
+    }
+
+    section#section4 img{
+        width: 185px;
+        height: 241px;
+    }
+
+    div#section4Texto h2{
+        font-size: 40px;
+    }
+}
