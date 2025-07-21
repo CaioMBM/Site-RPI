@@ -221,6 +221,15 @@
 }
 
 /* Parte Inferior do Footer */
+@media only screen and (min-width: 459px) and (max-width: 558px){
+    footer div#footerInferior{
+        gap: 50px;
+    }
+
+    footer div#footerInferior p, div#footerInferior a{
+        font-size: 12px;
+    }
+}
 @media only screen and (min-width: 559px) and (max-width: 748px){
     footer div#footerInferior{
         gap: 50px;
