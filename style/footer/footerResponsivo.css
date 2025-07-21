@@ -219,3 +219,10 @@
         height: 50px;
     }
 }
+
+/* Parte Inferior do Footer */
+@media only screen and (min-width: 559px) and (max-width: 748px){
+    footer div#footerInferior{
+        gap: 50px;
+    }
+}

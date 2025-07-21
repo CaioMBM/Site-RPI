@@ -5,6 +5,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    font-family: var(--openSans);
     background-color: var(--Verde-petroleo-claro);
 }
 
@@ -60,7 +61,6 @@ footer div#footerSuperior div#footerinformacoes > div i.icon-localizacao{
 
 footer div#footerSuperior div#footerinformacoes > div p, a{
     font-size: 15px;
-    font-family: var(--openSans);
     letter-spacing: 0.5px
 }
 
