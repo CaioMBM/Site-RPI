@@ -1,7 +1,39 @@
 @import url('../base.css');
 
 /* Media query */
-@media screen and (max-width: 389px) {}
+@media screen and (max-width: 389px) {
+    section#section7{
+        padding: 50px 10px;
+        gap: 35px;
+    }
+
+    section#section7 > p{
+        font-size: 20px;
+    }
+
+    section#section7 div#section7container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    section#section7 div#section7container > div{
+        width: 100%;
+    }
+    
+    section#section7 div#section7container > div > p{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    section#section7 div#section7container > div div#palavrasVideo{
+        gap: 15px;
+    }
+
+    section#section7 div#section7container > div div#palavrasVideo p{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+}
 @media only screen and (min-width: 390px) and (max-width: 488px) {
     section#section7{
         padding: 50px 10px;
