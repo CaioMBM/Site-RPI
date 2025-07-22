@@ -3,7 +3,37 @@
 /* Media query */
 @media screen and (max-width: 389px) {}
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
-@media only screen and (min-width: 459px) and (max-width: 598px) {}
+@media only screen and (min-width: 459px) and (max-width: 488px) {}
+@media only screen and (min-width: 489px) and (max-width: 598px) {
+    section#section7{
+        padding: 40px 20px;
+    }
+
+    section#section7 > p{
+        font-size: 25px;
+    }
+
+    section#section7 div#section7container{
+        gap: 30px;
+    }
+
+    section#section7 div#section7container > div{
+        width: 100%;
+    }
+    
+    section#section7 div#section7container > div > p{
+        font-size: 20px;
+    }
+
+    section#section7 div#section7container > div div#palavrasVideo{
+        gap: 15px;
+    }
+
+    section#section7 div#section7container > div div#palavrasVideo p{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+}
 @media only screen and (min-width: 599px) and (max-width: 768px) {
     section#section7{
         padding: 40px;
