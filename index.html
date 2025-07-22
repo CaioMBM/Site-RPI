@@ -42,8 +42,6 @@
         <!-- Logo do site -->
         <img src="Imagens/Icon/Logo-RPI_Experiencia.png" alt="Logo R=P-I">
 
-        
-
         <nav>
             <ul>
                 <li class="navlink">
@@ -66,7 +64,6 @@
 
         <!-- Abrir menu hamburguer -->
         <i class="bi bi-list icon-abrirMenu"></i>
-
         <!-- Fechar menu hamburguer -->
         <i class="bi bi-x-lg icon-fecharMenu"></i>
     </header>
@@ -108,7 +105,7 @@
             <div id="section3-container">
                 <!-- Caixa do vídeo + texto do vídeo -->
                 <div id="section3-video">
-                    <img src="Imagens/Leandro/LeandroPensando.jpg" alt="Tumbnail do vídeo">
+                    <img src="Imagens/Leandro/LeandroPensando.jpg" alt="#">
 
                     <h3>“Gestão Orientada para Resultados.”</h3>
                 </div>
@@ -218,18 +215,35 @@
 
         <!-- Podcast -->
         <section id="section7">
-            <!-- Título -->
-            <div id="section7Titulo">
-                <i class="bi bi-mic-fill"></i>
-                <h1>Podcast</h1>
-            </div>
+            <p>Necessidade de Reinventar: Montando o Quebra-Cabeça em Movimento.</p>
 
-            <p>No <a href="#">@nomedopodcast</a> compartilho com você experiências que eu vivi no mercado nesses 30 anos de caminhada.</p>
+            <div id="section7container">
+                <!-- Vídeo -->
+                <video 
+                preload="none"
+                controls
+                controlsList="nodownload"
+                poster="Imagens/Leandro/Leandro_Tumbnail.jpeg"
+                oncontextmenu="return false;">
+                    <source src="Video/reinventar.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeos.
+                </video>
 
-            <div id="containerCards">
-                <div class="cardsVideos"></div>
-                <div class="cardsVideos"></div>
-                <div class="cardsVideos"></div>
+                <!-- Fala que tem no vídeo -->
+                <div>
+                    <p>“A dinâmica do mercado é o tabuleiro do nosso quebra-cabeça de hoje.“</p>
+
+                    <div id="palavrasVideo">
+                        <p>Ambíguo</p>
+                        <p>Ansioso</p>
+                        <p>Complexo</p>
+                        <p>Frágil</p>
+                        <p>Incerto</p>
+                        <p>Incompreensível</p>
+                        <p>Não-linear</p>
+                        <p>Volátil</p>
+                    </div>
+                </div>
             </div>
         </section>
 

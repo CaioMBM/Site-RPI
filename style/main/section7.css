@@ -4,77 +4,58 @@ section#section7{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
     padding: 60px 50px;
     background-color: var(--Branco);
     scroll-margin-top: 80px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
 
-section#section7 div#section7Titulo{
+section#section7 > p{
+    font-family: var(--openSans);
+    font-size: 30px;
+    color: var(--Verde-petroleo-claro);
+}
+
+section#section7 div#section7container{
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-section#section7 div#section7Titulo i{
-    font-size: 40px;
-    color: var(--Verde-petroleo-claro);
-}
-
-section#section7 div#section7Titulo h1{
-    font-size: 60px;
-    font-family: var(--theSeasonBold);
-    font-weight: 100;
-    color: var(--Verde-petroleo-claro);
-}
-
-section#section7 p{
-    max-width: 1000px;
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    font-family: var(--openSans);
-    color: var(--Verde-petroleo-claro);
-}
-
-section#section7 p a{
-    position: relative;
-    text-decoration: none;
-    font-size: 30px;
-    font-style: italic;
-    color: var(--Verde-petroleo-claro);
-    transition: .3s ease-in-out;
-}
-
-
-section#section7 p a:hover{
-    color: var(--Azul-petroleo-claro);
-}
-
-section#section7 p a::after{
-    position: absolute;
-    bottom: -4px;
-    left: 30px;
-    content: " ";
-    width: 0%;
-    height: 3px;
-    border-radius: 5px;
-    background-color: var(--Azul-petroleo-claro);
-    transition: .3s ease-in-out;
-}
-
-section#section7 p a:hover::after{
-    width: 88%;
-}
-
-section#section7 div#containerCards{
-    display: flex;
     gap: 50px;
 }
 
-section#section7 div#containerCards .cardsVideos{
-    width: 325px;
-    height: 500px;
+section#section7 div#section7container video{
+    width: fit-content;
+    height: 400px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    box-shadow: -10px 10px 20px 0 var(--Azul-petroleo-claro);
+}
+
+section#section7 div#section7container > div{
+    width: 500px;
+    text-align: center;
+}
+
+section#section7 div#section7container > div > p{
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: var(--theSeasonBold);
+    color: var(--Azul-petroleo-claro);
+}
+
+section#section7 div#section7container > div div#palavrasVideo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section#section7 div#section7container > div div#palavrasVideo p{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: var(--theSeasonBold);
+    color: var(--Branco);
+    background-color: var(--Verde-petroleo-claro);
+    box-shadow: -5px 5px 10px 0 var(--Azul-petroleo-claro);
 }
