@@ -18,26 +18,26 @@
         margin-left: 40px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 125px;
         height: 150px;
         top: -80px;
         left: -50px;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         margin: 0 0 20px 20px;
         font-size: 30px;
     }
 
-    div#section4Texto h2::after{
+    section#section4 div#section4Texto h2::after{
         height: 17px;
         width: 4px;
         top: 14px;
         left: -13px;
     }
 
-    div#section4Texto p{
+    section#section4 div#section4Texto p{
         margin-left: 25px;
         font-size: 14px;
     }
@@ -59,26 +59,26 @@
         margin-left: 40px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 145px;
         height: 190px;
         top: -80px;
         left: -50px;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         margin: 0 0 15px 20px;
         font-size: 30px;
     }
 
-    div#section4Texto h2::after{
+    section#section4 div#section4Texto h2::after{
         height: 17px;
         width: 4px;
         top: 14px;
         left: -13px;
     }
 
-    div#section4Texto p{
+    section#section4 div#section4Texto p{
         margin-left: 25px;
         font-size: 15px;
     }
@@ -100,26 +100,26 @@
         margin-left: 60px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 165px;
         height: 210px;
         top: -80px;
         left: -50px;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         margin: 0 0 25px 10px;
         font-size: 35px;
     }
 
-    div#section4Texto h2::after{
+    section#section4 div#section4Texto h2::after{
         height: 17px;
         width: 4px;
         top: 14px;
         left: -13px;
     }
 
-    div#section4Texto p{
+    section#section4 div#section4Texto p{
         font-size: 20px;
     }
 }
@@ -135,36 +135,33 @@
     section#section4 div#section4Imagens{
         width: 320px;
         height: 185px;
-    }
-
-    section#section4 div#section4Imagens{
         margin-left: 60px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 165px;
         height: 210px;
         top: -80px;
         left: -50px;
     }
 
-    div#section4Texto{
+    section#section4 div#section4Texto{
         width: 480px;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         font-size: 35px;
         margin-bottom: 25px;
     }
 
-    div#section4Texto h2::after{
+    section#section4 div#section4Texto h2::after{
         height: 17px;
         width: 4px;
         top: 14px;
         left: -13px;
     }
 
-    div#section4Texto p{
+    section#section4 div#section4Texto p{
         font-size: 20px;
     }
 }
@@ -179,29 +176,29 @@
         height: 155px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 155px;
         height: 200px;
     }
 
-    div#section4Texto{
+    section#section4 div#section4Texto{
         width: 80%;
         margin-top: -5%;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         font-size: 30px;
         margin-bottom: 25px;
     }
 
-    div#section4Texto h2::after{
+    section#section4 div#section4Texto h2::after{
         width: 4px;
         height: 18px;
         left: -12px;
         top: 12px;
     }
 
-    div#section4Texto p{
+    section#section4 div#section4Texto p{
         font-size: 18px;
     }
 }
@@ -216,16 +213,16 @@
         height: 205px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 185px;
         height: 241px;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         font-size: 38px;
     }
 
-    div#section4Texto p{
+    section#section4 div#section4Texto p{
         font-size: 22px;
     }
 }
@@ -240,12 +237,12 @@
         height: 205px;
     }
 
-    section#section4 img{
+    section#section4 div#section4Imagens img{
         width: 185px;
         height: 241px;
     }
 
-    div#section4Texto h2{
+    section#section4 div#section4Texto h2{
         font-size: 40px;
     }
 }
