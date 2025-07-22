@@ -11,6 +11,7 @@ section#section7{
 }
 
 section#section7 > p{
+    text-align: center;
     font-family: var(--openSans);
     font-size: 30px;
     color: var(--Verde-petroleo-claro);
