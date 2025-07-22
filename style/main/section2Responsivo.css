@@ -2,199 +2,199 @@
 
 /* Media query */
 @media screen and (max-width: 389px) {
-    #section2{
+    section#section2{
         padding: 20px;
         gap: 70px;
     }
 
-    #montandoQuebraCabeca div{
-        min-width: 275px;
-        height: 130px;
+    /* Serve p/todos os <p> da section2 */
+    section#section2 p{
+        font-size: 18px;
     }
 
-    #montandoQuebraCabeca{
+    section#section2 div #montandoQuebraCabeca{
         flex-direction: column-reverse;
         gap: 20px;
     }
 
-    #montandoQuebraCabeca p{
+    section#section2 div #montandoQuebraCabeca div{
+        min-width: 275px;
+        height: 130px;
+    }
+
+    section#section2 div #montandoQuebraCabeca p{
         max-width: 540px;
     }
 
-    /* Serve p/todos os <p> da section2 */
-    #section2 p{
-        font-size: 18px;
-    }
-
-    #exibindoLogo{
+    section#section2 div#exibindoLogo{
         gap: 20px;
     }
 
-    #exibindoLogo p{
+    section#section2 div#exibindoLogo p{
         max-width: 540px;
     }
 
     /* Gif da logo sendo gerada */
-    #exibindoLogo img{
+    section#section2 div#exibindoLogo img{
         width: 275px;
         height: 150px;
     }
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
-    #section2{
+    section#section2{
         padding: 40px;
         gap: 90px;
     }
 
-    #montandoQuebraCabeca div{
-        min-width: 325px;
-        height: 180px;
+    /* Serve p/todos os <p> da section2 */
+    section#section2 p{
+        font-size: 18px;
     }
 
-    #montandoQuebraCabeca{
+    section#section2 divsection#section2 div #montandoQuebraCabeca{
         flex-direction: column-reverse;
         gap: 20px;
     }
 
-    #montandoQuebraCabeca p{
+    section#section2 div#montandoQuebraCabeca div{
+        min-width: 325px;
+        height: 180px;
+    }
+
+    section#section2 div#montandoQuebraCabeca p{
         max-width: 540px;
     }
 
-    /* Serve p/todos os <p> da section2 */
-    #section2 p{
-        font-size: 18px;
-    }
-
-    #exibindoLogo{
+    section#section2 div#exibindoLogo{
         gap: 20px;
     }
 
-    #exibindoLogo p{
+    section#section2 div#exibindoLogo p{
         max-width: 540px;
     }
 
     /* Gif da logo sendo gerada */
-    #exibindoLogo img{
+    section#section2 div#exibindoLogo img{
         width: 325px;
         height: 180px;
     }
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {
-    #section2{
+    section#section2{
         padding: 40px;
         gap: 90px;
     }
 
-    #montandoQuebraCabeca div{
-        min-width: 374px;
-        height: 230px;
+    /* Serve p/todos os <p> da section2 */
+    section#section2 p{
+        font-size: 20px;
     }
 
-    #montandoQuebraCabeca{
+    section#section2 div#montandoQuebraCabeca{
         flex-direction: column-reverse;
         gap: 20px;
     }
 
-    #montandoQuebraCabeca p{
+    section#section2 div#montandoQuebraCabeca div{
+        min-width: 374px;
+        height: 230px;
+    }
+
+    section#section2 div#montandoQuebraCabeca p{
         max-width: 540px;
     }
 
-    /* Serve p/todos os <p> da section2 */
-    #section2 p{
-        font-size: 20px;
-    }
-
-    #exibindoLogo{
+    section#section2 div#exibindoLogo{
         gap: 20px;
     }
 
-    #exibindoLogo p{
+    section#section2 div#exibindoLogo p{
         max-width: 540px;
     }
 
     /* Gif da logo sendo gerada */
-    #exibindoLogo img{
+    section#section2 div#exibindoLogo img{
         width: 375px;
         height: 180px;
     }
 }
 @media only screen and (min-width: 599px) and (max-width: 768px) {
-    #section2{
+    section#section2{
         padding: 40px;
         gap: 60px;
     }
 
-    #montandoQuebraCabeca div{
-        min-width: 374px;
-        height: 230px;
+    /* Serve p/todos os <p> da section2 */
+    section#section2 p{
+        font-size: 20px;
     }
 
-    #montandoQuebraCabeca{
+    section#section2 div#montandoQuebraCabeca{
         flex-direction: column-reverse;
         gap: 20px;
     }
 
-    #montandoQuebraCabeca p{
+    section#section2 div#montandoQuebraCabeca div{
+        min-width: 374px;
+        height: 230px;
+    }
+
+    section#section2 div#montandoQuebraCabeca p{
         max-width: 540px;
     }
 
-    /* Serve p/todos os <p> da section2 */
-    #section2 p{
-        font-size: 20px;
-    }
-
-    #exibindoLogo{
+    section#section2 div#exibindoLogo{
         gap: 20px;
     }
 
-    #exibindoLogo p{
+    section#section2 div#exibindoLogo p{
         max-width: 540px;
     }
 
     /* Gif da logo sendo gerada */
-    #exibindoLogo img{
+    section#section2 div#exibindoLogo img{
         width: 475px;
         height: 255px;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 998px) {
-    #section2{
+    section#section2{
         padding: 40px;
         gap: 60px;
     }
 
-    #montandoQuebraCabeca div{
+    /* Serve p/todos os <p> da section2 */
+    section#section2 p{
+        font-size: 22px;
+    }
+    
+    section#section2 div#montandoQuebraCabeca{
+        gap: 30px;
+    }
+
+    section#section2 div#montandoQuebraCabeca div{
         min-width: 374px;
         height: 230px;
     }
 
-    #montandoQuebraCabeca{
-        gap: 30px;
-    }
-
-    /* Serve p/todos os <p> da section2 */
-    #section2 p{
-        font-size: 22px;
-    }
-
-    #exibindoLogo p{
+    section#section2 div#exibindoLogo p{
         max-width: 570px;
     }
 
     /* Gif da logo sendo gerada */
-    #exibindoLogo img{
+    section#section2 div#exibindoLogo img{
         width: 475px;
         height: 255px;
     }
 }
 @media only screen and (min-width: 999px) and (max-width: 1150px) {
-    #montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca div{
         min-width: 474px;
         height: 330px;
     }
 
     /* Gif da logo sendo gerada */
-    #exibindoLogo img{
+    section#section2 div#exibindoLogo img{
         width: 475px;
         height: 255px;
     }

@@ -1,6 +1,6 @@
 @import url('../base.css');
 
-#section2{
+section#section2{
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -11,38 +11,38 @@
 }
 
 /* Serve p/todos os <p> da section2 */
-#section2 p{
+section#section2 p{
     font-size: 30px;
     letter-spacing: 2px;
     text-align: center;
 }
 
-#montandoQuebraCabeca{
+section#section2 div#montandoQuebraCabeca{
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-#montandoQuebraCabeca div{
+section#section2 div#montandoQuebraCabeca div{
     min-width: 574px;
     height: 430px;
     border-radius: 20px;
     box-shadow: -5px 5px 10px 0 var(--Branco);
 }
 
-#exibindoLogo{
+section#section2 div#exibindoLogo{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-#exibindoLogo p{
+section#section2 div#exibindoLogo p{
     max-width: 870px;
 }
 
 /* Gif da logo sendo gerada */
-#exibindoLogo img{
+section#section2 div#exibindoLogo img{
     width: 575px;
     height: 355px;
     border-radius: 20px;
