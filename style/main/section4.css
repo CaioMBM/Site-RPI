@@ -13,7 +13,9 @@ section#section4 div#section4Imagens{
     width: 420px;
     height: 245px;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background: url('../../Imagens/Quebra-cabeça/montando_QuebraCabeca.png');
+    background-position: center;
+    background-size: cover;
 }
 
 section#section4 div#section4Imagens img{
@@ -27,6 +29,7 @@ section#section4 div#section4Imagens img{
 
 section#section4 div#section4Texto{
     max-width: 613px;
+    margin-top: -50px;
 }
 
 section#section4 div#section4Texto h2{
@@ -52,6 +55,7 @@ section#section4 div#section4Texto h2::after{
 
 section#section4 div#section4Texto p{
     font-size: 25px;
+    letter-spacing: 1px;
     color: var(--Branco);
     font-family: var(--openSans);
 }
