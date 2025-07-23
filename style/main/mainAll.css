@@ -1,0 +1,34 @@
+/* Section 1 - Início*/
+@import url('section1.css');
+@import url('section1Responsivo.css');
+
+/* Section 2 - Introdução */
+@import url('section2.css');
+@import url('section2Responsivo.css');
+
+/* Section 3 - R = P - I */
+@import url('section3.css');
+@import url('section3Responsivo.css');
+
+/* Section 4 - Leandro Uchoa */
+@import url('section4.css');
+@import url('section4Responsivo.css');
+
+/* Section 5 - Experiência */
+@import url('section5.css');
+
+/* Section 6 - Atributos */
+@import url('section6.css');
+@import url('section6Responsivo.css');
+
+/* Section 7 - Vídeo */
+@import url('section7.css');
+@import url('section7Responsivo.css');
+
+/* Section 8 - Depoimentos */
+@import url('section8.css');
+@import url('section8Responsivo.css');
+
+/* Section 9 - Contato */
+@import url('section9.css');
+@import url('section9Responsivo.css');
