@@ -1,0 +1,11 @@
+/* Navbar - Mostrar a navbar */
+@keyframes navbarDescer {
+    from{
+        transform: translatey(-15%);
+        opacity: 0;
+    }
+    to{
+        transform: translatey(0%);
+        opacity: 1;
+    }
+}
