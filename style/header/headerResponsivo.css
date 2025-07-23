@@ -129,10 +129,6 @@
         background-color: var(--Azul-petroleo-claro);
     }
 
-    header ul li a{
-        padding: 20px 180px;
-    }
-
     header a:hover::after{
         width: 0%;
     }
