@@ -1,7 +1,24 @@
 @import url('../base.css');
 
 /* Media query */
-@media screen and (max-width: 389px) {}
+@media screen and (max-width: 389px) {
+    section#section5{
+        padding: 50px 20px;
+    }
+
+    section#section5 div{
+        gap: 30px;
+        padding: 25px 15px;
+    }
+
+    section#section5 h2{
+        font-size: 30px;
+    }
+
+    section#section5 p{
+        font-size: 15px;
+    }
+}
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section5{
         padding: 50px 20px;
@@ -10,12 +27,11 @@
     section#section5 div{
         gap: 30px;
         padding: 25px 15px;
-        background-color: rebeccapurple;
     }
 
     section#section5 h2{
         font-size: 30px;
-}
+    }
 
     section#section5 p{
         font-size: 15px;
