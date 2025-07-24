@@ -4,7 +4,11 @@
 @media screen and (max-width: 389px) {}
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
 @media only screen and (min-width: 459px) and (max-width: 598px) {}
-@media only screen and (min-width: 599px) and (max-width: 768px) {}
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    section#section5 p{
+        font-size: 20px;
+    }
+}
 @media only screen and (min-width: 769px) and (max-width: 928px) {
     section#section5 p{
         font-size: 22px;
