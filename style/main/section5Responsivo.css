@@ -3,8 +3,30 @@
 /* Media query */
 @media screen and (max-width: 389px) {}
 @media only screen and (min-width: 390px) and (max-width: 458px) {}
-@media only screen and (min-width: 459px) and (max-width: 598px) {}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    section#section5{
+        padding: 40px 30px;
+    }
+
+    section#section5 div{
+        max-width: 900px;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    section#section5 h2{
+        font-size: 35px;
+}
+
+    section#section5 p{
+        font-size: 20px;
+    }
+}
 @media only screen and (min-width: 599px) and (max-width: 768px) {
+    section#section5{
+        padding: 40px;
+    }
+
     section#section5 p{
         font-size: 20px;
     }
