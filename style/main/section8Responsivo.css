@@ -1,7 +1,17 @@
 @import url('../base.css');
 
 /* Media query */
-@media screen and (max-width: 389px) {}
+@media screen and (max-width: 389px) {
+    section#section8{
+        padding: 50px 10px;
+    }
+
+    section#section8 img{
+        max-width: 280px;
+        max-height: 230px;
+        box-shadow: 0 0 20px 5px var(--Azul-petroleo-claro);
+    }
+}
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section8{
         padding: 50px 10px;
