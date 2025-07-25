@@ -18,7 +18,7 @@ section#section5 div{
     box-shadow: 0 0 50px 0 var(--Verde-petroleo-claro);
 }
 
-section#section5 h2{
+section#section5 div h2{
     font-size: 45px;
     letter-spacing: 5px;
     color: var(--Branco);
@@ -26,7 +26,7 @@ section#section5 h2{
     font-weight: 100;
 }
 
-section#section5 p{
+section#section5 div p{
     text-align: center;
     font-size: 25px;
     letter-spacing: 2px;
@@ -34,10 +34,6 @@ section#section5 p{
     color: var(--Branco);
 }
 
-section#section5 p span{
-    font-weight: bold;
-}
-
-section#section5 img{
+section#section5 div img{
     width: 100%;
 }
