@@ -2,91 +2,13 @@
 
 section#section8{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-    padding: 60px 50px;
-    color: var(--Branco);
-    position: relative;
+    justify-content: center;
+    padding: 60px;
 }
 
-section#section8 h1{
-    font-size: 60px;
-    font-family: var(--theSeasonBold);
-    font-weight: 100;
-}
-
-section#section8 div#section8Cards{
-    display: flex;
-    gap: 50px;
-}
-
-section#section8 div#section8Cards div.section8Depoimentos{
-    width: 290px;
-    border: 1px solid var(--Branco);
-    border-radius: 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    background-color: var(--Verde-petroleo);
-}
-
-section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInformacao{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInformacao div.imgDepoimentos{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid var(--Branco);
-    background-color: antiquewhite;
-}
-
-section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInformacao h5{
-    font-size: 15px;
-    font-family: var(--theSeasonBold);
-    font-weight: 100;
-}
-
-section#section8 div#section8Cards div.section8Depoimentos div.depoimentosInformacao span{
-    font-size: 10px;
-    font-family: var(--theSeasonBold);
-    font-weight: 100;
-    color: var(--Cinza-neutro);
-}
-
-section#section8 div#section8Cards div.section8Depoimentos p{
-    font-size: 12px;
-    font-weight: 400px;
-    font-family: var(--openSans);
-    letter-spacing: 1.5px;
-    line-height: 15px;
-}
-
-section#section8 div#section8BotoesCarrossel{
-    width: 95%;
-    position: absolute;
-    top: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-
-section#section8 div#section8BotoesCarrossel i{
-    display: none;
-    cursor: pointer;
-    font-size: 40px;
-    color: var(--Azul-petroleo-claro);
-    transition: .3s ease;
-}
-
-section#section8 div#section8BotoesCarrossel i:hover{
-    transform: scale(1.1);
-}
-
-section#section8 div#section8BotoesCarrossel i:active{
-    color: var(--Branco);
+section#section8 img{
+    width: 600px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px var(--Azul-petroleo-claro);
 }
