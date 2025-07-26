@@ -159,7 +159,7 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 958px) {
     section#section3{
-        padding: 60px;
+        padding: 40px;
     }
 
     section#section3 div#section3-container{
@@ -181,7 +181,7 @@
         font-size: 30px;
     }
 
-    section#section3 div#section3-container div#section3-pecas p{
+    section#section3 div#section3-container div#section3-pecas > p{
         font-size: 22px;
     }
 
@@ -211,5 +211,19 @@
     section#section3 div#section3-container div#section3-pecas div{
         width: 100%;
         height: 500px;
+    }
+
+    /* Modal */
+    div#conteinarPecas div.modal{
+        transform: translate(-40%, -15%);
+    }
+
+    div#conteinarPecas div.modal div.modalPeca{
+        max-width: 600px;
+    }
+
+    /* Interferência - Modal */
+    div#conteinarPecas div#modal-Interferencia{
+        transform: translate(-40%, -35%);
     }
 }

@@ -109,10 +109,12 @@ div#caixaResultado{
 }
 
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo > div{
@@ -181,8 +183,6 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-resultado:a
 /* Modal */
 div#conteinarPecas div.modal{
     z-index: 2;
-    width: 600px;
-    max-height: 180px;
     display: none;
     position: absolute;
     top: 50%;
@@ -192,6 +192,7 @@ div#conteinarPecas div.modal{
 
 div#conteinarPecas div.modal div.modalPeca{
     width: 600px;
+    max-height: fit-content;
     border: 2px solid var(--Preto);
     border-radius: 20px;
     padding: 30px;
@@ -314,14 +315,14 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferenc
 
 /* Interferência - Modal */
 div#conteinarPecas div#modal-Interferencia{
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
 }
 
 /* Serve para escurecer o fundo quando abrir o modal */
 #escurecer{
     display: none;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
     z-index: 1;
