@@ -122,7 +122,7 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas di
     align-items: center;
 }
 
-/* Conteúdo das peças */
+/* Conteúdos das peças */
 div#conteinarPecas div.pecaInformacao div.containerInfo > p{
     font-size: 30px;
     color: var(--Cinza-neutro);
