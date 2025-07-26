@@ -7,7 +7,7 @@ const fundoPadrao    = 'Imagens/Quebra-cabeça/fundoPecasPadrao.png';
 const pecaQC_Result = document.getElementById('pecaQC_Result');
 const imgResult_Contorno = 'Imagens/Quebra-cabeça/peçaResult-Contorno.png';
 const imgResult_Clicada  = 'Imagens/Quebra-cabeça/peçaResult-Clicada.png';
-const fundoResult = 'Imagens/Quebra-cabeça/QC-Resultado_resized.png';
+const fundoResult        = 'Imagens/Quebra-cabeça/QC-Resultado_resized.png';
 const infoResultado      = document.querySelectorAll('.pecaInformacao')[0];
 const modalResultado     = document.querySelectorAll('.modal')[0];
 const btn_resultado      = document.querySelector('#btn-resultado');
@@ -21,7 +21,9 @@ pecaQC_Result.addEventListener('click', () => {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoResult}')`;
-        infoResultado.style.display = 'block';
+        infoResultado.style.display     = 'block';
+        infoPerformance.style.display   = 'none';
+        infoInterferencia.style.display = 'none';
     } else {
         pecaQC_Result.setAttribute('src', imgResult_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
@@ -46,7 +48,7 @@ sairModalResultado.addEventListener('click', () => {
 const pecaQC_Perfor  = document.getElementById('pecaQC_Perfor');
 const imgPerfor_Contorno = 'Imagens/Quebra-cabeça/peçaPerfor-Contorno.png';
 const imgPerfor_Clicada  = 'Imagens/Quebra-cabeça/peçaPerfor-Clicada.png';
-const fundoPerfor = 'Imagens/Quebra-cabeça/QC-Performance_resized.png';
+const fundoPerfor        = 'Imagens/Quebra-cabeça/QC-Performance_resized.png';
 const infoPerformance      = document.querySelectorAll('.pecaInformacao')[1];
 const modalPerformance     = document.querySelectorAll('.modal')[1];
 const btn_Performance      = document.querySelector('#btn-performance');
@@ -60,7 +62,9 @@ pecaQC_Perfor.addEventListener('click', () => {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Clicada);
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPerfor}')`;
-        infoPerformance.style.display = 'block';
+        infoResultado.style.display     = 'none';
+        infoPerformance.style.display   = 'block';
+        infoInterferencia.style.display = 'none';
     } else {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
@@ -85,7 +89,7 @@ sairModalPerformance.addEventListener('click', () => {
 const pecaQC_Interf = document.getElementById('pecaQC_Interf');
 const imgInterf_Contorno = 'Imagens/Quebra-cabeça/peçaInterf-Contorno.png';
 const imgInterf_Clicada  = 'Imagens/Quebra-cabeça/peçaInterf-Clicada.png';
-const fundoInterf = 'Imagens/Quebra-cabeça/QC-Interferencia_resized.png';
+const fundoInterf        = 'Imagens/Quebra-cabeça/QC-Interferencia_resized.png';
 const infoInterferencia      = document.querySelectorAll('.pecaInformacao')[2];
 const modalInterferencia     = document.querySelectorAll('.modal')[2];
 const btn_Interferencia      = document.querySelector('#btn-interferencia');
@@ -99,6 +103,8 @@ pecaQC_Interf.addEventListener('click', () => {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         pecaQC_Interf.setAttribute('src', imgInterf_Clicada);
         conteinarPecas.style.backgroundImage = `url('${fundoInterf}')`;
+        infoResultado.style.display     = 'none';
+        infoPerformance.style.display   = 'none';
         infoInterferencia.style.display = 'block';
     } else {
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);

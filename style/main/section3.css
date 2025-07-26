@@ -313,7 +313,7 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferenc
 }
 
 /* Interferência - Modal */
-div#conteinarPecas div#re{
+div#conteinarPecas div#modal-Interferencia{
     transform: translate(-50%, -100%);
 }
 
