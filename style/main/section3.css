@@ -188,7 +188,6 @@ div#conteinarPecas div.modal{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 div#conteinarPecas div.modal div.modalPeca{
@@ -272,6 +271,50 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance
     border: none;
     border: 3px solid var(--Cinza-neutro);
     background-color: var(--Cinza-neutro);
+}
+
+/* Interferência */
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#interferencia > span{
+    color: var(--Vermelho);
+    position: relative;
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#interferencia > span::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--Vermelho);
+}
+
+div#caixaInterferencia{
+    border: 3px solid var(--Vermelho);
+}
+
+/* Interferência - Botão "Saiba Mais" */
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia{
+    border: 3px solid var(--Vermelho);
+    color: var(--Vermelho);
+    background-color: var(--Branco);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia:hover{
+    color: var(--Branco);
+    background-color: var(--Vermelho);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia:active{
+    border: none;
+    border: 3px solid var(--Cinza-neutro);
+    background-color: var(--Cinza-neutro);
+}
+
+/* Interferência - Modal */
+div#conteinarPecas div#re{
+    transform: translate(-50%, -100%);
 }
 
 /* Serve para escurecer o fundo quando abrir o modal */

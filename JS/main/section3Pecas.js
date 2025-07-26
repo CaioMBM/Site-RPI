@@ -86,6 +86,10 @@ const pecaQC_Interf = document.getElementById('pecaQC_Interf');
 const imgInterf_Contorno = 'Imagens/Quebra-cabeça/peçaInterf-Contorno.png';
 const imgInterf_Clicada  = 'Imagens/Quebra-cabeça/peçaInterf-Clicada.png';
 const fundoInterf = 'Imagens/Quebra-cabeça/QC-Interferencia_resized.png';
+const infoInterferencia      = document.querySelectorAll('.pecaInformacao')[2];
+const modalInterferencia     = document.querySelectorAll('.modal')[2];
+const btn_Interferencia      = document.querySelector('#btn-interferencia');
+const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
 
 pecaQC_Interf.addEventListener('click', () => {
     const imgAgora = pecaQC_Interf.getAttribute('src');
@@ -95,8 +99,21 @@ pecaQC_Interf.addEventListener('click', () => {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         pecaQC_Interf.setAttribute('src', imgInterf_Clicada);
         conteinarPecas.style.backgroundImage = `url('${fundoInterf}')`;
+        infoInterferencia.style.display = 'block';
     } else {
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
+        infoInterferencia.style.display = 'none';
     }
 });
+
+// Abrir modal
+btn_Interferencia.addEventListener('click', () => {
+    modalInterferencia.style.display = 'block';
+    escurecer.style.display        = 'block';
+})
+// Fechar modal
+sairModalInterferencia.addEventListener('click', () => {
+    modalInterferencia.style.display = 'none';
+    escurecer.style.display        = 'none';
+})
