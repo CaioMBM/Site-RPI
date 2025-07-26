@@ -8,8 +8,8 @@ const pecaQC_Result = document.getElementById('pecaQC_Result');
 const imgResult_Contorno = 'Imagens/Quebra-cabeça/peçaResult-Contorno.png';
 const imgResult_Clicada  = 'Imagens/Quebra-cabeça/peçaResult-Clicada.png';
 const fundoResult = 'Imagens/Quebra-cabeça/QC-Resultado_resized.png';
-const modalResultado     = document.querySelectorAll('.modal')[0];
 const infoResultado      = document.querySelectorAll('.pecaInformacao')[0];
+const modalResultado     = document.querySelectorAll('.modal')[0];
 const btn_resultado      = document.querySelector('#btn-resultado');
 const sairModalResultado = document.querySelectorAll('.sairModal')[0];
 
@@ -47,6 +47,10 @@ const pecaQC_Perfor  = document.getElementById('pecaQC_Perfor');
 const imgPerfor_Contorno = 'Imagens/Quebra-cabeça/peçaPerfor-Contorno.png';
 const imgPerfor_Clicada  = 'Imagens/Quebra-cabeça/peçaPerfor-Clicada.png';
 const fundoPerfor = 'Imagens/Quebra-cabeça/QC-Performance_resized.png';
+const infoPerformance      = document.querySelectorAll('.pecaInformacao')[1];
+const modalPerformance     = document.querySelectorAll('.modal')[1];
+const btn_Performance      = document.querySelector('#btn-performance');
+const sairModalPerformance = document.querySelectorAll('.sairModal')[1];
 
 pecaQC_Perfor.addEventListener('click', () => {
     const imgAtual = pecaQC_Perfor.getAttribute('src');
@@ -56,11 +60,24 @@ pecaQC_Perfor.addEventListener('click', () => {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Clicada);
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPerfor}')`;
+        infoPerformance.style.display = 'block';
     } else {
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
+        infoPerformance.style.display = 'none';
     }
 });
+
+// Abrir modal
+btn_Performance.addEventListener('click', () => {
+    modalPerformance.style.display = 'block';
+    escurecer.style.display        = 'block';
+})
+// Fechar modal
+sairModalPerformance.addEventListener('click', () => {
+    modalPerformance.style.display = 'none';
+    escurecer.style.display        = 'none';
+})
 
 
 // Interferência
