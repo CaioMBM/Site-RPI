@@ -54,7 +54,7 @@ section#section3 div#section3-container div#section3-pecas{
     gap: 20px;
 }
 
-section#section3 div#section3-container div#section3-pecas p{
+section#section3 div#section3-container div#section3-pecas > p{
     font-size: 30px;
     font-family: var(--openSans);
     color: var(--Preto);
@@ -68,12 +68,15 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     background: url('../../Imagens/Quebra-cabeça/fundoPecasPadrao.png');
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     transition: background-image 0.5s ease-in-out;
+    position: relative;
 }
 
 section#section3 div#section3-container div#section3-pecas div div#contentPecas{
@@ -84,9 +87,153 @@ section#section3 div#section3-container div#section3-pecas div div#contentPecas{
 }
 
 section#section3 div#section3-container div#section3-pecas div div#contentPecas img{
+    cursor: pointer;
     transition: .3s ease;
 }
 
 section#section3 div#section3-container div#section3-pecas div div#contentPecas img:hover{
     transform: translateY(-20px);
+}
+
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao{
+    display: none;
+    width: 650px;
+    max-height: 230px;
+    border: 3px solid var(--Preto);
+    border-radius: 30px;
+    padding: 10px 30px 30px;
+    background-color: var(--Branco);
+}
+
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo > div{
+    display: flex;
+    align-items: center;
+}
+
+/* Conteúdo das peças */
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#resultado{
+    font-size: 30px;
+    color: var(--Cinza-neutro);
+    font-family: var(--theSeasonBold);
+}
+
+/* Resultado */
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#resultado > span{
+    color: var(--Preto);
+    position: relative;
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#resultado > span::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--Preto);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > p.pecaParagrafo{
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--openSans);
+    color: var(--Preto);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-resultado{
+    cursor: pointer;
+    border: 3px solid var(--Preto);
+    border-radius: 30px;
+    padding: 10px 35px;
+    font-size: 15px;
+    font-family: var(--theSeasonBold);
+    background-color: var(--Branco);
+    transition: .3s ease;
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-resultado:hover{
+    color: var(--Branco);
+    background-color: var(--Preto);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-resultado:active{
+    border: none;
+    border: 3px solid var(--Cinza-neutro);
+    background-color: var(--Cinza-neutro);
+}
+
+/* Modal */
+div#conteinarPecas div.modal{
+    z-index: 2;
+    width: 600px;
+    max-height: 180px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+div#conteinarPecas div.modal div.modalPeca{
+    width: 600px;
+    border: 2px solid var(--Preto);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Branco);
+}
+
+div#conteinarPecas div.modal div.modalPeca p{
+    font-size: 15px;
+    font-family: var(--openSans);
+    color: var(--Preto);
+}
+
+div#conteinarPecas div.modal div.modalPeca button.sairModal{
+    cursor: pointer;
+    position: relative;
+    border: none;
+    font-size: 18px;
+    font-family: var(--theSeasonBold);
+    color: var(--Vermelho);
+    background-color: transparent;
+}
+
+div#conteinarPecas div.modal div.modalPeca button.sairModal::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--Vermelho);
+    transition: .3s ease;
+}
+
+div#conteinarPecas div.modal div.modalPeca button.sairModal:hover::after{
+    width: 100%;
+}
+
+
+#escurecer{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #000000bd;
 }
