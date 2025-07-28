@@ -3,7 +3,7 @@
 /* Media query */
 @media screen and (max-width: 389px) {
     section#section4{
-        padding: 50px 10px;
+        padding: 80px 10px 10px 10px;
         align-items: center;
         flex-direction: column-reverse;
         gap: 130px;
@@ -44,7 +44,7 @@
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section4{
-        padding: 50px 10px;
+        padding: 80px 10px 10px 10px;
         align-items: center;
         flex-direction: column-reverse;
         gap: 120px;
@@ -85,7 +85,7 @@
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {
     section#section4{
-        padding: 40px 20px;
+        padding: 90px 20px 40px 20px;
         align-items: center;
         flex-direction: column-reverse;
         gap: 120px;
@@ -126,7 +126,7 @@
 @media only screen and (min-width: 599px) and (max-width: 768px) {
     section#section4{
         width: 100%;
-        padding: 40px;
+        padding: 100px 40px 40px 40px;
         align-items: center;
         flex-direction: column-reverse;
         gap: 120px;
