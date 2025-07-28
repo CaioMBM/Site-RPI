@@ -23,7 +23,7 @@ section#section2 div#montandoQuebraCabeca{
     gap: 50px;
 }
 
-section#section2 div#montandoQuebraCabeca div{
+section#section2 div#montandoQuebraCabeca img{
     min-width: 574px;
     height: 430px;
     border-radius: 20px;
