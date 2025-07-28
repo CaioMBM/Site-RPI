@@ -12,12 +12,12 @@
         font-size: 18px;
     }
 
-    section#section2 div #montandoQuebraCabeca{
+    section#section2 div#montandoQuebraCabeca{
         flex-direction: column-reverse;
         gap: 20px;
     }
 
-    section#section2 div #montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca img{
         min-width: 275px;
         height: 130px;
     }
@@ -51,12 +51,12 @@
         font-size: 18px;
     }
 
-    section#section2 divsection#section2 div #montandoQuebraCabeca{
+    section#section2 div#montandoQuebraCabeca{
         flex-direction: column-reverse;
         gap: 20px;
     }
 
-    section#section2 div#montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca img{
         min-width: 325px;
         height: 180px;
     }
@@ -95,7 +95,7 @@
         gap: 20px;
     }
 
-    section#section2 div#montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca img{
         min-width: 374px;
         height: 230px;
     }
@@ -134,7 +134,7 @@
         gap: 20px;
     }
 
-    section#section2 div#montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca img{
         min-width: 374px;
         height: 230px;
     }
@@ -172,7 +172,7 @@
         gap: 30px;
     }
 
-    section#section2 div#montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca img{
         min-width: 374px;
         height: 230px;
     }
@@ -188,7 +188,7 @@
     }
 }
 @media only screen and (min-width: 999px) and (max-width: 1150px) {
-    section#section2 div#montandoQuebraCabeca div{
+    section#section2 div#montandoQuebraCabeca img{
         min-width: 474px;
         height: 330px;
     }
