@@ -32,7 +32,7 @@ section#section3 div#section3-container div#section3-video{
 
 /* Vídeo do "Do que se trata?" */
 section#section3 div#section3-container div#section3-video video{
-    width: 700px;
+    width: 650px;
     height: 400px;
     border-radius: 10px;
     box-shadow: -10px 10px 4px 0 var(--Azul-petroleo-claro);
@@ -40,9 +40,9 @@ section#section3 div#section3-container div#section3-video video{
 }
 
 section#section3 div#section3-container div#section3-video h3{
-    max-width: 400px;
-    font-size: 40px;
-    font-family: var(--theSeasonBold);
+    max-width: 550px;
+    font-size: 32px;
+    font-family: var(--openSans);
     font-weight: 100;
     letter-spacing: 2px;
     color: var(--Verde-petroleo-claro);
