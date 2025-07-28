@@ -94,7 +94,7 @@
 
     /* Interferência - Modal */
     div#conteinarPecas div#modal-Interferencia{ 
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -54%);
     }
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
@@ -174,7 +174,7 @@
 
     /* Modal */
     div#conteinarPecas div.modal{
-        transform: translate(-47%, -45%);
+        transform: translate(-50%, -45%);
     }
 
     div#conteinarPecas div.modal div.modalPeca{
@@ -187,7 +187,7 @@
 
     /* Interferência - Modal */
     div#conteinarPecas div#modal-Interferencia{ 
-        transform: translate(-47%, -50%);
+        transform: translate(-50%, -55%);
     }
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {
@@ -280,7 +280,7 @@
 
     /* Interferência - Modal */
     div#conteinarPecas div#modal-Interferencia{ 
-        transform: translate(-47%, -50%);
+        transform: translate(-47%, -55%);
     }
 }
 @media only screen and (min-width: 599px) and (max-width: 768px) {
@@ -350,7 +350,7 @@
 
     /* Modal */
     div#conteinarPecas div.modal{
-        transform: translate(-47%, -30%);
+        transform: translate(-50%, -30%);
     }
 
     div#conteinarPecas div.modal div.modalPeca{
@@ -363,7 +363,7 @@
 
     /* Interferência - Modal */
     div#conteinarPecas div#modal-Interferencia{
-        transform: translate(-47%, -48%);
+        transform: translate(-50%, -48%);
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 958px) {
@@ -407,7 +407,7 @@
 
     /* Modal */
     div#conteinarPecas div.modal{
-        transform: translate(-43%, -20%);
+        transform: translate(-40%, -20%);
     }
 
     div#conteinarPecas div.modal div.modalPeca{
