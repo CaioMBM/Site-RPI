@@ -24,13 +24,13 @@ section#section6 #section6container div.section6Card{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background-color: var(--Azul-petroleo-claro);
+    background-color: var(--Branco);
     transition: .3s ease;
 }
 
 section#section6 #section6container div.section6Card:hover{
     transform: translateY(-3%);
-    box-shadow: -10px 10px 3px 0 var(--Branco);
+    box-shadow: -10px 10px 3px 0 var(--Azul-petroleo-claro);
 }
 
 section#section6 #section6container div.section6Card img{
