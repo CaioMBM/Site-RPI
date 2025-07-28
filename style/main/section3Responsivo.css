@@ -20,7 +20,7 @@
     }
 
     /* Vídeo do "Do que se trata?" */
-    section#section3 div#section3-container div#section3-video img{
+    section#section3 div#section3-container div#section3-video video{
         max-width: 205px; 
         height: 130px;
     }
@@ -116,7 +116,7 @@
     }
 
     /* Vídeo do "Do que se trata?" */
-    section#section3 div#section3-container div#section3-video img{
+    section#section3 div#section3-container div#section3-video video{
         max-width: 230px; 
         height: 140px;
     }
@@ -209,8 +209,8 @@
     }
 
     /* Vídeo do "Do que se trata?" */
-    section#section3 div#section3-container div#section3-video img{
-        max-width: 230px; 
+    section#section3 div#section3-container div#section3-video video{
+        max-width: 250px; 
         height: 140px;
     }
 
@@ -301,7 +301,7 @@
     }
 
     /* Vídeo do "Do que se trata?" */
-    section#section3 div#section3-container div#section3-video img{
+    section#section3 div#section3-container div#section3-video video{
         min-width: 230px;
         height: 170px;
     }
@@ -380,7 +380,7 @@
     }
 
     /* Vídeo do "Do que se trata?" */
-    section#section3 div#section3-container div#section3-video img{
+    section#section3 div#section3-container div#section3-video video{
         min-width: 350px;
         height: 200px;
     }
@@ -427,7 +427,7 @@
     }
 
     /* Vídeo do "Do que se trata?" */
-    section#section3 div#section3-container div#section3-video img{
+    section#section3 div#section3-container div#section3-video video{
         min-width: 400px;
         height: 300px;
     }
