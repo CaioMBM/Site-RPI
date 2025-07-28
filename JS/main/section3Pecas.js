@@ -17,14 +17,20 @@ pecaQC_Result.addEventListener('click', () => {
     const imgPresente = pecaQC_Result.getAttribute('src');
     
     if (imgPresente === imgResult_Contorno) {
+        // Imagem da peça do quebra-cabeça
         pecaQC_Result.setAttribute('src', imgResult_Clicada);
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
+
+        // Imagem de fundo
         conteinarPecas.style.backgroundImage = `url('${fundoResult}')`;
+
+        // Conteúdo da peça clicada
         infoResultado.style.display     = 'block';
         infoPerformance.style.display   = 'none';
         infoInterferencia.style.display = 'none';
     } else {
+        // Ao clicar na peça do quebra-cabeça que está acionada/ativa, ela e a imagem de fundo votlam para a imagem da peça padrão e a caixa do conteúdo da imagem desaparece.
         pecaQC_Result.setAttribute('src', imgResult_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
         infoResultado.style.display = 'none';
@@ -58,14 +64,20 @@ pecaQC_Perfor.addEventListener('click', () => {
     const imgAtual = pecaQC_Perfor.getAttribute('src');
     
     if (imgAtual === imgPerfor_Contorno) {
+        // Imagem da peça do quebra-cabeça
         pecaQC_Result.setAttribute('src', imgResult_Contorno);
         pecaQC_Perfor.setAttribute('src', imgPerfor_Clicada);
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
+
+        // Imagem de fundo
         conteinarPecas.style.backgroundImage = `url('${fundoPerfor}')`;
+
+        // Conteúdo da peça clicada
         infoResultado.style.display     = 'none';
         infoPerformance.style.display   = 'block';
         infoInterferencia.style.display = 'none';
     } else {
+        // Ao clicar na peça do quebra-cabeça que está acionada/ativa, ela e a imagem de fundo votlam para a imagem da peça padrão e a caixa do conteúdo da imagem desaparece.
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
         infoPerformance.style.display = 'none';
@@ -99,14 +111,20 @@ pecaQC_Interf.addEventListener('click', () => {
     const imgAgora = pecaQC_Interf.getAttribute('src');
     
     if (imgAgora === imgInterf_Contorno) {
+        // Imagem da peça do quebra-cabeça
         pecaQC_Result.setAttribute('src', imgResult_Contorno);
         pecaQC_Perfor.setAttribute('src', imgPerfor_Contorno);
         pecaQC_Interf.setAttribute('src', imgInterf_Clicada);
+
+        // Imagem de fundo
         conteinarPecas.style.backgroundImage = `url('${fundoInterf}')`;
+
+        // Conteúdo da peça clicada
         infoResultado.style.display     = 'none';
         infoPerformance.style.display   = 'none';
         infoInterferencia.style.display = 'block';
     } else {
+        // Ao clicar na peça do quebra-cabeça que está acionada/ativa, ela e a imagem de fundo votlam para a imagem da peça padrão e a caixa do conteúdo da imagem desaparece.
         pecaQC_Interf.setAttribute('src', imgInterf_Contorno);
         conteinarPecas.style.backgroundImage = `url('${fundoPadrao}')`;
         infoInterferencia.style.display = 'none';
