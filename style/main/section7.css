@@ -14,7 +14,7 @@ section#section7 > p{
     text-align: center;
     font-family: var(--openSans);
     font-size: 30px;
-    color: var(--Verde-petroleo-claro);
+    color: var(--Verde-petroleo);
 }
 
 section#section7 div#section7container{
@@ -27,7 +27,7 @@ section#section7 div#section7container video{
     width: fit-content;
     height: 400px;
     border-radius: 10px;
-    box-shadow: -10px 10px 20px 0 var(--Azul-petroleo-claro);
+    box-shadow: -10px 10px 20px 0 var(--Verde-petroleo-claro);
 }
 
 section#section7 div#section7container > div{
@@ -39,7 +39,7 @@ section#section7 div#section7container > div > p{
     margin-bottom: 50px;
     font-size: 30px;
     font-family: var(--theSeasonBold);
-    color: var(--Azul-petroleo-claro);
+    color: var(--Verde-petroleo-claro);
 }
 
 section#section7 div#section7container > div div#palavrasVideo{
@@ -58,5 +58,5 @@ section#section7 div#section7container > div div#palavrasVideo p{
     font-family: var(--theSeasonBold);
     color: var(--Branco);
     background-color: var(--Verde-petroleo-claro);
-    box-shadow: -5px 5px 10px 0 var(--Azul-petroleo-claro);
+    box-shadow: -5px 5px 10px 0 var(--Verde-petroleo-claro);
 }

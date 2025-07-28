@@ -14,7 +14,7 @@ section#section3 h1{
     font-size: 60px;
     font-family: var(--theSeasonBold);
     font-weight: 100;
-    color: var(--Verde-petroleo-claro);
+    color: var(--Verde-petroleo);
 }
 
 section#section3 div#section3-container{
@@ -45,7 +45,7 @@ section#section3 div#section3-container div#section3-video h3{
     font-family: var(--theSeasonBold);
     font-weight: 100;
     letter-spacing: 2px;
-    color: var(--Azul-petroleo-claro);
+    color: var(--Verde-petroleo-claro);
 }
 
 section#section3 div#section3-container div#section3-pecas{
