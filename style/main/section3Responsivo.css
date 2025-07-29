@@ -424,17 +424,17 @@
 @media only screen and (min-width: 959px) and (max-width: 1280px) {
     section#section3 div#section3-container div#section3-video{
         gap: 50px;
+        background-color: rgb(185, 136, 234);
     }
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        min-width: 400px;
+        max-width: 420px;
         height: 300px;
     }
 
     section#section3 div#section3-container div#section3-video h3{
-        max-width: 400px;
-        font-size: 40px;
+        width: clamp(380px, 100%, 530px); /* Indica que a o conteúdo ocupará 100% do espaço disponível, espaço esse que vai variar entre 500px - 530px*/
     }
 
     /* Onde ficará a parte interativa com as peças R, P e I */
