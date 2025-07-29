@@ -376,18 +376,18 @@
     }
 
     section#section3 div#section3-container div#section3-video{
-        gap: 40px;
+        gap: 30px;
     }
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        min-width: 350px;
-        height: 200px;
+        max-width: 350px;
+        height: 230px;
     }
 
     section#section3 div#section3-container div#section3-video h3{
-        max-width: 400px;
-        font-size: 30px;
+        min-width: 320px;
+        font-size: 22px;
     }
 
     section#section3 div#section3-container div#section3-pecas > p{
@@ -424,7 +424,7 @@
 @media only screen and (min-width: 959px) and (max-width: 1280px) {
     section#section3 div#section3-container div#section3-video{
         gap: 50px;
-        background-color: rgb(185, 136, 234);
+        
     }
 
     /* Vídeo do "Do que se trata?" */
