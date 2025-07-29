@@ -7,26 +7,33 @@
     }
 
     section#section3 h1{
-        font-size: 30px;
-        margin-bottom: 45px;
+        font-size: 25px;
+        margin-bottom: 20px;
     }
 
     section#section3 div#section3-container{
-        gap: 50px;
+        gap: 60px;
     }
 
     section#section3 div#section3-container div#section3-video{
-        gap: 20px;
+        flex-direction: column;
+        gap: 30px;
     }
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        max-width: 205px; 
-        height: 130px;
+        max-width: 90%; 
+        height: 180px;
     }
 
     section#section3 div#section3-container div#section3-video h3{
-        font-size: 15px;
+        width: clamp(280px, 100%, 320px); /* Indica que a o conteúdo ocupará 100% do espaço disponível, espaço esse que vai variar entre 280px - 320px */
+        text-align: center;
+        font-size: 12px;
+    }
+
+    section#section3 div#section3-container div#section3-pecas {
+        flex-direction: column-reverse;
     }
 
     section#section3 div#section3-container div#section3-pecas p{
@@ -437,7 +444,6 @@
 @media only screen and (min-width: 959px) and (max-width: 1280px) {
     section#section3 div#section3-container div#section3-video{
         gap: 50px;
-        
     }
 
     /* Vídeo do "Do que se trata?" */
