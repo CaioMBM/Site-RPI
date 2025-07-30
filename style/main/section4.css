@@ -8,23 +8,11 @@ section#section4{
     scroll-margin-top: 80px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
 
-section#section4 div#section4Imagens{
-    position: relative;
+section#section4 img#section4Imagens{
     width: 420px;
     height: 245px;
     border-radius: 10px;
-    background: url('../../Imagens/Quebra-cabeça/montando_QuebraCabeca.png');
-    background-position: center;
-    background-size: cover;
-}
-
-section#section4 div#section4Imagens img{
-    width: 195px;
-    height: 281px;
-    position: absolute;
-    top: -100px;
-    right: -50px;
-    border-radius: 10px;
+    box-shadow: -6px 6px 10px 0 var(--Verde-petroleo-claro);
 }
 
 section#section4 div#section4Texto{
