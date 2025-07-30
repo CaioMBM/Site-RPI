@@ -44,30 +44,22 @@
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section4{
-        padding: 80px 10px 10px 10px;
+        padding: 80px 20px 40px 20px;
         align-items: center;
         flex-direction: column-reverse;
-        gap: 120px;
+        gap: 30px;
     }
 
-    section#section4 div#section4Imagens{
-        width: 290px;
-        height: 165px;
+    section#section4 img#section4Imagens{
+        width: 320px;
+        height: 160px;
     }
-
-    section#section4 div#section4Imagens{
-        margin-left: 40px;
-    }
-
-    section#section4 div#section4Imagens img{
-        width: 145px;
-        height: 190px;
-        top: -80px;
-        left: -50px;
+    section#section4 div#section4Texto{
+        max-width: 400px;
     }
 
     section#section4 div#section4Texto h2{
-        margin: 0 0 15px 20px;
+        margin: 0 0 15px 15px;
         font-size: 30px;
     }
 
@@ -79,7 +71,6 @@
     }
 
     section#section4 div#section4Texto p{
-        margin-left: 25px;
         font-size: 15px;
     }
 }
