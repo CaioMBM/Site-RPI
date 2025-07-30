@@ -3,10 +3,10 @@
 /* Media query */
 @media screen and (max-width: 389px) {
     section#section4{
-        padding: 80px 10px 10px 10px;
+        padding: 80px 20px 40px 20px;
         align-items: center;
         flex-direction: column-reverse;
-        gap: 130px;
+        gap: 30px;
     }
 
     section#section4 div#section4Imagens{
@@ -14,32 +14,29 @@
         height: 125px;
     }
 
-    section#section4 div#section4Imagens{
-        margin-left: 40px;
+    section#section4 img#section4Imagens{
+        width: 260px;
+        height: 160px;
     }
 
-    section#section4 div#section4Imagens img{
-        width: 125px;
-        height: 150px;
-        top: -80px;
-        left: -50px;
+    section#section4 div#section4Texto{
+        max-width: 326px;
     }
 
     section#section4 div#section4Texto h2{
-        margin: 0 0 20px 20px;
-        font-size: 30px;
+        margin: 0 0 10px 15px;
+        font-size: 25px;
     }
 
     section#section4 div#section4Texto h2::after{
-        height: 17px;
+        height: 13px;
         width: 4px;
-        top: 14px;
+        top: 10px;
         left: -13px;
     }
 
     section#section4 div#section4Texto p{
-        margin-left: 25px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
