@@ -228,21 +228,24 @@
 }
 @media only screen and (min-width: 1009px) and (max-width: 1280px) {
     section#section4{
-        gap: 100px;
-        padding: 150px 60px 50px 60px;
+        gap: 80px;
+        padding: 100px 60px 50px 60px;
     }
 
-    section#section4 div#section4Imagens{
+    section#section4 img#section4Imagens{
+        margin-top: -2%;
         min-width: 380px;
-        height: 205px;
     }
 
-    section#section4 div#section4Imagens img{
-        width: 185px;
-        height: 241px;
+    section#section4 div#section4Texto{
+        width: clamp(200px, 100%, 520px);
     }
 
     section#section4 div#section4Texto h2{
         font-size: 40px;
+    }
+
+    section#section4 div#section4Texto p{
+        font-size: 22px;
     }
 }
