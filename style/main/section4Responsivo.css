@@ -167,22 +167,18 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 898px) {
     section#section4{
-        gap: 100px;
-        padding: 150px 60px 50px 60px;
+        gap: 40px;
+        padding: 80px 50px 50px 50px;
     }
 
-    section#section4 div#section4Imagens{
-        min-width: 280px;
-        height: 155px;
-    }
-
-    section#section4 div#section4Imagens img{
-        width: 155px;
+    section#section4 img#section4Imagens{
+        margin-top: -2%;
+        min-width: 300px;
         height: 200px;
     }
 
     section#section4 div#section4Texto{
-        width: 80%;
+        width: clamp(300px, 100%, 400px);
         margin-top: -5%;
     }
 
@@ -199,7 +195,7 @@
     }
 
     section#section4 div#section4Texto p{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 @media only screen and (min-width: 899px) and (max-width: 1008px) {
