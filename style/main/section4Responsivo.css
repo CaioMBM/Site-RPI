@@ -85,26 +85,19 @@
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {
     section#section4{
-        padding: 90px 20px 40px 20px;
+        padding: 90px 30px 40px 30px;
         align-items: center;
         flex-direction: column-reverse;
-        gap: 120px;
+        gap: 50px;
     }
 
-    section#section4 div#section4Imagens{
-        width: 320px;
-        height: 185px;
+    section#section4 img#section4Imagens{
+        width: 360px;
+        height: 200px;
     }
 
-    section#section4 div#section4Imagens{
-        margin-left: 60px;
-    }
-
-    section#section4 div#section4Imagens img{
-        width: 165px;
-        height: 210px;
-        top: -80px;
-        left: -50px;
+    section#section4 div#section4Texto{
+        width: clamp(390px, 100%, 460px);
     }
 
     section#section4 div#section4Texto h2{
