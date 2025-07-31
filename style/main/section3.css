@@ -74,6 +74,7 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
     box-shadow: 0 0 20px 0 var(--Cinza-neutro);
 
     transition: background-image 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
     position: relative;
 }
 
@@ -350,10 +351,11 @@ div#conteinarPecas div#modal-Interferencia{
 
 /* Serve para escurecer o fundo quando abrir o modal */
 #escurecer{
-    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
+    border-radius: 10px;
+    display: none;
     top: 0;
     z-index: 3;
     background-color: #000000bd;

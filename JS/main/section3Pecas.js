@@ -14,6 +14,9 @@ const sairModalResultado = document.querySelectorAll('.sairModal')[0];
 pecaQC_Result.addEventListener('click', () => {
     // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
     if(pecaQC_Result.offsetHeight === 139){
+        // Sombra da caixa
+        conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
+
         // Peça Resultado
         pecaQC_Result.style.height    = '160px';
         pecaQC_Result.style.transform = 'translateX(-10px)';
@@ -32,6 +35,9 @@ pecaQC_Result.addEventListener('click', () => {
     } 
         // Serve para quando clicar novamente na peça, voltar para o conteúdo default
         else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
             // Peça Resultado
             pecaQC_Result.style.height    = '139px';
             pecaQC_Result.style.transform = 'translateX(32px)';
@@ -67,6 +73,9 @@ const sairModalPerformance = document.querySelectorAll('.sairModal')[1];
 pecaQC_Perfor.addEventListener('click', () => {
     // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
     if(pecaQC_Perfor.offsetHeight === 113){
+        // Sombra da caixa
+        conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
+
         // Peça Resultado
         pecaQC_Result.style.height    = '139px';
         pecaQC_Result.style.transform = 'translateX(-10px)';
@@ -74,7 +83,7 @@ pecaQC_Perfor.addEventListener('click', () => {
         // Peça clicada
         pecaQC_Perfor.style.height   = '140px';
         pecaQC_Perfor.style.transform = 'translateY(-10px)';
-    
+
         // Peça Resultado
         pecaQC_Interf.style.height    = '139px';
         pecaQC_Interf.style.transform = 'translateX(10px)';
@@ -87,6 +96,9 @@ pecaQC_Perfor.addEventListener('click', () => {
     }
         // Serve para quando clicar novamente na peça, voltar para o conteúdo default
         else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
             // Peça clicada
             pecaQC_Perfor.style.height   = '113px';
             pecaQC_Result.style.transform = 'translateX(32px)';
@@ -124,6 +136,9 @@ const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
 pecaQC_Interf.addEventListener('click', () => {
     // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
     if(pecaQC_Interf.offsetHeight === 139){
+        // Sombra da caixa
+        conteinarPecas.style.boxShadow = '0 0 20px 5px #C32224';
+
         // Peça Resultado
         pecaQC_Result.style.height    = '139px';
         pecaQC_Result.style.transform = 'translateX(32px)';
@@ -144,6 +159,9 @@ pecaQC_Interf.addEventListener('click', () => {
     } 
         // Serve para quando clicar novamente na peça, voltar para o conteúdo default
         else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
             // Peça clicada
             pecaQC_Interf.style.height    = '139px';
             pecaQC_Interf.style.transform = 'translateX(-32px)';
