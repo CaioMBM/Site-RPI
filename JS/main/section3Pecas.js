@@ -1,7 +1,7 @@
-const escurecer      = document.getElementById('escurecer');
 const conteinarPecas = document.getElementById('conteinarPecas');
 const fundoPadrao    = 'Imagens/Quebra-cabeça/fundoPecasPadrao.jpg';
-const infoPadrao      = document.querySelectorAll('.pecaInformacao')[0];
+const infoPadrao     = document.querySelectorAll('.pecaInformacao')[0];
+const escurecer      = document.getElementById('escurecer');
 
 // Resultado
 // Caminhos relativos ao HTML
@@ -12,9 +12,15 @@ const btn_resultado      = document.querySelector('#btn-resultado');
 const sairModalResultado = document.querySelectorAll('.sairModal')[0];
 
 pecaQC_Result.addEventListener('click', () => {
-    // Peça clicada
-    pecaQC_Result.style.height = '160px';
+    // Peça Resultado
+    pecaQC_Result.style.height    = '160px';
     pecaQC_Result.style.transform = 'translateX(-10px)';
+    // Peça Performance
+    pecaQC_Perfor.style.height    = '113px';
+    pecaQC_Perfor.style.transform = 'translateY(0)';
+    // Peça Interferência
+    pecaQC_Interf.style.height    = '139px';
+    pecaQC_Interf.style.transform = 'translateX(-32px)';
 
     // Conteúdo da peça clicada
     infoPadrao.style.display        = 'none';
@@ -44,10 +50,16 @@ const btn_Performance      = document.querySelector('#btn-performance');
 const sairModalPerformance = document.querySelectorAll('.sairModal')[1];
 
 pecaQC_Perfor.addEventListener('click', () => {
-    // Peça clicada
-    pecaQC_Perfor.style.height = '140px';
+    // Peça Resultado
+    pecaQC_Result.style.height    = '139px';
     pecaQC_Result.style.transform = 'translateX(-10px)';
+    
+    // Peça clicada
+    pecaQC_Perfor.style.height   = '140px';
     pecaQC_Perfor.style.transform = 'translateY(-10px)';
+
+    // Peça Resultado
+    pecaQC_Interf.style.height    = '139px';
     pecaQC_Interf.style.transform = 'translateX(10px)';
     
     // Conteúdo da peça clicada
@@ -78,6 +90,14 @@ const btn_Interferencia      = document.querySelector('#btn-interferencia');
 const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
 
 pecaQC_Interf.addEventListener('click', () => {
+    // Peça Resultado
+    pecaQC_Result.style.height    = '139px';
+    pecaQC_Result.style.transform = 'translateX(32px)';
+
+    // Peça Performance
+    pecaQC_Perfor.style.height    = '113px';
+    pecaQC_Perfor.style.transform = 'translateY(0)';
+
     // Peça clicada
     pecaQC_Interf.style.height = '160px';
     pecaQC_Interf.style.transform = 'translateX(10px)';
