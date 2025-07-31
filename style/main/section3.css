@@ -130,18 +130,17 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas di
     background-color: var(--Branco);
 }
 
-div#caixaResultado{
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas div#caixaResultado{
     border: 3px solid var(--Preto);
 }
 
-div#caixaPerformance{
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas div#caixaPerformance{ 
     border: 3px solid var(--Azul-claro);
 }
 
-div#caixaInterferencia{
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas div#caixaInterferencia{
     border: 3px solid var(--Vermelho);
 }
-
 
 /* Caixa do título + parágrafo + Btn-SaibaMais */
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo{
@@ -170,7 +169,7 @@ div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
 /* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
 div#conteinarPecas div.pecaInformacao div.containerInfo p.pecaParagrafo{
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: var(--openSans);
     color: var(--Preto);
 }
