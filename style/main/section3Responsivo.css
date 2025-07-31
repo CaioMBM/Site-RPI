@@ -415,30 +415,13 @@
     }
 
     /* Onde ficará a parte interativa com as peças R, P e I */
-    section#section3 div#section3-container div#section3-pecas div{
-        width: 100%;
-        height: 350px;
-    }
-
-    /* Onde ficará a parte interativa com as peças R, P e I */
     section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
-        width: 100%;
-    }
-
-    /* Modal */
-    div#conteinarPecas div.modal{
-        transform: translate(-40%, -20%);
+        width: 700px;
     }
 
     div#conteinarPecas div.modal div.modalPeca{
         max-width: 600px;
         gap: 10px;
-    }
-    
-    /* Interferência - Modal */
-    div#conteinarPecas div#modal-Interferencia{
-        max-width: 600px;
-        transform: translate(-50%, -45%);
     }
 }
 @media only screen and (min-width: 959px) and (max-width: 1280px) {
