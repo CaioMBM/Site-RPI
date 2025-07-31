@@ -12,21 +12,36 @@ const btn_resultado      = document.querySelector('#btn-resultado');
 const sairModalResultado = document.querySelectorAll('.sairModal')[0];
 
 pecaQC_Result.addEventListener('click', () => {
-    // Peça Resultado
-    pecaQC_Result.style.height    = '160px';
-    pecaQC_Result.style.transform = 'translateX(-10px)';
-    // Peça Performance
-    pecaQC_Perfor.style.height    = '113px';
-    pecaQC_Perfor.style.transform = 'translateY(0)';
-    // Peça Interferência
-    pecaQC_Interf.style.height    = '139px';
-    pecaQC_Interf.style.transform = 'translateX(-32px)';
+    // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
+    if(pecaQC_Result.offsetHeight === 139){
+        // Peça Resultado
+        pecaQC_Result.style.height    = '160px';
+        pecaQC_Result.style.transform = 'translateX(-10px)';
+        // Peça Performance
+        pecaQC_Perfor.style.height    = '113px';
+        pecaQC_Perfor.style.transform = 'translateY(0)';
+        // Peça Interferência
+        pecaQC_Interf.style.height    = '139px';
+        pecaQC_Interf.style.transform = 'translateX(-32px)';
 
-    // Conteúdo da peça clicada
-    infoPadrao.style.display        = 'none';
-    infoResultado.style.display     = 'block';
-    infoPerformance.style.display   = 'none';
-    infoInterferencia.style.display = 'none';
+        // Conteúdo da peça clicada
+        infoPadrao.style.display        = 'none';
+        infoResultado.style.display     = 'block';
+        infoPerformance.style.display   = 'none';
+        infoInterferencia.style.display = 'none';
+    } 
+        // Serve para quando clicar novamente na peça, voltar para o conteúdo default
+        else{
+            // Peça Resultado
+            pecaQC_Result.style.height    = '139px';
+            pecaQC_Result.style.transform = 'translateX(32px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }
 });
 
 // Abrir modal
@@ -50,23 +65,40 @@ const btn_Performance      = document.querySelector('#btn-performance');
 const sairModalPerformance = document.querySelectorAll('.sairModal')[1];
 
 pecaQC_Perfor.addEventListener('click', () => {
-    // Peça Resultado
-    pecaQC_Result.style.height    = '139px';
-    pecaQC_Result.style.transform = 'translateX(-10px)';
+    // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
+    if(pecaQC_Perfor.offsetHeight === 113){
+        // Peça Resultado
+        pecaQC_Result.style.height    = '139px';
+        pecaQC_Result.style.transform = 'translateX(-10px)';
+        
+        // Peça clicada
+        pecaQC_Perfor.style.height   = '140px';
+        pecaQC_Perfor.style.transform = 'translateY(-10px)';
     
-    // Peça clicada
-    pecaQC_Perfor.style.height   = '140px';
-    pecaQC_Perfor.style.transform = 'translateY(-10px)';
+        // Peça Resultado
+        pecaQC_Interf.style.height    = '139px';
+        pecaQC_Interf.style.transform = 'translateX(10px)';
+        
+        // Conteúdo da peça clicada
+        infoPadrao.style.display        = 'none';
+        infoResultado.style.display     = 'none';
+        infoPerformance.style.display   = 'block';
+        infoInterferencia.style.display = 'none';
+    }
+        // Serve para quando clicar novamente na peça, voltar para o conteúdo default
+        else{
+            // Peça clicada
+            pecaQC_Perfor.style.height   = '113px';
+            pecaQC_Result.style.transform = 'translateX(32px)';
+            pecaQC_Perfor.style.transform = 'translateY(0px)';
+            pecaQC_Interf.style.transform = 'translateX(-32px)';
 
-    // Peça Resultado
-    pecaQC_Interf.style.height    = '139px';
-    pecaQC_Interf.style.transform = 'translateX(10px)';
-    
-    // Conteúdo da peça clicada
-    infoPadrao.style.display        = 'none';
-    infoResultado.style.display     = 'none';
-    infoPerformance.style.display   = 'block';
-    infoInterferencia.style.display = 'none';
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }
 });
 
 // Abrir modal
@@ -90,23 +122,38 @@ const btn_Interferencia      = document.querySelector('#btn-interferencia');
 const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
 
 pecaQC_Interf.addEventListener('click', () => {
-    // Peça Resultado
-    pecaQC_Result.style.height    = '139px';
-    pecaQC_Result.style.transform = 'translateX(32px)';
+    // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
+    if(pecaQC_Interf.offsetHeight === 139){
+        // Peça Resultado
+        pecaQC_Result.style.height    = '139px';
+        pecaQC_Result.style.transform = 'translateX(32px)';
 
-    // Peça Performance
-    pecaQC_Perfor.style.height    = '113px';
-    pecaQC_Perfor.style.transform = 'translateY(0)';
+        // Peça Performance
+        pecaQC_Perfor.style.height    = '113px';
+        pecaQC_Perfor.style.transform = 'translateY(0)';
 
-    // Peça clicada
-    pecaQC_Interf.style.height = '160px';
-    pecaQC_Interf.style.transform = 'translateX(10px)';
+        // Peça clicada
+        pecaQC_Interf.style.height = '160px';
+        pecaQC_Interf.style.transform = 'translateX(10px)';
 
-    // Conteúdo da peça clicada
-    infoPadrao.style.display        = 'none';
-    infoResultado.style.display     = 'none';
-    infoPerformance.style.display   = 'none';
-    infoInterferencia.style.display = 'block';
+        // Conteúdo da peça clicada
+        infoPadrao.style.display        = 'none';
+        infoResultado.style.display     = 'none';
+        infoPerformance.style.display   = 'none';
+        infoInterferencia.style.display = 'block';
+    } 
+        // Serve para quando clicar novamente na peça, voltar para o conteúdo default
+        else{
+            // Peça clicada
+            pecaQC_Interf.style.height    = '139px';
+            pecaQC_Interf.style.transform = 'translateX(-32px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }
 });
 
 // Abrir modal
