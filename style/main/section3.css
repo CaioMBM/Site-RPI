@@ -59,8 +59,9 @@ section#section3 div#section3-container div#section3-pecas{
 /* Onde ficará a parte interativa com as peças R, P e I */
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
     width: 750px;
-    height: 500px;
+    min-height: 500px;
     border-radius: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,17 +92,17 @@ section#section3 div#section3-container div#section3-pecas div#contentPecas img{
 
 /* Peça - Resultado */
 section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(1){
-    height: 140px;
+    height: 139px;
     transform: translateX(32px);
 }
 
 section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(1):hover{
-    transform: translateX(-10px);
+    transform: translateX(-5px);
 }
 
 /* Peça - Performance */
 section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(2){
-    height: 112px;
+    height: 113px;
     z-index: 2;
 }
 
@@ -111,56 +112,70 @@ section#section3 div#section3-container div#section3-pecas div div#contentPecas 
 
 /* Peça - Interferência */
 section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(3){
-    height: 140px;
+    height: 139px;
     transform: translateX(-32px);
 }
 
 section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(3):hover{
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 
+/* Caixa que engloba a caixa do título + parágrafo + Btn-SaibaMais */
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao{
     display: none;
     width: 550px;
-    max-height: 230px;
     border: 3px solid var(--Cinza-neutro);
     border-radius: 30px;
-    padding: 10px 30px 30px;
+    padding: 10px 30px 20px;
     background-color: var(--Branco);
-}
-
-/* Conteúdo padrão */
-section#section3 div#section3-container div#section3-pecas div#conteinarPecas :nth-child(1){
-    text-align: center;
-    color: var(--Preto);
 }
 
 div#caixaResultado{
     border: 3px solid var(--Preto);
 }
 
+div#caixaPerformance{
+    border: 3px solid var(--Azul-claro);
+}
+
+div#caixaInterferencia{
+    border: 3px solid var(--Vermelho);
+}
+
+
+/* Caixa do título + parágrafo + Btn-SaibaMais */
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo{
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
 }
 
-section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo > div{
-    display: flex;
-    align-items: center;
-}
-
-/* Conteúdos das peças */
+/* Conteúdos das peças - Título default */
 div#conteinarPecas div.pecaInformacao div.containerInfo p.conteudoTitulo{
     font-size: 40px;
     color: var(--Cinza-neutro) !important;
     font-family: var(--theSeasonBold);
 }
 
-/* Resultado */
+/* Conteúdos das peças - Parágrafo default */
+div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--openSans);
+    color: var(--Preto);
+}
+
+/* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
+div#conteinarPecas div.pecaInformacao div.containerInfo p.pecaParagrafo{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--openSans);
+    color: var(--Preto);
+}
+
+/* Resultado - Título */
 div#conteinarPecas div.pecaInformacao div.containerInfo > p#resultado > span{
     color: var(--Preto);
     position: relative;
@@ -177,14 +192,41 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > p#resultado > span::af
     background-color: var(--Preto);
 }
 
-div#conteinarPecas div.pecaInformacao div.containerInfo > p.pecaParagrafo{
-    text-align: center;
-    font-size: 25px;
-    font-family: var(--openSans);
-    color: var(--Preto);
+/* Performance - Título */
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#performance > span{
+    color: var(--Azul-claro);
+    position: relative;
 }
 
-/* Config Padrão - Botão "Saiba Mais" */
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#performance > span::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--Azul-claro);
+}
+
+/* Interferência - Título */
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#interferencia > span{
+    color: var(--Vermelho);
+    position: relative;
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > p#interferencia > span::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--Vermelho);
+}
+
+/* Config Default - Botão "Saiba Mais" */
 div#conteinarPecas div.pecaInformacao div.containerInfo > button {
     cursor: pointer;
     border-radius: 30px;
@@ -211,9 +253,45 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-resultado:a
     background-color: var(--Cinza-neutro);
 }
 
-/* Modal */
+/* Performance - Botão "Saiba Mais" */
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance{
+    border: 3px solid var(--Azul-claro);
+    color: var(--Azul-claro);
+    background-color: var(--Branco);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance:hover{
+    color: var(--Branco);
+    background-color: var(--Azul-claro);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance:active{
+    border: none;
+    border: 3px solid var(--Cinza-neutro);
+    background-color: var(--Cinza-neutro);
+}
+
+/* Interferência - Botão "Saiba Mais" */
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia{
+    border: 3px solid var(--Vermelho);
+    color: var(--Vermelho);
+    background-color: var(--Branco);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia:hover{
+    color: var(--Branco);
+    background-color: var(--Vermelho);
+}
+
+div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia:active{
+    border: none;
+    border: 3px solid var(--Cinza-neutro);
+    background-color: var(--Cinza-neutro);
+}
+
+/* Modal - Configuração padrão */
 div#conteinarPecas div.modal{
-    z-index: 2;
+    z-index: 3;
     display: none;
     position: absolute;
     top: 50%;
@@ -266,85 +344,7 @@ div#conteinarPecas div.modal div.modalPeca button.sairModal:hover::after{
     width: 100%;
 }
 
-/* Performance */
-div#conteinarPecas div.pecaInformacao div.containerInfo > p#performance > span{
-    color: var(--Azul-claro);
-    position: relative;
-}
-
-div#conteinarPecas div.pecaInformacao div.containerInfo > p#performance > span::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: " ";
-    width: 100%;
-    height: 3px;
-    border-radius: 5px;
-    background-color: var(--Azul-claro);
-}
-
-div#caixaPerformance{
-    border: 3px solid var(--Azul-claro);
-}
-
-/* Performance - Botão "Saiba Mais" */
-div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance{
-    border: 3px solid var(--Azul-claro);
-    color: var(--Azul-claro);
-    background-color: var(--Branco);
-}
-
-div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance:hover{
-    color: var(--Branco);
-    background-color: var(--Azul-claro);
-}
-
-div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-performance:active{
-    border: none;
-    border: 3px solid var(--Cinza-neutro);
-    background-color: var(--Cinza-neutro);
-}
-
-/* Interferência */
-div#conteinarPecas div.pecaInformacao div.containerInfo > p#interferencia > span{
-    color: var(--Vermelho);
-    position: relative;
-}
-
-div#conteinarPecas div.pecaInformacao div.containerInfo > p#interferencia > span::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: " ";
-    width: 100%;
-    height: 3px;
-    border-radius: 5px;
-    background-color: var(--Vermelho);
-}
-
-div#caixaInterferencia{
-    border: 3px solid var(--Vermelho);
-}
-
-/* Interferência - Botão "Saiba Mais" */
-div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia{
-    border: 3px solid var(--Vermelho);
-    color: var(--Vermelho);
-    background-color: var(--Branco);
-}
-
-div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia:hover{
-    color: var(--Branco);
-    background-color: var(--Vermelho);
-}
-
-div#conteinarPecas div.pecaInformacao div.containerInfo > button#btn-interferencia:active{
-    border: none;
-    border: 3px solid var(--Cinza-neutro);
-    background-color: var(--Cinza-neutro);
-}
-
-/* Interferência - Modal */
+/* Modal - Interferência */
 div#conteinarPecas div#modal-Interferencia{
     transform: translate(-50%, -50%);
 }
@@ -352,10 +352,10 @@ div#conteinarPecas div#modal-Interferencia{
 /* Serve para escurecer o fundo quando abrir o modal */
 #escurecer{
     display: none;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     background-color: #000000bd;
 }
