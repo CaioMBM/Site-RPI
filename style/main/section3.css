@@ -56,12 +56,6 @@ section#section3 div#section3-container div#section3-pecas{
     gap: 20px;
 }
 
-section#section3 div#section3-container div#section3-pecas > p{
-    font-size: 30px;
-    font-family: var(--openSans);
-    color: var(--Preto);
-}
-
 /* Onde ficará a parte interativa com as peças R, P e I */
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
     width: 750px;
@@ -72,10 +66,11 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    background: url('../../Imagens/Quebra-cabeça/fundoPecasPadrao.png');
-    object-fit: cover;
+    background: url('../../Imagens/Quebra-cabeça/fundoPecasPadrao.jpg');
     background-position: center;
     background-repeat: no-repeat;
+
+    box-shadow: 0 0 20px 0 var(--Cinza-neutro);
 
     transition: background-image 0.5s ease-in-out;
     position: relative;
@@ -88,22 +83,56 @@ section#section3 div#section3-container div#section3-pecas div div#contentPecas{
     align-items: baseline;
 }
 
-section#section3 div#section3-container div#section3-pecas div div#contentPecas img{
+/* Imagem das peças de quebra-cabeça */
+section#section3 div#section3-container div#section3-pecas div#contentPecas img{
     cursor: pointer;
     transition: .3s ease;
 }
 
-section#section3 div#section3-container div#section3-pecas div div#contentPecas img:hover{
-    transform: translateY(-20px);
+/* Peça - Resultado */
+section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(1){
+    height: 140px;
+    transform: translateX(32px);
+}
+
+section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(1):hover{
+    transform: translateX(-10px);
+}
+
+/* Peça - Performance */
+section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(2){
+    height: 112px;
+    z-index: 2;
+}
+
+section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(2):hover{
+    transform: translateY(-60px);
+}
+
+/* Peça - Interferência */
+section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(3){
+    height: 140px;
+    transform: translateX(-32px);
+}
+
+section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(3):hover{
+    transform: translateX(10px);
 }
 
 section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao{
     display: none;
-    width: 650px;
+    width: 550px;
     max-height: 230px;
+    border: 3px solid var(--Cinza-neutro);
     border-radius: 30px;
     padding: 10px 30px 30px;
     background-color: var(--Branco);
+}
+
+/* Conteúdo padrão */
+section#section3 div#section3-container div#section3-pecas div#conteinarPecas :nth-child(1){
+    text-align: center;
+    color: var(--Preto);
 }
 
 div#caixaResultado{
@@ -125,9 +154,9 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas di
 }
 
 /* Conteúdos das peças */
-div#conteinarPecas div.pecaInformacao div.containerInfo > p{
-    font-size: 30px;
-    color: var(--Cinza-neutro);
+div#conteinarPecas div.pecaInformacao div.containerInfo p.conteudoTitulo{
+    font-size: 40px;
+    color: var(--Cinza-neutro) !important;
     font-family: var(--theSeasonBold);
 }
 
@@ -150,7 +179,7 @@ div#conteinarPecas div.pecaInformacao div.containerInfo > p#resultado > span::af
 
 div#conteinarPecas div.pecaInformacao div.containerInfo > p.pecaParagrafo{
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     font-family: var(--openSans);
     color: var(--Preto);
 }
