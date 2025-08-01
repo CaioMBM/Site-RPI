@@ -6,6 +6,7 @@ const escurecer      = document.getElementById('escurecer');
 // Media query
 const tela_459_598 = window.matchMedia('(min-width: 459px) and (max-width: 598px)');
 const tela_390_458 = window.matchMedia('(min-width: 390px) and (max-width: 458px)');
+const tela_389     = window.matchMedia('(max-width: 389px)');
 
 
 // Resultado
@@ -81,6 +82,42 @@ pecaQC_Result.addEventListener('click', () => {
                 // Peça Resultado
                 pecaQC_Result.style.height    = '118px';
                 pecaQC_Result.style.transform = 'translateX(28px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+            }
+    }
+    // Tela de no máximo 389px
+    else if(tela_389.matches){
+        if(pecaQC_Result.offsetHeight === 90){
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
+
+            // Peça Resultado
+            pecaQC_Result.style.height    = '100px';
+            pecaQC_Result.style.transform = 'translateX(0)';
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '73px';
+            pecaQC_Perfor.style.transform = 'translateY(0)';
+            // Peça Interferência
+            pecaQC_Interf.style.height    = '90px';
+            pecaQC_Interf.style.transform = 'translateX(-22px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'block';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Result.style.height    = '90px';
+                pecaQC_Result.style.transform = 'translateX(22px)';
 
                 // Conteúdo da peça clicada
                 infoPadrao.style.display        = 'block';
@@ -231,6 +268,46 @@ pecaQC_Perfor.addEventListener('click', () => {
                 infoInterferencia.style.display = 'none';
             }
     }
+    // Tela de no máximo 389px
+    else if(tela_389.matches){
+        if(pecaQC_Perfor.offsetHeight === 73){
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
+
+            // Peça Resultado
+            pecaQC_Result.style.height    = '90px';
+            pecaQC_Result.style.transform = 'translateX(0)';
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '80px';
+            pecaQC_Perfor.style.transform = 'translateY(-15px)';
+            // Peça Interferência
+            pecaQC_Interf.style.height    = '90px';
+            pecaQC_Interf.style.transform = 'translateX(0)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'block';
+            infoInterferencia.style.display = 'none';
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Result.style.transform = 'translateX(22px)';
+                // Peça Performance
+                pecaQC_Perfor.style.height    = '73px';
+                pecaQC_Perfor.style.transform = 'translateY(0)';
+                // Peça Interferência
+                pecaQC_Interf.style.transform = 'translateX(-22px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+        }
+    }
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
@@ -294,7 +371,9 @@ const pecaQC_Interf          = document.getElementById('pecaQC_Interf');
 const infoInterferencia      = document.querySelectorAll('.pecaInformacao')[3];
 const modalInterferencia     = document.querySelectorAll('.modal')[2];
 const btn_Interferencia      = document.querySelector('#btn-interferencia');
+const modal_Interferencia    = document.querySelector('#modal-Interferencia')
 const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
+
 
 pecaQC_Interf.addEventListener('click', () => {
     // Tela entre 459px - 598px
@@ -373,6 +452,46 @@ pecaQC_Interf.addEventListener('click', () => {
             infoInterferencia.style.display = 'none';
         }
     } 
+    // Tela de no máximo 389px
+    else if(tela_389.matches){
+        btn_Interferencia.addEventListener('click', () => { conteinarPecas.style.height = '420px' });
+
+        if(pecaQC_Interf.offsetHeight === 90){
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #C32224';
+
+            // Peça Resultado
+            pecaQC_Result.style.height    = '90px';
+            pecaQC_Result.style.transform = 'translateX(22px)';
+
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '73px';
+            pecaQC_Perfor.style.transform = 'translateY(0)';
+
+            // Peça clicada
+            pecaQC_Interf.style.height = '100px';
+            pecaQC_Interf.style.transform = 'translateX(0)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'block';
+        }   else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
+
+            // Peça Resultado
+            pecaQC_Interf.style.height    = '90px';
+            pecaQC_Interf.style.transform = 'translateX(-22px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+            }
+    }
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa

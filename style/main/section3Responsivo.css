@@ -36,48 +36,66 @@
         flex-direction: column-reverse;
     }
 
-    section#section3 div#section3-container div#section3-pecas p{
-        text-align: center;
-        font-size: 12px;
-    }
-
-    section#section3 div#section3-container div#section3-pecas div{
-        width: 100%;
-        height: auto;
-        padding: 15px 10px;
-    }
-
     /* Onde ficará a parte interativa com as peças R, P e I */
     section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
-        width: 90%;
-        height: 390px;
-        gap: 0;
+        width: 95%;
+        min-height: 350px;
     }
 
-    /* Peça Resultado e Interferência */
-    section#section3 div#section3-container div#section3-pecas div div#contentPecas img{
-        height: 100px;
-        width: 65px;
+    /* Peça - Resultado */
+    section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(1){
+        height: 90px;
+        transform: translateX(22px);
     }
 
-    /* Peça Performance */
-    section#section3 div#section3-container div#section3-pecas div div#contentPecas img#pecaQC_Perfor{
-        width: 105px;
-        height: 75px;
+    section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(1):hover{
+        transform: translateX(0px);
+    }
+
+    /* Peça - Performance */
+    section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(2){
+        height: 73px;
+        z-index: 2;
+    }
+
+    section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(2):hover{
+        transform: translateY(-25px);
+    }
+
+    /* Peça - Interferência */
+    section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(3){
+        height: 90px;
+        transform: translateX(-22px);
+    }
+
+    section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(3):hover{
+        transform: translateX(0);
     }
 
     section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao{
-        width: 90%;
+        width: 99%;
         height: auto;
-        padding: 10px;
+        padding: 10px 20px;
     }
 
-    div#conteinarPecas div.pecaInformacao div.containerInfo > p{
-        font-size: 18px !important;
+    /* Caixa do título + parágrafo + Btn-SaibaMais */
+    section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo{
+        gap: 20px;
     }
 
-    div#conteinarPecas div.pecaInformacao div.containerInfo > p.pecaParagrafo{
-        font-size: 11px !important;
+    /* Conteúdos das peças - Título default */
+    div#conteinarPecas div.pecaInformacao div.containerInfo p.conteudoTitulo{
+        font-size: 20px;
+    }
+
+    /* Conteúdos das peças - Parágrafo default */
+    div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
+        font-size: 16px;
+    }
+
+    /* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
+    div#conteinarPecas div.pecaInformacao div.containerInfo p.pecaParagrafo{
+        font-size: 12px;
     }
 
     /* Config Padrão - Botão "Saiba Mais" */
@@ -87,21 +105,14 @@
     }
 
     /* Modal */
-    div#conteinarPecas div.modal{
-        transform: translate(-50%, -50%);
-    }
-
     div#conteinarPecas div.modal div.modalPeca{
-        padding: 20px;
+        width: 250px;
+        padding: 10px;
+        gap: 10px;
     }
 
     div#conteinarPecas div.modal div.modalPeca p{
-        font-size: 12px !important;
-    }
-
-    /* Interferência - Modal */
-    div#conteinarPecas div#modal-Interferencia{ 
-        transform: translate(-50%, -54%);
+        font-size: 12px;
     }
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
@@ -173,18 +184,6 @@
 
     section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(3):hover{
         transform: translateX(2px);
-    }
-
-    /* Peça Resultado e Interferência */
-    section#section3 div#section3-container div#section3-pecas div div#contentPecas img{
-        height: 120px;
-        width: 85px;
-    }
-
-    /* Peça Performance */
-    section#section3 div#section3-container div#section3-pecas div div#contentPecas img#pecaQC_Perfor{
-        width: 125px;
-        height: 95px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao{
