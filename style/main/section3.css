@@ -53,7 +53,7 @@ section#section3 div#section3-container div#section3-pecas{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 section#section3 div#section3-container div#section3-pecas > p{
@@ -162,8 +162,8 @@ section#section3 div#section3-container div#section3-pecas div#conteinarPecas di
 /* Conteúdos das peças - Título default */
 div#conteinarPecas div.pecaInformacao div.containerInfo p.conteudoTitulo{
     font-size: 40px;
-    color: var(--Cinza-neutro) !important;
     font-family: var(--theSeasonBold);
+    color: var(--Cinza-neutro) !important;
 }
 
 /* Conteúdos das peças - Parágrafo default */

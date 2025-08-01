@@ -32,8 +32,9 @@
         font-size: 12px;
     }
 
-    section#section3 div#section3-container div#section3-pecas {
-        flex-direction: column-reverse;
+    section#section3 div#section3-container div#section3-pecas > p{
+        width: 260px;
+        font-size: 18px;
     }
 
     /* Onde ficará a parte interativa com as peças R, P e I */
@@ -92,7 +93,7 @@
 
     /* Conteúdos das peças - Parágrafo default */
     div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
-        font-size: 16px;
+        font-size: 12px;
     }
 
     /* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
@@ -128,7 +129,7 @@
     }
 
     section#section3 div#section3-container{
-        gap: 50px;
+        gap: 80px;
     }
 
     section#section3 div#section3-container div#section3-video{
@@ -148,8 +149,9 @@
         font-size: 14px;
     }
 
-    section#section3 div#section3-container div#section3-pecas{
-        flex-direction: column-reverse
+    section#section3 div#section3-container div#section3-pecas > p{
+        width: 300px;
+        font-size: 20px;
     }
 
     /* Onde ficará a parte interativa com as peças R, P e I */
@@ -208,7 +210,7 @@
 
     /* Conteúdos das peças - Parágrafo default */
     div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
@@ -244,7 +246,7 @@
     }
 
     section#section3 div#section3-container{
-        gap: 60px;
+        gap: 80px;
     }
 
     section#section3 div#section3-container div#section3-video{
@@ -264,8 +266,9 @@
         font-size: 15px;
     }
 
-    section#section3 div#section3-container div#section3-pecas{
-        flex-direction: column-reverse;
+    section#section3 div#section3-container div#section3-pecas > p{
+        width: 350px;
+        font-size: 22px;
     }
 
     /* Onde ficará a parte interativa com as peças R, P e I */
@@ -353,7 +356,7 @@
     }
 
     section#section3 div#section3-container{
-        gap: 60px;
+        gap: 90px;
     }
 
     section#section3 div#section3-container div#section3-video{
@@ -369,6 +372,11 @@
     section#section3 div#section3-container div#section3-video h3{
         min-width: 260px;
         font-size: 18px;
+    }
+
+    section#section3 div#section3-container div#section3-pecas > p{
+        width: 450px;
+        font-size: 22px;
     }
 
     /* Onde ficará a parte interativa com as peças R, P e I */
@@ -415,7 +423,7 @@
     }
 
     section#section3 div#section3-container{
-        gap: 60px;
+        gap: 90px;
     }
 
     section#section3 div#section3-container div#section3-video{
