@@ -274,7 +274,6 @@ pecaQC_Perfor.addEventListener('click', () => {
                 infoInterferencia.style.display = 'none';
             }
     }
-
 });
 
 // Abrir modal
@@ -343,7 +342,7 @@ pecaQC_Interf.addEventListener('click', () => {
             conteinarPecas.style.boxShadow = '0 0 20px 5px #C32224';
 
             // Peça Resultado
-            pecaQC_Result.style.height    = '119px';
+            pecaQC_Result.style.height    = '118px';
             pecaQC_Result.style.transform = 'translateX(32px)';
 
             // Peça Performance
