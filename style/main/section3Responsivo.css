@@ -139,19 +139,40 @@
         flex-direction: column-reverse
     }
 
-    section#section3 div#section3-container div#section3-pecas p{
-        text-align: center;
-        font-size: 15px;
-    }
-
-    section#section3 div#section3-container div#section3-pecas div{
-        width: 100%;
-    }
-
     /* Onde ficará a parte interativa com as peças R, P e I */
     section#section3 div#section3-container div#section3-pecas div#conteinarPecas{
         width: 90%;
-        height: 400px;
+        min-height: 300px;
+    }
+
+    /* Peça - Resultado */
+    section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(1){
+        height: 118px;
+        transform: translateX(28px);
+    }
+
+    section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(1):hover{
+        transform: translateX(-2px);
+    }
+
+    /* Peça - Performance */
+    section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(2){
+        height: 95px;
+        z-index: 2;
+    }
+
+    section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(2):hover{
+        transform: translateY(-25px);
+    }
+
+    /* Peça - Interferência */
+    section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(3){
+        height: 118px;
+        transform: translateX(-28px);
+    }
+
+    section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(3):hover{
+        transform: translateX(2px);
     }
 
     /* Peça Resultado e Interferência */
@@ -167,17 +188,29 @@
     }
 
     section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao{
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding: 10px;
+        padding: 10px 20px;
     }
 
-    div#conteinarPecas div.pecaInformacao div.containerInfo > p{
-        font-size: 20px !important;
+    /* Caixa do título + parágrafo + Btn-SaibaMais */
+    section#section3 div#section3-container div#section3-pecas div#conteinarPecas div.pecaInformacao div.containerInfo{
+        gap: 20px;
     }
 
-    div#conteinarPecas div.pecaInformacao div.containerInfo > p.pecaParagrafo{
-        font-size: 12px !important;
+    /* Conteúdos das peças - Título default */
+    div#conteinarPecas div.pecaInformacao div.containerInfo p.conteudoTitulo{
+        font-size: 25px;
+    }
+
+    /* Conteúdos das peças - Parágrafo default */
+    div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
+        font-size: 16px;
+    }
+
+    /* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
+    div#conteinarPecas div.pecaInformacao div.containerInfo p.pecaParagrafo{
+        font-size: 14px;
     }
 
     /* Config Padrão - Botão "Saiba Mais" */
@@ -187,21 +220,14 @@
     }
 
     /* Modal */
-    div#conteinarPecas div.modal{
-        transform: translate(-50%, -45%);
-    }
-
     div#conteinarPecas div.modal div.modalPeca{
-        padding: 20px;
+        width: 290px;
+        padding: 10px;
+        gap: 10px;
     }
 
     div#conteinarPecas div.modal div.modalPeca p{
-        font-size: 13px !important;
-    }
-
-    /* Interferência - Modal */
-    div#conteinarPecas div#modal-Interferencia{ 
-        transform: translate(-50%, -55%);
+        font-size: 12px;
     }
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {

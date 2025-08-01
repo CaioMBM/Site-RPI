@@ -5,6 +5,7 @@ const escurecer      = document.getElementById('escurecer');
 
 // Media query
 const tela_459_598 = window.matchMedia('(min-width: 459px) and (max-width: 598px)');
+const tela_390_458 = window.matchMedia('(min-width: 390px) and (max-width: 458px)');
 
 
 // Resultado
@@ -19,39 +20,75 @@ pecaQC_Result.addEventListener('click', () => {
     // Tela entre 459px - 598px
     if(tela_459_598.matches){
         if(pecaQC_Result.offsetHeight === 119){
-                // Sombra da caixa
-                conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
-
-                // Peça Resultado
-                pecaQC_Result.style.height    = '139px';
-                pecaQC_Result.style.transform = 'translateX(-5px)';
-                // Peça Performance
-                pecaQC_Perfor.style.height    = '96px';
-                pecaQC_Perfor.style.transform = 'translateY(0)';
-                // Peça Interferência
-                pecaQC_Interf.style.height    = '119px';
-                pecaQC_Interf.style.transform = 'translateX(-32px)';
-
-                // Conteúdo da peça clicada
-                infoPadrao.style.display        = 'none';
-                infoResultado.style.display     = 'block';
-                infoPerformance.style.display   = 'none';
-                infoInterferencia.style.display = 'none';
-        } else{
             // Sombra da caixa
-            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
 
             // Peça Resultado
-            pecaQC_Result.style.height    = '119px';
-            pecaQC_Result.style.transform = 'translateX(28px)';
+            pecaQC_Result.style.height    = '139px';
+            pecaQC_Result.style.transform = 'translateX(-5px)';
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '96px';
+            pecaQC_Perfor.style.transform = 'translateY(0)';
+            // Peça Interferência
+            pecaQC_Interf.style.height    = '119px';
+            pecaQC_Interf.style.transform = 'translateX(-32px)';
 
             // Conteúdo da peça clicada
-            infoPadrao.style.display        = 'block';
-            infoResultado.style.display     = 'none';
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'block';
             infoPerformance.style.display   = 'none';
             infoInterferencia.style.display = 'none';
-        }
-    } 
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Result.style.height    = '119px';
+                pecaQC_Result.style.transform = 'translateX(28px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+            }
+    }
+    // Tela entre 390px - 458px
+    else if(tela_390_458.matches){
+        if(pecaQC_Result.offsetHeight === 118){
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
+
+            // Peça Resultado
+            pecaQC_Result.style.height    = '139px';
+            pecaQC_Result.style.transform = 'translateX(-5px)';
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '95px';
+            pecaQC_Perfor.style.transform = 'translateY(0)';
+            // Peça Interferência
+            pecaQC_Interf.style.height    = '118px';
+            pecaQC_Interf.style.transform = 'translateX(-32px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'block';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Result.style.height    = '118px';
+                pecaQC_Result.style.transform = 'translateX(28px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+            }
+    }
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
@@ -117,43 +154,83 @@ pecaQC_Perfor.addEventListener('click', () => {
     // Tela entre 459px - 598px
     if(tela_459_598.matches){
         if(pecaQC_Perfor.offsetHeight === 96){
-                // Sombra da caixa
-                conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
-
-                // Peça Resultado
-                pecaQC_Result.style.height    = '119px';
-                pecaQC_Result.style.transform = 'translateX(-10px)';
-                // Peça Performance
-                pecaQC_Perfor.style.height    = '106px';
-                pecaQC_Perfor.style.transform = 'translateY(-15px)';
-                // Peça Interferência
-                pecaQC_Interf.style.height    = '119px';
-                pecaQC_Interf.style.transform = 'translateX(5px)';
-
-                // Conteúdo da peça clicada
-                infoPadrao.style.display        = 'none';
-                infoResultado.style.display     = 'none';
-                infoPerformance.style.display   = 'block';
-                infoInterferencia.style.display = 'none';
-        } else{
             // Sombra da caixa
-            conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
 
             // Peça Resultado
-            pecaQC_Result.style.transform = 'translateX(28px)';
+            pecaQC_Result.style.height    = '119px';
+            pecaQC_Result.style.transform = 'translateX(-10px)';
             // Peça Performance
-            pecaQC_Perfor.style.height    = '96px';
-            pecaQC_Perfor.style.transform = 'translateY(0)';
+            pecaQC_Perfor.style.height    = '106px';
+            pecaQC_Perfor.style.transform = 'translateY(-15px)';
             // Peça Interferência
-            pecaQC_Interf.style.transform = 'translateX(-28px)';
+            pecaQC_Interf.style.height    = '119px';
+            pecaQC_Interf.style.transform = 'translateX(5px)';
 
             // Conteúdo da peça clicada
-            infoPadrao.style.display        = 'block';
+            infoPadrao.style.display        = 'none';
             infoResultado.style.display     = 'none';
-            infoPerformance.style.display   = 'none';
+            infoPerformance.style.display   = 'block';
             infoInterferencia.style.display = 'none';
-        }
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Result.style.transform = 'translateX(28px)';
+                // Peça Performance
+                pecaQC_Perfor.style.height    = '96px';
+                pecaQC_Perfor.style.transform = 'translateY(0)';
+                // Peça Interferência
+                pecaQC_Interf.style.transform = 'translateX(-28px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+            }
     } 
+    // Tela entre 390px - 458px
+    else if(tela_390_458.matches){
+        if(pecaQC_Perfor.offsetHeight === 95){
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
+
+            // Peça Resultado
+            pecaQC_Result.style.height    = '118px';
+            pecaQC_Result.style.transform = 'translateX(-5px)';
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '106px';
+            pecaQC_Perfor.style.transform = 'translateY(-15px)';
+            // Peça Interferência
+            pecaQC_Interf.style.height    = '118px';
+            pecaQC_Interf.style.transform = 'translateX(5px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'block';
+            infoInterferencia.style.display = 'none';
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Result.style.transform = 'translateX(28px)';
+                // Peça Performance
+                pecaQC_Perfor.style.height    = '95px';
+                pecaQC_Perfor.style.transform = 'translateY(0)';
+                // Peça Interferência
+                pecaQC_Interf.style.transform = 'translateX(-28px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+            }
+    }
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
@@ -244,12 +321,50 @@ pecaQC_Interf.addEventListener('click', () => {
             infoResultado.style.display     = 'none';
             infoPerformance.style.display   = 'none';
             infoInterferencia.style.display = 'block';
-        } else{
+        }   else{
+                // Sombra da caixa
+                conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
+
+                // Peça Resultado
+                pecaQC_Interf.style.height    = '119px';
+                pecaQC_Interf.style.transform = 'translateX(-32px)';
+
+                // Conteúdo da peça clicada
+                infoPadrao.style.display        = 'block';
+                infoResultado.style.display     = 'none';
+                infoPerformance.style.display   = 'none';
+                infoInterferencia.style.display = 'none';
+            }
+    }
+    // Tela entre 390px - 458px
+    else if(tela_390_458.matches){
+        if(pecaQC_Interf.offsetHeight === 118){
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 5px #C32224';
+
+            // Peça Resultado
+            pecaQC_Result.style.height    = '119px';
+            pecaQC_Result.style.transform = 'translateX(32px)';
+
+            // Peça Performance
+            pecaQC_Perfor.style.height    = '95px';
+            pecaQC_Perfor.style.transform = 'translateY(0)';
+
+            // Peça clicada
+            pecaQC_Interf.style.height = '139px';
+            pecaQC_Interf.style.transform = 'translateX(5px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'none';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'block';
+        }   else{
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
 
             // Peça Resultado
-            pecaQC_Interf.style.height    = '119px';
+            pecaQC_Interf.style.height    = '118px';
             pecaQC_Interf.style.transform = 'translateX(-32px)';
 
             // Conteúdo da peça clicada
