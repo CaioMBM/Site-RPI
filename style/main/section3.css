@@ -318,6 +318,10 @@ div#conteinarPecas div.modal div.modalPeca p{
     color: var(--Preto);
 }
 
+#lista{
+    margin-bottom: -10px;
+}
+
 div#conteinarPecas div.modal div.modalPeca button.sairModal{
     cursor: pointer;
     position: relative;
