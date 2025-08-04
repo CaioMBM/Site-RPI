@@ -198,7 +198,7 @@
     header ul li{
         width: 100%;
         text-align: center;
-        padding: 15px 40px;
+        padding: 15px 30px;
         border: 2px solid var(--Preto);
     }
 
@@ -207,7 +207,7 @@
     }
 
     header a{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     header i.icon-abrirMenu{
