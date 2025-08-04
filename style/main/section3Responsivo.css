@@ -93,7 +93,7 @@
 
     /* Conteúdos das peças - Parágrafo default */
     div#conteinarPecas div.pecaInformacao div.containerInfo p#pecaParagrafoPadrao{
-        font-size: 12px;
+        font-size: 11px;
     }
 
     /* Conteúdos das peças - Parágrafo Resultado, Performance e Interferência */
