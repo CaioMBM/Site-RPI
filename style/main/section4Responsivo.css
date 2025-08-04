@@ -15,7 +15,7 @@
     }
 
     section#section4 img#section4Imagens{
-        width: 260px;
+        width: 90%;
         height: 160px;
     }
 
@@ -48,8 +48,8 @@
     }
 
     section#section4 img#section4Imagens{
-        width: 320px;
-        height: 160px;
+        width: 330px;
+        height: 180px;
     }
     section#section4 div#section4Texto{
         max-width: 400px;
@@ -80,8 +80,8 @@
     }
 
     section#section4 img#section4Imagens{
-        width: 360px;
-        height: 200px;
+        width: 380px;
+        height: 220px;
     }
 
     section#section4 div#section4Texto{
@@ -139,14 +139,12 @@
     }
 
     section#section4 img#section4Imagens{
-        margin-top: -2%;
-        min-width: 300px;
-        height: 200px;
+        width: 320px;
+        height: 220px;
     }
 
     section#section4 div#section4Texto{
         width: clamp(300px, 100%, 400px);
-        margin-top: -5%;
     }
 
     section#section4 div#section4Texto h2{
@@ -172,8 +170,8 @@
     }
 
     section#section4 img#section4Imagens{
-        margin-top: -2%;
-        min-width: 380px;
+        width: 380px;
+        height: 250px;
     }
 
     section#section4 div#section4Texto h2{
@@ -186,13 +184,13 @@
 }
 @media only screen and (min-width: 1009px) and (max-width: 1280px) {
     section#section4{
-        gap: 80px;
+        gap: 65px;
         padding: 100px 60px 50px 60px;
     }
 
     section#section4 img#section4Imagens{
-        margin-top: -2%;
-        min-width: 380px;
+        width: 400px;
+        height: 270px;
     }
 
     section#section4 div#section4Texto{

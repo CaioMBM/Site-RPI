@@ -3,21 +3,21 @@
 section#section4{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 120px;
     padding: 150px 0 60px 0;
     scroll-margin-top: 80px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
 
 section#section4 img#section4Imagens{
-    width: 420px;
-    height: 245px;
+    width: 520px;
+    height: 345px;
     border-radius: 10px;
     box-shadow: -6px 6px 10px 0 var(--Verde-petroleo-claro);
 }
 
 section#section4 div#section4Texto{
     max-width: 613px;
-    margin-top: -50px;
 }
 
 section#section4 div#section4Texto h2{
