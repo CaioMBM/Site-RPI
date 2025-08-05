@@ -7,6 +7,8 @@ icon_abrirMenu.addEventListener("click", ()=> {
     icon_abrirMenu.style.display  = 'none';
     icon_fecharMenu.style.display = 'block';
     navbar.style.display          = 'block';
+
+    navbar.classList.remove('navbarOcultar');
 })
 
 // Fechar menu hamburguer
@@ -15,3 +17,13 @@ icon_fecharMenu.addEventListener("click", ()=> {
     icon_fecharMenu.style.display = 'none';
     navbar.style.display          = 'none';
 })
+
+function fecharMenu(){
+    setTimeout(() => {
+        console.log('click')
+        icon_abrirMenu.style.display  = 'block';
+        icon_fecharMenu.style.display = 'none';
+        navbar.style.display          = 'none';
+    }, 300);
+    
+}

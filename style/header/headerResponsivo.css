@@ -35,6 +35,10 @@
         background-color: var(--Azul-petroleo-claro);
     }
 
+    header ul li:active{
+        background-color: var(--Preto);
+    }
+
     header a:hover::after{
         width: 0%;
     }
@@ -78,6 +82,10 @@
 
     header ul li:hover{
         background-color: var(--Azul-petroleo-claro);
+    }
+
+    header ul li:active{
+        background-color: var(--Preto);
     }
 
     header a:hover::after{
@@ -125,6 +133,10 @@
         background-color: var(--Azul-petroleo-claro);
     }
 
+    header ul li:active{
+        background-color: var(--Preto);
+    }
+
     header a:hover::after{
         width: 0%;
     }
@@ -166,6 +178,10 @@
         background-color: var(--Azul-petroleo-claro);
     }
 
+    header ul li:active{
+        background-color: var(--Preto);
+    }
+
     header ul li a{
         padding: 20px 240px;
     }
@@ -204,6 +220,10 @@
 
     header ul li:hover{
         background-color: var(--Azul-petroleo-claro);
+    }
+
+    header ul li:active{
+        background-color: var(--Preto);
     }
 
     header a{
