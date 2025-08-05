@@ -42,7 +42,30 @@
         height: 350px;
     }
 }
-@media only screen and (min-width: 769px) and (max-width: 1048px) {}
+@media only screen and (min-width: 879px) and (max-width: 1048px) {
+    section#section8{
+        padding: 80px 50px 120px 60px;
+        gap: 30px;
+    }
+
+    section#section8 img{
+        width: 400px;
+        height: 350px;
+    }
+
+    /* Caixa com o título e o parágrafo */
+    section#section8 div {
+        width: 360px;
+    }
+
+    section#section8 div h1{
+        font-size: 45px;
+    }
+
+    section#section8 div p{
+        font-size: 25px;
+    }
+}
 @media only screen and (min-width: 1049px) and (max-width: 1280px) {
     section#section8 img{
         width: 500px;

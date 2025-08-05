@@ -1,11 +1,11 @@
 @import url('../base.css');
 
 section#section8{
+    padding: 80px 80px 120px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
-    padding: 80px 80px 120px 80px;
 }
 
 section#section8 img{
