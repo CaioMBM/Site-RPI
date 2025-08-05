@@ -30,7 +30,6 @@ section#section8 div h1{
 
 section#section8 div p{
     font-size: 32px;
-    font-weight: 100;
     font-family: var(--openSans);
     color: var(--Branco);
 }
