@@ -10,7 +10,7 @@ Tela: 459px-598px = atributos_telaBemPequena
 Tela: ...px-389px = atributos_telaMuitoPequena
 */
 
-//atributos_telaBemPequenoa
+
 const atributos_telaNormal         = window.matchMedia('(min-width: 689px) and (max-width: 798px)');
 const atributos_telaNormalPequena  = window.matchMedia('(min-width: 599px) and (max-width: 688px)');
 const atributos_telaPequena        = window.matchMedia('(min-width: 459px) and (max-width: 598px)');
