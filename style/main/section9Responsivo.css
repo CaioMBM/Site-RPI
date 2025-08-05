@@ -65,7 +65,7 @@
     }
 
     section#section9 div{
-        width: 90%;
+        width: 80%;
     }
     
     section#section9 div h1{
@@ -80,7 +80,7 @@
 
     /* Formulário */ 
     section#section9 form{
-        width: 100%;
+        width: 90%;
         padding: 25px;
         box-shadow: 6px 6px 0 0 var(--Branco);
     }
