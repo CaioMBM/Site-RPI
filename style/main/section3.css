@@ -56,7 +56,7 @@ section#section3 div#section3-container div#section3-pecas{
     gap: 30px;
 }
 
-section#section3 div#section3-container div#section3-pecas > p{
+section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
     text-align: center;
     font-family: var(--openSans);
     font-size: 32px;
