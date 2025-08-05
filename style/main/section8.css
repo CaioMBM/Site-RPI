@@ -3,12 +3,34 @@
 section#section8{
     display: flex;
     justify-content: center;
-    padding: 60px;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 80px 120px 80px;
 }
 
 section#section8 img{
     width: 600px;
     height: 550px;
     border-radius: 20px;
-    box-shadow: 0 0 20px 10px var(--Azul-petroleo-claro);
+    box-shadow: -12px 10px 5px 2px var(--Verde-petroleo-claro);
+}
+
+/* Caixa com o título e o parágrafo */
+section#section8 div{
+    max-width: 640px;
+}
+
+section#section8 div h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-family: var(--theSeasonBold);
+    color: var(--Verde-petroleo-claro);
+}
+
+section#section8 div p{
+    font-size: 32px;
+    font-weight: 100;
+    font-family: var(--openSans);
+    color: var(--Branco);
 }
