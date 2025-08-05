@@ -129,19 +129,19 @@ pecaQC_Result.addEventListener('click', () => {
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
-        if(pecaQC_Result.offsetHeight === 139){
+        if(pecaQC_Result.offsetHeight === 179){
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
 
             // Peça Resultado
-            pecaQC_Result.style.height    = '160px';
+            pecaQC_Result.style.height    = '189px';
             pecaQC_Result.style.transform = 'translateX(-10px)';
             // Peça Performance
-            pecaQC_Perfor.style.height    = '113px';
+            pecaQC_Perfor.style.height    = '145px';
             pecaQC_Perfor.style.transform = 'translateY(0)';
             // Peça Interferência
-            pecaQC_Interf.style.height    = '139px';
-            pecaQC_Interf.style.transform = 'translateX(-32px)';
+            pecaQC_Interf.style.height    = '179px';
+            pecaQC_Interf.style.transform = 'translateX(-42px)';
 
             // Conteúdo da peça clicada
             infoPadrao.style.display        = 'none';
@@ -155,8 +155,8 @@ pecaQC_Result.addEventListener('click', () => {
                 conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
 
                 // Peça Resultado
-                pecaQC_Result.style.height    = '139px';
-                pecaQC_Result.style.transform = 'translateX(32px)';
+                pecaQC_Result.style.height    = '179px';
+                pecaQC_Result.style.transform = 'translateX(42px)';
 
                 // Conteúdo da peça clicada
                 infoPadrao.style.display        = 'block';
@@ -311,20 +311,20 @@ pecaQC_Perfor.addEventListener('click', () => {
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
-        if(pecaQC_Perfor.offsetHeight === 113){
+        if(pecaQC_Perfor.offsetHeight === 145){
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
     
             // Peça Resultado
-            pecaQC_Result.style.height    = '139px';
+            pecaQC_Result.style.height    = '179px';
             pecaQC_Result.style.transform = 'translateX(-10px)';
             
             // Peça clicada
-            pecaQC_Perfor.style.height   = '140px';
+            pecaQC_Perfor.style.height   = '150px';
             pecaQC_Perfor.style.transform = 'translateY(-10px)';
     
             // Peça Resultado
-            pecaQC_Interf.style.height    = '139px';
+            pecaQC_Interf.style.height    = '179px';
             pecaQC_Interf.style.transform = 'translateX(10px)';
             
             // Conteúdo da peça clicada
@@ -339,10 +339,10 @@ pecaQC_Perfor.addEventListener('click', () => {
                 conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
     
                 // Peça clicada
-                pecaQC_Perfor.style.height   = '113px';
-                pecaQC_Result.style.transform = 'translateX(32px)';
+                pecaQC_Perfor.style.height   = '145px';
+                pecaQC_Result.style.transform = 'translateX(42px)';
                 pecaQC_Perfor.style.transform = 'translateY(0px)';
-                pecaQC_Interf.style.transform = 'translateX(-32px)';
+                pecaQC_Interf.style.transform = 'translateX(-42px)';
     
                 // Conteúdo da peça clicada
                 infoPadrao.style.display        = 'block';
@@ -495,20 +495,20 @@ pecaQC_Interf.addEventListener('click', () => {
     // Telas de no mínimo 599px
     else{
         // Ao clicar na peça, irá mostrar seu conetúdo e esconder os demais caso tenha sido clicado em outra peça antes dessa
-        if(pecaQC_Interf.offsetHeight === 139){
+        if(pecaQC_Interf.offsetHeight === 179){
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #C32224';
     
             // Peça Resultado
-            pecaQC_Result.style.height    = '139px';
-            pecaQC_Result.style.transform = 'translateX(32px)';
+            pecaQC_Result.style.height    = '179px';
+            pecaQC_Result.style.transform = 'translateX(42px)';
     
             // Peça Performance
-            pecaQC_Perfor.style.height    = '113px';
+            pecaQC_Perfor.style.height    = '145px';
             pecaQC_Perfor.style.transform = 'translateY(0)';
     
             // Peça clicada
-            pecaQC_Interf.style.height = '160px';
+            pecaQC_Interf.style.height = '189px';
             pecaQC_Interf.style.transform = 'translateX(10px)';
     
             // Conteúdo da peça clicada
@@ -523,8 +523,8 @@ pecaQC_Interf.addEventListener('click', () => {
                 conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
     
                 // Peça clicada
-                pecaQC_Interf.style.height    = '139px';
-                pecaQC_Interf.style.transform = 'translateX(-32px)';
+                pecaQC_Interf.style.height    = '179px';
+                pecaQC_Interf.style.transform = 'translateX(-42px)';
     
                 // Conteúdo da peça clicada
                 infoPadrao.style.display        = 'block';
