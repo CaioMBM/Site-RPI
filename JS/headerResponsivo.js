@@ -20,7 +20,6 @@ icon_fecharMenu.addEventListener("click", ()=> {
 
 function fecharMenu(){
     setTimeout(() => {
-        console.log('click')
         icon_abrirMenu.style.display  = 'block';
         icon_fecharMenu.style.display = 'none';
         navbar.style.display          = 'none';
