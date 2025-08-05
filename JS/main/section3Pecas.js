@@ -20,18 +20,18 @@ const sairModalResultado = document.querySelectorAll('.sairModal')[0];
 pecaQC_Result.addEventListener('click', () => {
     // Tela entre 459px - 598px
     if(tela_459_598.matches){
-        if(pecaQC_Result.offsetHeight === 119){
+        if(pecaQC_Result.offsetHeight === 139){
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #030D0F';
 
             // Peça Resultado
-            pecaQC_Result.style.height    = '139px';
+            pecaQC_Result.style.height    = '159px';
             pecaQC_Result.style.transform = 'translateX(-5px)';
             // Peça Performance
-            pecaQC_Perfor.style.height    = '96px';
+            pecaQC_Perfor.style.height    = '113px';
             pecaQC_Perfor.style.transform = 'translateY(0)';
             // Peça Interferência
-            pecaQC_Interf.style.height    = '119px';
+            pecaQC_Interf.style.height    = '139px';
             pecaQC_Interf.style.transform = 'translateX(-32px)';
 
             // Conteúdo da peça clicada
@@ -44,8 +44,8 @@ pecaQC_Result.addEventListener('click', () => {
                 conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
 
                 // Peça Resultado
-                pecaQC_Result.style.height    = '119px';
-                pecaQC_Result.style.transform = 'translateX(28px)';
+                pecaQC_Result.style.height    = '139px';
+                pecaQC_Result.style.transform = 'translateX(33px)';
 
                 // Conteúdo da peça clicada
                 infoPadrao.style.display        = 'block';
@@ -190,19 +190,19 @@ const sairModalPerformance = document.querySelectorAll('.sairModal')[1];
 pecaQC_Perfor.addEventListener('click', () => {
     // Tela entre 459px - 598px
     if(tela_459_598.matches){
-        if(pecaQC_Perfor.offsetHeight === 96){
+        if(pecaQC_Perfor.offsetHeight === 113){
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #11BCE8';
 
             // Peça Resultado
-            pecaQC_Result.style.height    = '119px';
+            pecaQC_Result.style.height    = '139px';
             pecaQC_Result.style.transform = 'translateX(-10px)';
             // Peça Performance
-            pecaQC_Perfor.style.height    = '106px';
+            pecaQC_Perfor.style.height    = '133px';
             pecaQC_Perfor.style.transform = 'translateY(-15px)';
             // Peça Interferência
-            pecaQC_Interf.style.height    = '119px';
-            pecaQC_Interf.style.transform = 'translateX(5px)';
+            pecaQC_Interf.style.height    = '139px';
+            pecaQC_Interf.style.transform = 'translateX(10px)';
 
             // Conteúdo da peça clicada
             infoPadrao.style.display        = 'none';
@@ -214,12 +214,12 @@ pecaQC_Perfor.addEventListener('click', () => {
                 conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
 
                 // Peça Resultado
-                pecaQC_Result.style.transform = 'translateX(28px)';
+                pecaQC_Result.style.transform = 'translateX(33px)';
                 // Peça Performance
-                pecaQC_Perfor.style.height    = '96px';
+                pecaQC_Perfor.style.height    = '113px';
                 pecaQC_Perfor.style.transform = 'translateY(0)';
                 // Peça Interferência
-                pecaQC_Interf.style.transform = 'translateX(-28px)';
+                pecaQC_Interf.style.transform = 'translateX(-33px)';
 
                 // Conteúdo da peça clicada
                 infoPadrao.style.display        = 'block';
@@ -378,20 +378,20 @@ const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
 pecaQC_Interf.addEventListener('click', () => {
     // Tela entre 459px - 598px
     if(tela_459_598.matches){
-        if(pecaQC_Interf.offsetHeight === 119){
+        if(pecaQC_Interf.offsetHeight === 139){
             // Sombra da caixa
             conteinarPecas.style.boxShadow = '0 0 20px 5px #C32224';
 
             // Peça Resultado
-            pecaQC_Result.style.height    = '119px';
+            pecaQC_Result.style.height    = '139px';
             pecaQC_Result.style.transform = 'translateX(32px)';
 
             // Peça Performance
-            pecaQC_Perfor.style.height    = '96px';
+            pecaQC_Perfor.style.height    = '113px';
             pecaQC_Perfor.style.transform = 'translateY(0)';
 
             // Peça clicada
-            pecaQC_Interf.style.height = '139px';
+            pecaQC_Interf.style.height = '159px';
             pecaQC_Interf.style.transform = 'translateX(5px)';
 
             // Conteúdo da peça clicada
@@ -404,7 +404,7 @@ pecaQC_Interf.addEventListener('click', () => {
                 conteinarPecas.style.boxShadow = '0 0 20px 5px #8aa4a7';
 
                 // Peça Resultado
-                pecaQC_Interf.style.height    = '119px';
+                pecaQC_Interf.style.height    = '139px';
                 pecaQC_Interf.style.transform = 'translateX(-32px)';
 
                 // Conteúdo da peça clicada

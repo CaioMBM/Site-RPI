@@ -293,8 +293,8 @@
 
     /* Peça - Resultado */
     section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(1){
-        height: 119px;
-        transform: translateX(28px);
+        height: 139px;
+        transform: translateX(33px);
     }
 
     section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(1):hover{
@@ -303,7 +303,7 @@
 
     /* Peça - Performance */
     section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(2){
-        height: 96px;
+        height: 113px;
         z-index: 2;
     }
 
@@ -313,8 +313,8 @@
 
     /* Peça - Interferência */
     section#section3 div#section3-container div#section3-pecas div#contentPecas img:nth-child(3){
-        height: 119px;
-        transform: translateX(-28px);
+        height: 139px;
+        transform: translateX(-33px);
     }
 
     section#section3 div#section3-container div#section3-pecas div div#contentPecas img:nth-child(3):hover{
