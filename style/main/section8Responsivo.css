@@ -25,11 +25,26 @@
 @media only screen and (min-width: 459px) and (max-width: 598px) {
     section#section8{
         padding: 50px 20px;
+        flex-direction: column-reverse;
+        gap: 40px;
     }
 
     section#section8 img{
         max-width: 350px;
         max-height: 300px;
+    }
+
+    section#section8 div{
+        width: 360px;
+    }
+
+    section#section8 div h1{
+        margin-bottom: 15px;
+        font-size: 38px;
+    }
+
+    section#section8 div p{
+        font-size: 25px;
     }
 }
 @media only screen and (min-width: 599px) and (max-width: 738px){
