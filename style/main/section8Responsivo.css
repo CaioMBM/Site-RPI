@@ -32,7 +32,30 @@
         max-height: 300px;
     }
 }
+@media only screen and (min-width: 599px) and (max-width: 738px){
+    section#section8{
+        padding: 80px 30px 90px 40px;
+        gap: 30px;
+    }
 
+    section#section8 img{
+        width: 280px;
+        height: 290px;
+    }
+
+    /* Caixa com o título e o parágrafo */
+    section#section8 div {
+        width: 225px;
+    }
+
+    section#section8 div h1{
+        font-size: 35px;
+    }
+
+    section#section8 div p{
+        font-size: 20px;
+    }
+}
 @media only screen and (min-width: 739px) and (max-width: 878px){
     section#section8{
         padding: 80px 40px 120px 50px;
