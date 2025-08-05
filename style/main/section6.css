@@ -11,25 +11,26 @@ section#section6 #section6container{
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 80px 30px;
     flex-wrap: wrap;
 }
 
 section#section6 #section6container div.section6Card{
     width: 300px;
+    min-height: 460px;
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap:30px;
     background-color: var(--Branco);
-    transition: .3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-section#section6 #section6container div.section6Card:hover{
-    transform: translateY(-3%);
+section#section6 #section6container div.section6Card:hover {
+    transform: translateY(-10%);
     box-shadow: -10px 10px 3px 0 var(--Azul-petroleo-claro);
 }
 
@@ -59,12 +60,16 @@ section#section6 #section6container div.section6Card div span{
     background-color: var(--Verde-petroleo);
 }
 
-section#section6 #section6container div.section6Card p{
-    height: 205px;
+section#section6 #section6container div.section6Card p.atributoParagrafo {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-family: var(--openSans);
     color: var(--Verde-petroleo);
+    transition: font-size 0.3s ease;
+}
+
+section#section6 #section6container div.section6Card:hover p.atributoParagrafo {
+    font-size: 15px;
 }
 
 section#section6 div#section6BotoesCarrossel{

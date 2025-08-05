@@ -6,15 +6,16 @@ const containerSec6 = document.querySelector('#section6container');
 /*
 Tela: 689px-768px = atributos_telaNormal
 Tela: 599px-688px = atributos_telaNormalPequena
-Tela: 389px-598px = atributos_telaBemPequena
+Tela: 459px-598px = atributos_telaBemPequena
 Tela: ...px-389px = atributos_telaMuitoPequena
 */
 
+//atributos_telaBemPequenoa
 const atributos_telaNormal         = window.matchMedia('(min-width: 689px) and (max-width: 798px)');
 const atributos_telaNormalPequena  = window.matchMedia('(min-width: 599px) and (max-width: 688px)');
-const atributos_telaBemPequena     = window.matchMedia('(min-width: 389px) and (max-width: 598px)');
-const atributos_telaMuitoPequena   = window.matchMedia('(max-width: 390px)');
-
+const atributos_telaPequena        = window.matchMedia('(min-width: 459px) and (max-width: 598px)');
+const atributos_telaBemPequena     = window.matchMedia('(min-width: 390px) and (max-width: 458px)');
+const atributos_telaMuitoPequena   = window.matchMedia('(max-width: 389px)');
 // Mover itens do carrossel para direita
 function moverDireitaAtributos(){
     const scrollMax = containerSec6.scrollWidth - containerSec6.clientWidth;
@@ -27,7 +28,7 @@ function moverDireitaAtributos(){
         } 
         // Se não for o último card, será mostrado o card seguinte
         else {
-            containerSec6.scrollLeft += 270; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
+            containerSec6.scrollLeft += 420; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     }
     // Telas: 599px-688px
@@ -35,10 +36,18 @@ function moverDireitaAtributos(){
         if (containerSec6.scrollLeft >= scrollMax) {
             containerSec6.scrollLeft = 0;
         } else {
-            containerSec6.scrollLeft += 250;
+            containerSec6.scrollLeft += 420;
         }
     }
-    // Telas: 389px-598px
+    // Telas: 459px-598px
+    else if (atributos_telaPequena.matches){
+        if (containerSec6.scrollLeft >= scrollMax) {
+            containerSec6.scrollLeft = 0;
+        } else {
+            containerSec6.scrollLeft += 320;
+        }
+    }
+    // Telas: 390px-458px
     else if (atributos_telaBemPequena.matches){
         if (containerSec6.scrollLeft >= scrollMax) {
             containerSec6.scrollLeft = 0;
@@ -60,14 +69,14 @@ btnSec6CarrosselDireita.addEventListener('click', moverDireitaAtributos);
 // Mover itens do carrossel para esquerda
 function moverEsquerdaAtributos(){
     // Telas: 689px-768px
-    if (atributos_telaNormalPequena.matches){
+    if (atributos_telaNormal.matches){
         // Se estiver no primeiro card e então clicar para mover para esquerda, será mostrado o último card do carrossel
         if (containerSec6.scrollLeft <= 0) {
             containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
         } 
         // Se não for o primeiro card, será mostrado o card anterior
         else {
-            containerSec6.scrollLeft -= 270; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
+            containerSec6.scrollLeft -= 420; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card.
         }
     }
     // Telas: 599px-688px
@@ -75,10 +84,18 @@ function moverEsquerdaAtributos(){
         if (containerSec6.scrollLeft <= 0) {
             containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
         } else {
-            containerSec6.scrollLeft -= 250;
+            containerSec6.scrollLeft -= 420;
         }
     }
-    // Telas: 389px-598px
+    // Telas: 459px-598px
+    else if (atributos_telaPequena.matches){
+        if (containerSec6.scrollLeft <= 0) {
+            containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
+        } else {
+            containerSec6.scrollLeft -= 320;
+        }
+    }
+    // Telas: 390px-458px
     else if (atributos_telaBemPequena.matches){
         if (containerSec6.scrollLeft <= 0) {
             containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;

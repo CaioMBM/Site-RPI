@@ -16,6 +16,7 @@
 
     section#section6 #section6container div.section6Card{
         min-width: 220px;
+        min-height: 530px;
         padding: 10px;
         gap: 20px;
     }
@@ -30,10 +31,6 @@
         text-align: center;
     }
 
-    section#section6 #section6container div.section6Card p{
-        height: 290px;
-    }
-
     section#section6 div#section6BotoesCarrossel{
         width: 89%;
     }
@@ -42,7 +39,7 @@
         display: block;
     }
 }
-@media only screen and (min-width: 390px) and (max-width: 598px) {
+@media only screen and (min-width: 390px) and (max-width: 458px){
     section#section6{
         padding: 40px 20px;
     }
@@ -57,6 +54,7 @@
 
     section#section6 #section6container div.section6Card{
         min-width: 260px;
+        min-height: 510px;
         gap: 20px;
     }
 
@@ -66,11 +64,42 @@
     }
 
     section#section6 #section6container div.section6Card h3{
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    section#section6 #section6container div.section6Card p{
-        height: 240px;
+    section#section6 div#section6BotoesCarrossel{
+        width: 89%;
+    }
+
+    section#section6 div#section6BotoesCarrossel i{
+        display: block;
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    section#section6{
+        padding: 40px 20px;
+    }
+
+    section#section6 #section6container{
+        width: 300px;
+        overflow-x: hidden;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: unset;
+    }
+
+    section#section6 #section6container div.section6Card{
+        min-width: 300px;
+        gap: 20px;
+    }
+
+    section#section6 #section6container div.section6Card:hover{
+        transform: translateY(0%);
+        box-shadow: 0 var(--Branco);
+    }
+
+    section#section6 #section6container div.section6Card h3{
+        font-size: 18px;
     }
 
     section#section6 div#section6BotoesCarrossel{
@@ -87,7 +116,7 @@
     }
 
     section#section6 #section6container{
-        width: 480px;
+        width: 400px;
         overflow-x: hidden;
         justify-content: start;
         gap: 20px;
@@ -95,7 +124,7 @@
     }
 
     section#section6 #section6container div.section6Card{
-        min-width: 230px;
+        min-width: 400px;
         gap: 20px;
     }
 
@@ -105,15 +134,15 @@
     }
 
     section#section6 #section6container div.section6Card h3{
-        font-size: 14px;
+        font-size: 22px;
     }
 
-    section#section6 #section6container div.section6Card p{
-        height: 310px;
+    section#section6 #section6container div.section6Card p.atributoParagrafo{
+        font-size: 17px;
     }
 
     section#section6 div#section6BotoesCarrossel{
-        width: 95%;
+        width: 85%;
     }
 
     section#section6 div#section6BotoesCarrossel i{
@@ -126,7 +155,7 @@
     }
 
     section#section6 #section6container{
-        width: 520px;
+        width: 400px;
         overflow-x: hidden;
         justify-content: start;
         gap: 20px;
@@ -134,7 +163,8 @@
     }
 
     section#section6 #section6container div.section6Card{
-        min-width: 250px;
+        min-width: 400px;
+        min-height: 510px;        
         gap: 20px;
     }
 
@@ -143,12 +173,16 @@
         box-shadow: 0 var(--Branco);
     }
 
-    section#section6 #section6container div.section6Card p{
-        height: 260px;
+    section#section6 #section6container div.section6Card h3{
+        font-size: 22px;
+    }
+
+    section#section6 #section6container div.section6Card p.atributoParagrafo{
+        font-size: 17px;
     }
 
     section#section6 div#section6BotoesCarrossel{
-        width: 90%;
+        width: 75%;
     }
 
     section#section6 div#section6BotoesCarrossel i{
