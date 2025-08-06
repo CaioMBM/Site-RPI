@@ -52,7 +52,7 @@ function moverDireitaAtributos(){
         if (containerSec6.scrollLeft >= scrollMax) {
             containerSec6.scrollLeft = 0;
         } else {
-            containerSec6.scrollBy({ left: 280, behavior: 'smooth' });
+            containerSec6.scrollLeft += 280;
         }
     }
     // Telas: ...px-390px
@@ -100,7 +100,7 @@ function moverEsquerdaAtributos(){
         if (containerSec6.scrollLeft <= 0) {
             containerSec6.scrollLeft = containerSec6.scrollWidth - containerSec6.clientWidth;
         } else {
-            containerSec6.scrollBy({ left: -280, behavior: 'smooth' });
+            containerSec6.scrollLeft -= 280;
         }
     }
     // Telas: ...px-390px

@@ -46,27 +46,16 @@
 
     section#section6 #section6container{
         width: 260px;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        flex-wrap: nowrap;
+        overflow-x: hidden;
         justify-content: start;
         gap: 20px;
-
-        /* Oculta barra de rolagem */
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE */
-    }
-
-    #section6container::-webkit-scrollbar {
-        display: none; /* Safari/Chrome */
+        flex-wrap: unset;
     }
 
     section#section6 #section6container div.section6Card{
         min-width: 260px;
         min-height: 510px;
         gap: 20px;
-        scroll-snap-align: start;
     }
 
     section#section6 #section6container div.section6Card:hover{
