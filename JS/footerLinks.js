@@ -15,5 +15,5 @@ instagram.addEventListener('click', ()=> {
 // Whastapp
 function redirecionarWhatsapp(){
     // Tive que fazer uma function pq o addEventListener para o Whatsapp não estava funcionando
-    window.open('https://wa.me/5581992780767?text=Ol%C3%A1%2C%20vim%20pelo%20site%20R%20%3D%20P%20-%20I.%20%0AGostaria%20de%20iniciar%20uma%20conversa.', '_blank');;
+    window.open('https://wa.me/5581992780767?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20o%20R%3DP-I%20pode%20me%20ajudar%20a%20melhorar%20a%20Performance%20e%20eliminar%20Interfer%C3%AAncias%2C%20para%20garantir%20que%20os%20Resultados%20sejam%20atingidos.');;
 };
