@@ -10,10 +10,10 @@ section#section4{
 }
 
 section#section4 img#section4Imagens{
-    width: 520px;
-    height: 345px;
+    width: 480px;
+    height: 260px;
     border-radius: 10px;
-    box-shadow: -6px 6px 10px 0 var(--Verde-petroleo-claro);
+    box-shadow: -10px 10px 20px 5px var(--Verde-petroleo-claro);
 }
 
 section#section4 div#section4Texto{
