@@ -4,12 +4,12 @@
 @media screen and (max-width: 389px) {
     section#section2{
         padding: 20px;
-        gap: 70px;
+        gap: 60px;
     }
 
     /* Serve p/todos os <p> da section2 */
     section#section2 p{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     section#section2 div#montandoQuebraCabeca{
@@ -43,12 +43,12 @@
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section2{
         padding: 40px;
-        gap: 90px;
+        gap: 60px;
     }
 
     /* Serve p/todos os <p> da section2 */
     section#section2 p{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     section#section2 div#montandoQuebraCabeca{
