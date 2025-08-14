@@ -3,19 +3,24 @@
 /* Media query */
 @media screen and (max-width: 389px) {
     section#section3{
-        padding: 50px 10px;
+        padding: 50px 20px;
     }
 
     section#section3 h1{
         font-size: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     section#section3 div#section3-container{
         gap: 60px;
     }
 
+    section#section3 div#section3-container p.section3-texto{
+        font-size: 14px;
+    }
+
     section#section3 div#section3-container div#section3-video{
+        margin: 30px 0;
         flex-direction: column;
         gap: 30px;
     }
@@ -26,15 +31,16 @@
         height: 180px;
     }
 
-    section#section3 div#section3-container div#section3-video h3{
-        width: clamp(280px, 100%, 320px); /* Indica que a o conteúdo ocupará 100% do espaço disponível, espaço esse que vai variar entre 280px - 320px */
-        text-align: center;
-        font-size: 12px;
+    section#section3 div#section3-container div#section3-video div#texto-rpi{
+        width: 85%;
+    }
+
+    section#section3 div#section3-container div#section3-video p.section3-video-texto{
+        font-size: 13px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
-        width: 290px;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p:nth-child(2){
@@ -124,7 +130,7 @@
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     section#section3{
-        padding: 50px 10px;
+        padding: 50px 20px;
     }
 
     section#section3 h1{
@@ -150,6 +156,10 @@
     section#section3 div#section3-container div#section3-video video{
         width: 340px; 
         height: 200px;
+    }
+
+    section#section3 div#section3-container div#section3-video div#texto-rpi{
+        width: 85%;
     }
 
     section#section3 div#section3-container div#section3-video p.section3-video-texto{
