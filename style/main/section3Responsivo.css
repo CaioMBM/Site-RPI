@@ -442,19 +442,24 @@
         gap: 90px;
     }
 
+    section#section3 div#section3-container p.section3-texto{
+        font-size: 22px;
+}
+
     section#section3 div#section3-container div#section3-video{
         gap: 30px;
     }
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        max-width: 350px;
+        max-width: 370px;
         height: 230px;
     }
 
-    section#section3 div#section3-container div#section3-video h3{
-        min-width: 320px;
-        font-size: 22px;
+    section#section3 div#section3-container div#section3-video p.section3-video-texto{
+        min-width: 300px;
+        font-size: 16px;
+        background-color: lightblue;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
