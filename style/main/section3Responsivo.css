@@ -475,14 +475,15 @@
     section#section3 div#section3-container div#section3-video{
         gap: 50px;
     }
-
+    
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        max-width: 420px;
+        min-width: 450px;
         height: 300px;
     }
-
-    section#section3 div#section3-container div#section3-video h3{
-        width: clamp(380px, 100%, 530px); /* Indica que a o conteúdo ocupará 100% do espaço disponível, espaço esse que vai variar entre 500px - 530px*/
+    
+    section#section3 div#section3-container div#section3-video p.section3-video-texto{
+        min-width: 380px;
+        font-size: 20px;
     }
 }
