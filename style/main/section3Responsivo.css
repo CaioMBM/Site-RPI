@@ -257,6 +257,10 @@
         gap: 80px;
     }
 
+    section#section3 div#section3-container p.section3-texto{
+        font-size: 25px;
+    }
+
     section#section3 div#section3-container div#section3-video{
         flex-direction: column;
         gap: 30px;
@@ -264,18 +268,16 @@
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        width: 350px; 
+        width: 370px; 
         height: 200px;
     }
 
-    section#section3 div#section3-container div#section3-video h3{
-        width: 430px;
-        text-align: center;
-        font-size: 15px;
+    section#section3 div#section3-container div#section3-video p.section3-video-texto{
+        padding-left: 20px;
+        font-size: 18px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
-        width: 360px;
         font-size: 25px;
     }
 
