@@ -129,33 +129,36 @@
 
     section#section3 h1{
         font-size: 30px;
-        margin-bottom: 45px;
+        margin-bottom: 20px;
     }
 
     section#section3 div#section3-container{
         gap: 80px;
     }
 
+    section#section3 div#section3-container p.section3-texto{
+        font-size: 15px;
+    }
+
     section#section3 div#section3-container div#section3-video{
+        margin: 20px 0;
         flex-direction: column;
         gap: 30px;
     }
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        width: 350px; 
+        width: 340px; 
         height: 200px;
     }
 
-    section#section3 div#section3-container div#section3-video h3{
-        width: 340px;
-        text-align: center;
-        font-size: 16px;
+    section#section3 div#section3-container div#section3-video p.section3-video-texto{
+        padding-left: 20px;
+        font-size: 12px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
-        width: 300px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p:nth-child(2){
