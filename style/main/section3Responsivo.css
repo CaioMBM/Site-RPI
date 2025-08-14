@@ -443,7 +443,7 @@
     }
 
     section#section3 div#section3-container p.section3-texto{
-        font-size: 22px;
+        font-size: 25px;
 }
 
     section#section3 div#section3-container div#section3-video{
@@ -452,14 +452,13 @@
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        max-width: 370px;
+        max-width: 350px;
         height: 230px;
     }
 
     section#section3 div#section3-container div#section3-video p.section3-video-texto{
         min-width: 300px;
-        font-size: 16px;
-        background-color: lightblue;
+        font-size: 18px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
