@@ -371,24 +371,24 @@
         gap: 90px;
     }
 
+    section#section3 div#section3-container p.section3-texto{
+        font-size: 25px;
+    }
+
     section#section3 div#section3-container div#section3-video{
-        gap: 20px;
+        flex-direction: column;
+        gap: 40px;
     }
 
     /* Vídeo do "Do que se trata?" */
     section#section3 div#section3-container div#section3-video video{
-        min-width: 260px;
-        height: 200px;
-    }
-
-    section#section3 div#section3-container div#section3-video h3{
-        min-width: 260px;
-        font-size: 18px;
-    }
-
-    section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p{
         width: 500px;
-        font-size: 26px;
+        height: 300px;
+    }
+
+    section#section3 div#section3-container div#section3-video p.section3-video-texto{
+        padding-left: 20px;
+        font-size: 20px;
     }
 
     section#section3 div#section3-container div#section3-pecas div#section8Paragrafo p:nth-child(2){
@@ -444,7 +444,7 @@
 
     section#section3 div#section3-container p.section3-texto{
         font-size: 25px;
-}
+    }
 
     section#section3 div#section3-container div#section3-video{
         gap: 30px;
