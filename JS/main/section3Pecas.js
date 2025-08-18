@@ -10,12 +10,8 @@ const tela_389     = window.matchMedia('(max-width: 389px)');
 
 
 // Resultado
-// Caminhos relativos ao HTML
 const pecaQC_Result      = document.getElementById('pecaQC_Result');
 const infoResultado      = document.querySelectorAll('.pecaInformacao')[1];
-const modalResultado     = document.querySelectorAll('.modal')[0];
-const btn_resultado      = document.querySelector('#btn-resultado');
-const sairModalResultado = document.querySelectorAll('.sairModal')[0];
 
 pecaQC_Result.addEventListener('click', () => {
     // Tela entre 459px - 598px
@@ -168,12 +164,8 @@ pecaQC_Result.addEventListener('click', () => {
 });
 
 // Performance
-// Caminhos relativos ao HTML
 const pecaQC_Perfor        = document.getElementById('pecaQC_Perfor');
 const infoPerformance      = document.querySelectorAll('.pecaInformacao')[2];
-const modalPerformance     = document.querySelectorAll('.modal')[1];
-const btn_Performance      = document.querySelector('#btn-performance');
-const sairModalPerformance = document.querySelectorAll('.sairModal')[1];
 
 pecaQC_Perfor.addEventListener('click', () => {
     // Tela entre 459px - 598px
@@ -342,14 +334,8 @@ pecaQC_Perfor.addEventListener('click', () => {
 });
 
 // Interferência
-// Caminhos relativos ao HTML
 const pecaQC_Interf          = document.getElementById('pecaQC_Interf');
 const infoInterferencia      = document.querySelectorAll('.pecaInformacao')[3];
-const modalInterferencia     = document.querySelectorAll('.modal')[2];
-const btn_Interferencia      = document.querySelector('#btn-interferencia');
-const modal_Interferencia    = document.querySelector('#modal-Interferencia')
-const sairModalInterferencia = document.querySelectorAll('.sairModal')[2];
-
 
 pecaQC_Interf.addEventListener('click', () => {
     // Tela entre 459px - 598px
@@ -430,7 +416,7 @@ pecaQC_Interf.addEventListener('click', () => {
     } 
     // Tela de no máximo 389px
     else if(tela_389.matches){
-        btn_Interferencia.addEventListener('click', () => { conteinarPecas.style.height = '420px' });
+        tabAbrirModal[2].addEventListener('click', () => { conteinarPecas.style.height = '420px' });
 
         if(pecaQC_Interf.offsetHeight === 90){
             // Sombra da caixa
