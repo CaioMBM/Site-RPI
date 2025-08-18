@@ -149,35 +149,23 @@ pecaQC_Result.addEventListener('click', () => {
             infoPerformance.style.display   = 'none';
             infoInterferencia.style.display = 'none';
         } 
-            // Serve para quando clicar novamente na peça, voltar para o conteúdo default
-            else{
-                // Sombra da caixa
-                conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+        // Serve para quando clicar novamente na peça, voltar para o conteúdo default
+        else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
 
-                // Peça Resultado
-                pecaQC_Result.style.height    = '179px';
-                pecaQC_Result.style.transform = 'translateX(42px)';
+            // Peça Resultado
+            pecaQC_Result.style.height    = '179px';
+            pecaQC_Result.style.transform = 'translateX(42px)';
 
-                // Conteúdo da peça clicada
-                infoPadrao.style.display        = 'block';
-                infoResultado.style.display     = 'none';
-                infoPerformance.style.display   = 'none';
-                infoInterferencia.style.display = 'none';
-            }
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }
     }
 });
-
-// Abrir modal
-btn_resultado.addEventListener('click', () => {
-    modalResultado.style.display = 'block';
-    escurecer.style.display      = 'block';
-})
-// Fechar modal
-sairModalResultado.addEventListener('click', () => {
-    modalResultado.style.display = 'none';
-    escurecer.style.display      = 'none';
-})
-
 
 // Performance
 // Caminhos relativos ao HTML
@@ -333,37 +321,25 @@ pecaQC_Perfor.addEventListener('click', () => {
             infoPerformance.style.display   = 'block';
             infoInterferencia.style.display = 'none';
         }
-            // Serve para quando clicar novamente na peça, voltar para o conteúdo default
-            else{
-                // Sombra da caixa
-                conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
-    
-                // Peça clicada
-                pecaQC_Perfor.style.height   = '145px';
-                pecaQC_Result.style.transform = 'translateX(42px)';
-                pecaQC_Perfor.style.transform = 'translateY(0px)';
-                pecaQC_Interf.style.transform = 'translateX(-42px)';
-    
-                // Conteúdo da peça clicada
-                infoPadrao.style.display        = 'block';
-                infoResultado.style.display     = 'none';
-                infoPerformance.style.display   = 'none';
-                infoInterferencia.style.display = 'none';
-            }
+        // Serve para quando clicar novamente na peça, voltar para o conteúdo default
+        else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
+            // Peça clicada
+            pecaQC_Perfor.style.height   = '145px';
+            pecaQC_Result.style.transform = 'translateX(42px)';
+            pecaQC_Perfor.style.transform = 'translateY(0px)';
+            pecaQC_Interf.style.transform = 'translateX(-42px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }
     }
 });
-
-// Abrir modal
-btn_Performance.addEventListener('click', () => {
-    modalPerformance.style.display = 'block';
-    escurecer.style.display        = 'block';
-})
-// Fechar modal
-sairModalPerformance.addEventListener('click', () => {
-    modalPerformance.style.display = 'none';
-    escurecer.style.display        = 'none';
-})
-
 
 // Interferência
 // Caminhos relativos ao HTML
@@ -517,31 +493,54 @@ pecaQC_Interf.addEventListener('click', () => {
             infoPerformance.style.display   = 'none';
             infoInterferencia.style.display = 'block';
         } 
-            // Serve para quando clicar novamente na peça, voltar para o conteúdo default
-            else{
-                // Sombra da caixa
-                conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
-    
-                // Peça clicada
-                pecaQC_Interf.style.height    = '179px';
-                pecaQC_Interf.style.transform = 'translateX(-42px)';
-    
-                // Conteúdo da peça clicada
-                infoPadrao.style.display        = 'block';
-                infoResultado.style.display     = 'none';
-                infoPerformance.style.display   = 'none';
-                infoInterferencia.style.display = 'none';
-            }
+        // Serve para quando clicar novamente na peça, voltar para o conteúdo default
+        else{
+            // Sombra da caixa
+            conteinarPecas.style.boxShadow = '0 0 20px 0 #8aa4a7';
+
+            // Peça clicada
+            pecaQC_Interf.style.height    = '179px';
+            pecaQC_Interf.style.transform = 'translateX(-42px)';
+
+            // Conteúdo da peça clicada
+            infoPadrao.style.display        = 'block';
+            infoResultado.style.display     = 'none';
+            infoPerformance.style.display   = 'none';
+            infoInterferencia.style.display = 'none';
+        }
     }
 });
 
-// Abrir modal
-btn_Interferencia.addEventListener('click', () => {
-    modalInterferencia.style.display = 'block';
-    escurecer.style.display        = 'block';
-})
-// Fechar modal
-sairModalInterferencia.addEventListener('click', () => {
-    modalInterferencia.style.display = 'none';
-    escurecer.style.display        = 'none';
-})
+
+// Parte para Abrir/Fechar modal
+const tabAbrirModal = document.querySelectorAll('.containerInfo button');
+const tabModals     = document.querySelectorAll('.modal');
+const tabSairModal  = document.querySelectorAll('.sairModal');
+
+// Abrir o modal
+function abrirModal(index){
+    // Abre o modal respectivo ao botão "Saiba Mais" clicado
+    tabModals[index].classList.add('abrirModal');
+
+    // Coloca um fundo preto por trás do modal aberto
+    escurecer.style.display = 'block';
+}
+
+// Chama a função ao clicar no botão "Saiba Mais", que é o item de navegação 
+tabAbrirModal.forEach((button, index) => {  // O argumento index é referente ao index de cada butão (item de navegação) 
+    button.addEventListener('click', () => { abrirModal(index); });
+});
+
+// Fechar o modal
+function fecharModal(index){
+    // Fecha o modal respectivo ao botão "Sair" clicado
+    tabModals[index].classList.remove('abrirModal');
+
+    // Coloca um fundo preto por trás do modal aberto
+    escurecer.style.display = 'none';
+}
+
+// Chama a função ao clicar no botão "Sair" do modal, que é o item de navegação
+tabSairModal.forEach((btnSair, index) => {  // O argumento index é referente ao index de cada butão (item de navegação) 
+    btnSair.addEventListener('click', () => {fecharModal(index); });
+});

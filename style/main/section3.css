@@ -320,6 +320,11 @@ div#conteinarPecas div.modal{
     transform: translate(-50%, -50%);
 }
 
+/* Serve para abrir o modal com JS */
+.abrirModal{
+    display: block !important;
+}
+
 div#conteinarPecas div.modal div.modalPeca{
     width: 600px;
     max-height: fit-content;
