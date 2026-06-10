@@ -108,7 +108,7 @@ section#section9 form div.form-input textarea::placeholder{
 
 section#section9 form button{
     cursor: pointer;
-    width: 200px;
+    width: 100%;
     padding: 12px 0;
     border: 1px solid var(--Branco);
     border-radius: 5px;
