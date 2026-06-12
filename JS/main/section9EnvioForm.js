@@ -8,7 +8,8 @@ formContainer.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(formContainer);
-    formData.append("access_key", "ef9920a6-0592-45f0-a762-f63379f617a3"); // Web3Forms - Chave de acesso
+    formData.append("access_key", "4e0c0ba3-e96f-43a5-b027-c9521da1f8ed"); // Web3Forms - Chave de acesso (site)
+    // formData.append("access_key", "ef9920a6-0592-45f0-a762-f63379f617a3"); // Web3Forms - Chave de acesso (testes locais)
 
 
     // ======== Personaliza o e-mail que chega após enviar pelo form do site ========
